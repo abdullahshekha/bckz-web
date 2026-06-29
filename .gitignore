@@ -1,0 +1,18 @@
+# Old WordPress exported pages (not part of new site)
+Bahria College Karsaz – Home Page.html
+Bahria College Karsaz – Home Page_files/
+Boys Wing (Morning) – Bahria College Karsaz.html
+Boys Wing (Morning) – Bahria College Karsaz_files/
+
+# Content source documents
+*.docx
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories
+.vscode/
+.idea/
