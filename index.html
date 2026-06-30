@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bahria College Karsaz — Inspiring Excellence, Building Character</title>
     <meta name="description" content="Bahria College Karsaz is a premier educational institution under the patronage of Pakistan Navy, offering Cambridge and National programmes since 1997.">
-    <link rel="icon" type="image/png" href="Images/BCKz Logo-01.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Images/BCKz Logo.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -43,82 +40,94 @@
     <header class="header" id="header">
         <nav class="navbar">
             <div class="navbar__inner">
+
+                <!-- College Logo (left) -->
                 <a href="index.html" class="navbar__logo">
-                    <img src="Images/BCKz Logo-01.png" alt="Bahria College Karsaz">
+                    <img src="Images/BCKz Logo.png" alt="Bahria College Karsaz">
                 </a>
 
+                <!-- Mobile Toggle -->
                 <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
 
-                <ul class="navbar__menu" id="navMenu" role="menubar">
-                    <li role="none"><a href="index.html" class="navbar__link active" role="menuitem">Home</a></li>
+                <!-- Nav Links -->
+                <ul class="navbar__menu" id="navMenu">
+                    <li><a href="index.html" class="navbar__link active">Home</a></li>
 
-                    <li class="has-dropdown" role="none">
-                        <a href="about.html" class="navbar__link" role="menuitem" aria-haspopup="true">About Us</a>
-                        <ul class="dropdown" role="menu">
-                            <li><a href="about.html#history" role="menuitem">History</a></li>
-                            <li><a href="about.html#vision" role="menuitem">Vision & Mission</a></li>
-                            <li><a href="about.html#values" role="menuitem">Core Values</a></li>
-                            <li><a href="about.html#governance" role="menuitem">Governance</a></li>
-                            <li><a href="about.html#org-structure" role="menuitem">Organizational Structure</a></li>
+                    <li class="has-dropdown">
+                        <a href="about.html" class="navbar__link">About Us</a>
+                        <ul class="dropdown">
+                            <li><a href="about.html#history">History</a></li>
+                            <li><a href="about.html#vision">Vision</a></li>
+                            <li><a href="about.html#mission">Mission</a></li>
+                            <li><a href="about.html#core-values">Core Values</a></li>
+                            <li><a href="about.html#our-legacy">Our Legacy</a></li>
+                            <li><a href="about.html#governance">Governance</a></li>
+                            <li><a href="about.html#org-structure">Organizational Structure</a></li>
                         </ul>
                     </li>
 
-                    <li class="has-dropdown" role="none">
-                        <a href="wings.html" class="navbar__link" role="menuitem" aria-haspopup="true">Wings</a>
-                        <ul class="dropdown" role="menu">
-                            <li><a href="wings/boys-morning.html" role="menuitem">Boys Wing (Morning)</a></li>
-                            <li><a href="wings/girls-morning.html" role="menuitem">Girls Wing (Morning)</a></li>
-                            <li><a href="wings/boys-afternoon.html" role="menuitem">Boys Wing (Afternoon)</a></li>
-                            <li><a href="wings/girls-afternoon.html" role="menuitem">Girls Wing (Afternoon)</a></li>
-                            <li><a href="wings/cambridge.html" role="menuitem">Cambridge Wing</a></li>
-                            <li><a href="wings/middle.html" role="menuitem">Middle Wing</a></li>
-                            <li><a href="wings/primary.html" role="menuitem">Primary Wing</a></li>
-                            <li><a href="wings/secondary.html" role="menuitem">Secondary Wing</a></li>
+                    <li class="has-dropdown">
+                        <a href="wings.html" class="navbar__link">Wings</a>
+                        <ul class="dropdown">
+                            <li><a href="wings/boys-morning.html">Boys Wing (Morning)</a></li>
+                            <li><a href="wings/girls-morning.html">Girls Wing (Morning)</a></li>
+                            <li><a href="wings/boys-afternoon.html">Boys Wing (Afternoon)</a></li>
+                            <li><a href="wings/girls-afternoon.html">Girls Wing (Afternoon)</a></li>
+                            <li><a href="wings/cambridge.html">Cambridge Wing</a></li>
+                            <li><a href="wings/middle.html">Middle Wing</a></li>
+                            <li><a href="wings/primary.html">Primary Wing</a></li>
+                            <li><a href="wings/secondary.html">Secondary Wing</a></li>
                         </ul>
                     </li>
 
-                    <li class="has-dropdown" role="none">
-                        <a href="academics.html" class="navbar__link" role="menuitem" aria-haspopup="true">Academics</a>
-                        <ul class="dropdown" role="menu">
-                            <li><a href="academics.html#programmes" role="menuitem">Explore Programmes</a></li>
-                            <li><a href="admissions.html" role="menuitem">Admissions</a></li>
-                            <li><a href="academics.html#fees" role="menuitem">Fee Structure</a></li>
-                            <li><a href="academics.html#uniform" role="menuitem">Uniform</a></li>
-                            <li><a href="academics.html#scholarships" role="menuitem">Scholarships</a></li>
-                            <li><a href="academics.html#calendar" role="menuitem">Academic Calendar</a></li>
-                            <li><a href="academics.html#clubs" role="menuitem">Clubs & Societies</a></li>
+                    <li class="has-dropdown">
+                        <a href="academics.html" class="navbar__link">Academics</a>
+                        <ul class="dropdown">
+                            <li><a href="academics.html#programmes">Explore Programmes</a></li>
+                            <li><a href="admissions.html">Admissions</a></li>
+                            <li><a href="academics.html#fees">Fee Structure</a></li>
+                            <li><a href="academics.html#uniform">Uniform</a></li>
+                            <li><a href="academics.html#scholarships">Scholarships</a></li>
+                            <li><a href="academics.html#calendar">Academic Calendar</a></li>
+                            <li><a href="academics.html#clubs">Clubs &amp; Societies</a></li>
                         </ul>
                     </li>
 
-                    <li class="has-dropdown" role="none">
-                        <a href="administration.html" class="navbar__link" role="menuitem" aria-haspopup="true">Administration</a>
-                        <ul class="dropdown" role="menu">
-                            <li><a href="administration.html#medical" role="menuitem">Medical</a></li>
-                            <li><a href="administration.html#counselling" role="menuitem">Student Counselling</a></li>
-                            <li><a href="administration.html#transport" role="menuitem">Transport</a></li>
-                            <li><a href="administration.html#card" role="menuitem">College Card</a></li>
-                            <li><a href="administration.html#security" role="menuitem">Security</a></li>
+                    <li class="has-dropdown">
+                        <a href="administration.html" class="navbar__link">Administration</a>
+                        <ul class="dropdown">
+                            <li><a href="administration.html#medical">Medical</a></li>
+                            <li><a href="administration.html#counselling">Student Counselling</a></li>
+                            <li><a href="administration.html#transport">Transport</a></li>
+                            <li><a href="administration.html#card">College Card</a></li>
+                            <li><a href="administration.html#security">Security</a></li>
                         </ul>
                     </li>
 
-                    <li class="has-dropdown" role="none">
-                        <a href="facilities.html" class="navbar__link" role="menuitem" aria-haspopup="true">Facilities</a>
-                        <ul class="dropdown" role="menu">
-                            <li><a href="facilities.html#labs" role="menuitem">Labs</a></li>
-                            <li><a href="facilities.html#library" role="menuitem">Library</a></li>
-                            <li><a href="facilities.html#sports" role="menuitem">Sports</a></li>
-                            <li><a href="facilities.html#auditorium" role="menuitem">Auditorium</a></li>
-                            <li><a href="facilities.html#cafeteria" role="menuitem">Cafeteria & Canteens</a></li>
+                    <li class="has-dropdown">
+                        <a href="facilities.html" class="navbar__link">Facilities</a>
+                        <ul class="dropdown">
+                            <li><a href="facilities.html#labs">Labs</a></li>
+                            <li><a href="facilities.html#library">Library</a></li>
+                            <li><a href="facilities.html#sports">Sports</a></li>
+                            <li><a href="facilities.html#auditorium">Auditorium</a></li>
+                            <li><a href="facilities.html#cafeteria">Cafeteria &amp; Canteens</a></li>
                         </ul>
                     </li>
 
-                    <li role="none"><a href="achievements.html" class="navbar__link" role="menuitem">Achievements</a></li>
-                    <li role="none"><a href="alumni.html" class="navbar__link" role="menuitem">Alumni</a></li>
+                    <li><a href="achievements.html" class="navbar__link">Achievements</a></li>
+                    <li><a href="alumni.html" class="navbar__link">Alumni</a></li>
                 </ul>
+
+                <!-- Pakistan Navy Logo (right) -->
+                <a href="https://www.paknavy.gov.pk" target="_blank" rel="noopener noreferrer" class="navbar__navy-logo" aria-label="Pakistan Navy">
+                    <img src="Images/Navy Logo.png" alt="Pakistan Navy">
+                </a>
+
             </div>
         </nav>
     </header>
@@ -150,6 +159,35 @@
             </div>
         </div>
 
+        <!-- News Ticker on Hero -->
+        <div class="hero__ticker">
+            <span class="hero__ticker-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+                Latest News
+            </span>
+            <div class="hero__ticker-viewport">
+                <div class="hero__ticker-track" id="tickerTrack">
+                    <button class="hero__ticker-item" data-news="0">Top 7 Positions in Science Group — Karachi Board 2025</button>
+                    <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                    <button class="hero__ticker-item" data-news="1">Annual Examination Results – HSC II Pre-Medical Now Available</button>
+                    <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                    <button class="hero__ticker-item" data-news="2">Admissions Open for HSSC, O-Level &amp; A-Level — Session 2026</button>
+                    <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                    <button class="hero__ticker-item" data-news="3">Congratulations to our Board Position Holders 2025</button>
+                    <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                    <!-- Duplicate for seamless loop -->
+                    <button class="hero__ticker-item" data-news="0">Top 7 Positions in Science Group — Karachi Board 2025</button>
+                    <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                    <button class="hero__ticker-item" data-news="1">Annual Examination Results – HSC II Pre-Medical Now Available</button>
+                    <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                    <button class="hero__ticker-item" data-news="2">Admissions Open for HSSC, O-Level &amp; A-Level — Session 2026</button>
+                    <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                    <button class="hero__ticker-item" data-news="3">Congratulations to our Board Position Holders 2025</button>
+                    <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                </div>
+            </div>
+        </div>
+
         <a href="#stats" class="hero__scroll-indicator" aria-label="Scroll to content">
             <span>Scroll</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
@@ -160,7 +198,7 @@
     <section class="stats" id="stats">
         <div class="stats__inner">
             <div class="stat-item">
-                <span class="stat-item__number" data-target="1997">1997</span>
+                <span class="stat-item__number">1997</span>
                 <span class="stat-item__label">Established</span>
             </div>
             <div class="stat-item__divider"></div>
@@ -199,7 +237,7 @@
 
                 <div class="feature-card" data-aos>
                     <div class="feature-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                     </div>
                     <h3 class="feature-card__title">Academic Excellence</h3>
                     <p class="feature-card__text">Consistent board position holders and top results across all disciplines, recognised for excellence 12 years running.</p>
@@ -207,7 +245,7 @@
 
                 <div class="feature-card" data-aos>
                     <div class="feature-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </div>
                     <h3 class="feature-card__title">Highly Qualified Faculty</h3>
                     <p class="feature-card__text">Over 200 experienced, dedicated educators committed to nurturing every student's intellectual and personal growth.</p>
@@ -215,7 +253,7 @@
 
                 <div class="feature-card" data-aos>
                     <div class="feature-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                     </div>
                     <h3 class="feature-card__title">Modern Learning Environment</h3>
                     <p class="feature-card__text">State-of-the-art science and computer labs, e-library system, STEM integration, and technology-forward classrooms.</p>
@@ -223,7 +261,7 @@
 
                 <div class="feature-card" data-aos>
                     <div class="feature-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                     </div>
                     <h3 class="feature-card__title">Character Building</h3>
                     <p class="feature-card__text">Holistic development grounded in integrity, discipline, leadership, and moral values that last a lifetime.</p>
@@ -231,31 +269,31 @@
 
                 <div class="feature-card" data-aos>
                     <div class="feature-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                     </div>
-                    <h3 class="feature-card__title">Sports & Physical Education</h3>
+                    <h3 class="feature-card__title">Sports &amp; Physical Education</h3>
                     <p class="feature-card__text">Cricket, football, basketball, padel tennis, athletics and more — all on a sprawling 24-acre campus.</p>
                 </div>
 
                 <div class="feature-card" data-aos>
                     <div class="feature-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                     </div>
-                    <h3 class="feature-card__title">Cambridge & National Streams</h3>
+                    <h3 class="feature-card__title">Cambridge &amp; National Streams</h3>
                     <p class="feature-card__text">Offering O-Level and A-Level under Cambridge International alongside Federal and Karachi Board programmes.</p>
                 </div>
 
                 <div class="feature-card" data-aos>
                     <div class="feature-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
-                    <h3 class="feature-card__title">Safe & Secure Campus</h3>
+                    <h3 class="feature-card__title">Safe &amp; Secure Campus</h3>
                     <p class="feature-card__text">Full CCTV coverage, dedicated security staff, and a meticulously maintained safe environment for all students.</p>
                 </div>
 
                 <div class="feature-card feature-card--cta" data-aos>
                     <div class="feature-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                     </div>
                     <h3 class="feature-card__title">Principal's Message</h3>
                     <p class="feature-card__text">Hear from our Principal on the vision, values, and promise that defines Bahria College Karsaz.</p>
@@ -324,7 +362,7 @@
 
                 <a href="wings/boys-morning.html" class="wing-card">
                     <div class="wing-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     </div>
                     <h3 class="wing-card__name">Boys Wing</h3>
                     <span class="wing-card__shift">Morning</span>
@@ -334,7 +372,7 @@
 
                 <a href="wings/girls-morning.html" class="wing-card">
                     <div class="wing-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     </div>
                     <h3 class="wing-card__name">Girls Wing</h3>
                     <span class="wing-card__shift">Morning</span>
@@ -344,7 +382,7 @@
 
                 <a href="wings/boys-afternoon.html" class="wing-card">
                     <div class="wing-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                     </div>
                     <h3 class="wing-card__name">Boys Wing</h3>
                     <span class="wing-card__shift">Afternoon</span>
@@ -354,7 +392,7 @@
 
                 <a href="wings/girls-afternoon.html" class="wing-card">
                     <div class="wing-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                     </div>
                     <h3 class="wing-card__name">Girls Wing</h3>
                     <span class="wing-card__shift">Afternoon</span>
@@ -364,7 +402,7 @@
 
                 <a href="wings/cambridge.html" class="wing-card wing-card--featured">
                     <div class="wing-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                     </div>
                     <h3 class="wing-card__name">Cambridge Wing</h3>
                     <span class="wing-card__shift">O-Level &amp; A-Level</span>
@@ -374,7 +412,7 @@
 
                 <a href="wings/middle.html" class="wing-card">
                     <div class="wing-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                     </div>
                     <h3 class="wing-card__name">Middle Wing</h3>
                     <span class="wing-card__shift">Morning</span>
@@ -384,7 +422,7 @@
 
                 <a href="wings/primary.html" class="wing-card">
                     <div class="wing-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><circle cx="12" cy="5" r="3"/><path d="M6.168 8.606L5 12"/><path d="M17.832 8.606L19 12"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                     </div>
                     <h3 class="wing-card__name">Primary Wing</h3>
                     <span class="wing-card__shift">Morning</span>
@@ -394,7 +432,7 @@
 
                 <a href="wings/secondary.html" class="wing-card">
                     <div class="wing-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
                     </div>
                     <h3 class="wing-card__name">Secondary Wing</h3>
                     <span class="wing-card__shift">SSC &amp; HSSC</span>
@@ -415,32 +453,6 @@
                 <div class="section-rule"></div>
             </div>
 
-            <!-- Announcement Ticker -->
-            <div class="ticker" role="marquee" aria-label="Latest announcements">
-                <span class="ticker__badge">Latest</span>
-                <div class="ticker__viewport">
-                    <div class="ticker__track">
-                        <span class="ticker__item">Top 7 Positions in Science Group — Karachi Board 2025</span>
-                        <span class="ticker__sep" aria-hidden="true">&#9679;</span>
-                        <span class="ticker__item">Annual Examination Results – HSC II Pre-Medical Now Available</span>
-                        <span class="ticker__sep" aria-hidden="true">&#9679;</span>
-                        <span class="ticker__item">Admissions Open for HSSC, O-Level &amp; A-Level — Session 2026</span>
-                        <span class="ticker__sep" aria-hidden="true">&#9679;</span>
-                        <span class="ticker__item">Congratulations to our Board Position Holders 2025</span>
-                        <span class="ticker__sep" aria-hidden="true">&#9679;</span>
-                        <span class="ticker__item">Top 7 Positions in Science Group — Karachi Board 2025</span>
-                        <span class="ticker__sep" aria-hidden="true">&#9679;</span>
-                        <span class="ticker__item">Annual Examination Results – HSC II Pre-Medical Now Available</span>
-                        <span class="ticker__sep" aria-hidden="true">&#9679;</span>
-                        <span class="ticker__item">Admissions Open for HSSC, O-Level &amp; A-Level — Session 2026</span>
-                        <span class="ticker__sep" aria-hidden="true">&#9679;</span>
-                        <span class="ticker__item">Congratulations to our Board Position Holders 2025</span>
-                        <span class="ticker__sep" aria-hidden="true">&#9679;</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- News Cards -->
             <div class="news-grid">
 
                 <article class="news-card">
@@ -452,7 +464,7 @@
                         <p class="news-card__date">January 2026</p>
                         <h3 class="news-card__title">Top Position Holders — Karachi Board 2025</h3>
                         <p class="news-card__excerpt">BCKz students clinch top positions in the Science Group at the Karachi Board annual examinations, continuing a proud tradition of excellence.</p>
-                        <a href="#" class="news-card__link">Read More <span aria-hidden="true">&#8594;</span></a>
+                        <button class="news-card__link" data-news="0">Read More &#8594;</button>
                     </div>
                 </article>
 
@@ -465,7 +477,7 @@
                         <p class="news-card__date">March 2026</p>
                         <h3 class="news-card__title">Annual Sports Gala 2026</h3>
                         <p class="news-card__excerpt">Students showcased athletic excellence across cricket, football, basketball and more at the annual inter-wing sports event.</p>
-                        <a href="#" class="news-card__link">Read More <span aria-hidden="true">&#8594;</span></a>
+                        <button class="news-card__link" data-news="2">Read More &#8594;</button>
                     </div>
                 </article>
 
@@ -478,7 +490,7 @@
                         <p class="news-card__date">April 2026</p>
                         <h3 class="news-card__title">Admissions Open — Session 2026</h3>
                         <p class="news-card__excerpt">Applications are now open for HSSC, O-Level and A-Level programmes. Entrance tests scheduled — limited seats available, apply early.</p>
-                        <a href="admissions.html" class="news-card__link">Apply Now <span aria-hidden="true">&#8594;</span></a>
+                        <button class="news-card__link" data-news="2">Apply Now &#8594;</button>
                     </div>
                 </article>
 
@@ -545,18 +557,18 @@
 
                     <div class="footer__brand-col">
                         <a href="index.html">
-                            <img src="Images/BCKz Logo-01.png" alt="Bahria College Karsaz" class="footer__logo" height="80">
+                            <img src="Images/BCKz Logo.png" alt="Bahria College Karsaz" class="footer__logo">
                         </a>
                         <p class="footer__motto">Inspiring Excellence<br>Building Character<br>Shaping Future Leaders</p>
                         <div class="footer__social">
-                            <a href="#" aria-label="Follow us on Facebook" class="footer__social-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            <a href="#" aria-label="Facebook" class="footer__social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                             </a>
-                            <a href="#" aria-label="Follow us on Instagram" class="footer__social-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            <a href="#" aria-label="Instagram" class="footer__social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                             </a>
-                            <a href="#" aria-label="Contact us on WhatsApp" class="footer__social-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                            <a href="#" aria-label="WhatsApp" class="footer__social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
                             </a>
                         </div>
                     </div>
@@ -592,11 +604,11 @@
                         <h4 class="footer__heading">Get In Touch</h4>
                         <ul class="footer__contact-list">
                             <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                                 <span>Karsaz Road, Karachi, Pakistan</span>
                             </li>
                             <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                                 <a href="mailto:info@bahriacollegekarsaz.edu.pk">info@bahriacollegekarsaz.edu.pk</a>
                             </li>
                         </ul>
@@ -613,6 +625,22 @@
         </div>
     </footer>
 
+    <!-- ===== NEWS POPUP MODAL ===== -->
+    <div class="news-modal" id="newsModal" hidden aria-modal="true" role="dialog">
+        <button class="news-modal__backdrop" id="modalBackdrop" aria-label="Close"></button>
+        <div class="news-modal__box">
+            <button class="news-modal__close" id="modalClose" aria-label="Close announcement">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="news-modal__header">
+                <span class="news-modal__tag" id="modalTag"></span>
+                <h2 class="news-modal__title" id="modalTitle"></h2>
+                <p class="news-modal__date" id="modalDate"></p>
+            </div>
+            <div class="news-modal__body" id="modalBody"></div>
+        </div>
+    </div>
+
     <!-- ===== VIDEO LIGHTBOX (Virtual Campus Tour) ===== -->
     <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Virtual Campus Tour" hidden>
         <button class="lightbox__backdrop" id="lightboxBackdrop" aria-label="Close tour"></button>
@@ -621,14 +649,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </button>
             <div class="lightbox__video-wrap">
-                <iframe
-                    id="lightboxIframe"
-                    src=""
-                    frameborder="0"
-                    allow="autoplay; encrypted-media; fullscreen"
-                    allowfullscreen
-                    title="Virtual Campus Tour — Bahria College Karsaz">
-                </iframe>
+                <iframe id="lightboxIframe" src="" frameborder="0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen title="Virtual Campus Tour — Bahria College Karsaz"></iframe>
             </div>
         </div>
     </div>
