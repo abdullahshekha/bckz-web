@@ -89,10 +89,13 @@ Every page shares the same shell:
 
 1. **Utility bar** — social icons (left) + quick links (right)
 2. **Header/Navbar** — BCKz logo (left), nav links with dropdowns (centre), Pakistan Navy logo (right)
-3. **Page content**
-4. **Footer** (to be built)
+3. **News ticker** — standalone strip between `</header>` and page hero (NOT inside hero)
+4. **Page content**
+5. **Footer** — 4-column grid (brand, quick links, resources, contact)
 
 The navbar scrolls sticky and adds a `scrolled` class via JS. The active `navbar__link` class must match the current page.
+
+> **Important:** Copy the navbar and utility bar HTML from `index.html` (root pages) or `wings/boys-morning.html` (wing sub-pages). Wing pages use `../` prefix for all asset paths.
 
 ## JS Architecture (`js/main.js`)
 
@@ -104,11 +107,34 @@ The navbar scrolls sticky and adds a `scrolled` class via JS. The active `navbar
 
 To add news items, append to the `NEWS_DATA` array in `main.js` and add a matching `<button class="hero__ticker-item" data-news="N">` in the ticker.
 
-## Page Build Order
+## Page Build Status
 
-Homepage ✅ → About Us → Wings (individual pages) → Academics → Admissions → Administration → Facilities → Achievements → Alumni → Downloads → Gallery → Contact
+All pages are complete as of July 2026:
 
-When continuing, always pick up with the **next unbuilt page** in this order.
+| Page | File | Status |
+|------|------|--------|
+| Home | `index.html` | ✅ Complete |
+| About Us | `about.html` | ✅ Complete |
+| Wings Overview | `wings.html` | ✅ Complete |
+| Boys Wing (Morning) | `wings/boys-morning.html` | ✅ Complete |
+| Girls Wing (Morning) | `wings/girls-morning.html` | ✅ Complete |
+| Boys Wing (Afternoon) | `wings/boys-afternoon.html` | ✅ Complete |
+| Girls Wing (Afternoon) | `wings/girls-afternoon.html` | ✅ Complete |
+| Cambridge Wing | `wings/cambridge.html` | ✅ Complete |
+| Middle Wing | `wings/middle.html` | ✅ Complete |
+| Primary Wing | `wings/primary.html` | ✅ Complete |
+| Secondary Wing | `wings/secondary.html` | ✅ Complete |
+| Academics | `academics.html` | ✅ Complete |
+| Admissions | `admissions.html` | ✅ Complete |
+| Administration | `administration.html` | ✅ Complete |
+| Facilities | `facilities.html` | ✅ Complete |
+| Achievements | `achievements.html` | ✅ Complete |
+| Alumni | `alumni.html` | ✅ Complete |
+| Downloads | `downloads.html` | ✅ Complete |
+| Gallery | `gallery.html` | ✅ Complete |
+| Contact | `contact.html` | ✅ Complete |
+
+Next work: content refinements, real VP photos when available, real PDF downloads when available.
 
 ## Rules
 
