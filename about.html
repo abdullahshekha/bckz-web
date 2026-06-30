@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — Bahria College Karsaz</title>
+    <meta name="description" content="Learn about Bahria College Karsaz — founded in 1997 under the patronage of Pakistan Navy, our history, vision, mission, core values, and governance.">
+    <link rel="icon" type="image/png" href="Images/BCKz Logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== TOP UTILITY BAR ===== -->
+    <div class="utility-bar">
+        <div class="utility-bar__inner">
+            <div class="utility-bar__social">
+                <a href="https://www.facebook.com/p/Media-Society-Bahria-College-Karsaz-61555816535227/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="utility-bar__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/mediasociety_bckz" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="utility-bar__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="#" aria-label="WhatsApp" class="utility-bar__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                </a>
+                <a href="mailto:info@bckz.edu.pk" aria-label="Email" class="utility-bar__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+            </div>
+            <div class="utility-bar__links">
+                <a href="gallery.html" class="utility-bar__link">Gallery</a>
+                <a href="downloads.html" class="utility-bar__link">Downloads</a>
+                <a href="#" class="utility-bar__link">Virtual Library</a>
+                <a href="contact.html" class="utility-bar__link">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MAIN HEADER ===== -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="navbar__inner">
+
+                <!-- College Logo (left) -->
+                <a href="index.html" class="navbar__logo">
+                    <img src="Images/BCKz Logo.png" alt="Bahria College Karsaz">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Nav Links -->
+                <ul class="navbar__menu" id="navMenu">
+                    <li><a href="index.html" class="navbar__link">Home</a></li>
+
+                    <li>
+                        <a href="about.html" class="navbar__link active">About Us</a>
+                    </li>
+
+                    <li class="has-dropdown">
+                        <a href="wings.html" class="navbar__link">Wings</a>
+                        <ul class="dropdown">
+                            <li><a href="wings/boys-morning.html">Boys Wing (Morning)</a></li>
+                            <li><a href="wings/girls-morning.html">Girls Wing (Morning)</a></li>
+                            <li><a href="wings/boys-afternoon.html">Boys Wing (Afternoon)</a></li>
+                            <li><a href="wings/girls-afternoon.html">Girls Wing (Afternoon)</a></li>
+                            <li><a href="wings/cambridge.html">Cambridge Wing</a></li>
+                            <li><a href="wings/middle.html">Middle Wing</a></li>
+                            <li><a href="wings/primary.html">Primary Wing</a></li>
+                            <li><a href="wings/secondary.html">Secondary Wing</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-dropdown">
+                        <a href="academics.html" class="navbar__link">Academics</a>
+                        <ul class="dropdown">
+                            <li><a href="academics.html#programmes">Explore Programmes</a></li>
+                            <li><a href="admissions.html">Admissions</a></li>
+                            <li><a href="academics.html#fees">Fee Structure</a></li>
+                            <li><a href="academics.html#uniform">Uniform</a></li>
+                            <li><a href="academics.html#scholarships">Scholarships</a></li>
+                            <li><a href="academics.html#calendar">Academic Calendar</a></li>
+                            <li><a href="academics.html#clubs">Clubs &amp; Societies</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-dropdown">
+                        <a href="administration.html" class="navbar__link">Administration</a>
+                        <ul class="dropdown">
+                            <li><a href="administration.html#medical">Medical</a></li>
+                            <li><a href="administration.html#counselling">Student Counselling</a></li>
+                            <li><a href="administration.html#transport">Transport</a></li>
+                            <li><a href="administration.html#card">College Card</a></li>
+                            <li><a href="administration.html#security">Security</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-dropdown">
+                        <a href="facilities.html" class="navbar__link">Facilities</a>
+                        <ul class="dropdown">
+                            <li><a href="facilities.html#labs">Labs</a></li>
+                            <li><a href="facilities.html#library">Library</a></li>
+                            <li><a href="facilities.html#sports">Sports</a></li>
+                            <li><a href="facilities.html#auditorium">Auditorium</a></li>
+                            <li><a href="facilities.html#cafeteria">Cafeteria &amp; Canteens</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="achievements.html" class="navbar__link">Achievements</a></li>
+                    <li><a href="alumni.html" class="navbar__link">Alumni</a></li>
+                </ul>
+
+                <!-- Pakistan Navy Logo (right) -->
+                <a href="https://www.paknavy.gov.pk" target="_blank" rel="noopener noreferrer" class="navbar__navy-logo" aria-label="Pakistan Navy">
+                    <img src="Images/Navy Logo.png" alt="Pakistan Navy">
+                </a>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== NEWS TICKER ===== -->
+    <div class="hero__ticker">
+        <span class="hero__ticker-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+            Latest News
+        </span>
+        <div class="hero__ticker-viewport">
+            <div class="hero__ticker-track" id="tickerTrack">
+                <button class="hero__ticker-item" data-news="0">Top 7 Positions in Science Group — Karachi Board 2025</button>
+                <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                <button class="hero__ticker-item" data-news="1">Annual Examination Results – HSC II Pre-Medical Now Available</button>
+                <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                <button class="hero__ticker-item" data-news="2">Admissions Open for HSSC, O-Level &amp; A-Level — Session 2026</button>
+                <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                <button class="hero__ticker-item" data-news="3">Congratulations to our Board Position Holders 2025</button>
+                <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                <!-- Duplicate for seamless loop -->
+                <button class="hero__ticker-item" data-news="0">Top 7 Positions in Science Group — Karachi Board 2025</button>
+                <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                <button class="hero__ticker-item" data-news="1">Annual Examination Results – HSC II Pre-Medical Now Available</button>
+                <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                <button class="hero__ticker-item" data-news="2">Admissions Open for HSSC, O-Level &amp; A-Level — Session 2026</button>
+                <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+                <button class="hero__ticker-item" data-news="3">Congratulations to our Board Position Holders 2025</button>
+                <span class="hero__ticker-sep" aria-hidden="true">&#9679;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="page-hero__overlay"></div>
+        <div class="page-hero__content">
+            <h1 class="page-hero__title">About Us</h1>
+            <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span aria-hidden="true">/</span>
+                <span>About Us</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ===== OUR STORY / HISTORY ===== -->
+    <section class="about-history section-pad" id="history">
+        <div class="container">
+            <div class="about-history__grid">
+
+                <div class="about-history__text-col">
+                    <div class="section-header section-header--left">
+                        <p class="section-label">Our Roots</p>
+                        <h2 class="section-title">Our Story</h2>
+                        <div class="section-rule section-rule--left"></div>
+                    </div>
+
+                    <p class="about-history__body">
+                        Bahria College Karsaz was established in <strong>1997</strong> on the shores of Karachi's premier education belt, born from Pakistan Navy's enduring commitment to quality education for the nation. What began as a single-shift institution with a handful of classrooms has grown into one of Karachi's most respected academic campuses.
+                    </p>
+                    <p class="about-history__body">
+                        Spread across a <strong>24-acre</strong> landscaped campus on Karsaz Road, the college today serves over <strong>3,000 students</strong> across eight specialised wings — from Primary to Cambridge A-Level — guided by more than <strong>200 qualified faculty members</strong>. Each wing is designed to cater to the distinct developmental needs of students at every stage of their educational journey.
+                    </p>
+                    <p class="about-history__body">
+                        Rooted in the Navy's ethos of discipline, service, and excellence, BCKz has consistently topped Karachi Board results, earned the <strong>Best Bahria College Award 12 times</strong>, and produced alumni who have gone on to lead in medicine, engineering, law, the armed forces, and beyond.
+                    </p>
+                </div>
+
+                <div class="about-history__stats-col">
+                    <div class="about-stats-strip">
+                        <div class="about-stat">
+                            <span class="about-stat__number">1997</span>
+                            <span class="about-stat__label">Year Founded</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat__number">24</span>
+                            <span class="about-stat__label">Acre Campus</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat__number">3,000+</span>
+                            <span class="about-stat__label">Students Enrolled</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat__number">200+</span>
+                            <span class="about-stat__label">Faculty Members</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat__number">8</span>
+                            <span class="about-stat__label">Specialised Wings</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat__number">12&times;</span>
+                            <span class="about-stat__label">Best Bahria College</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VISION & MISSION ===== -->
+    <section class="vision-mission section-pad" id="vision">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Our Purpose</p>
+                <h2 class="section-title">Vision &amp; Mission</h2>
+                <div class="section-rule"></div>
+            </div>
+
+            <div class="vm-grid">
+
+                <div class="vm-card vm-card--vision" id="vision">
+                    <div class="vm-card__icon-wrap">
+                        <!-- Eye / telescope icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <h3 class="vm-card__heading">Our Vision</h3>
+                    <div class="vm-card__rule"></div>
+                    <blockquote class="vm-card__quote">
+                        "To be a centre of academic excellence that inspires every learner to achieve their highest potential — cultivating leaders of character who serve Pakistan and humanity with integrity, wisdom, and purpose."
+                    </blockquote>
+                    <p class="vm-card__body">
+                        We envision a college where intellectual curiosity thrives alongside moral grounding, where students graduate not only equipped with qualifications but with the values, resilience, and vision needed to shape a better tomorrow.
+                    </p>
+                </div>
+
+                <div class="vm-card vm-card--mission" id="mission">
+                    <div class="vm-card__icon-wrap">
+                        <!-- Target / flag icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    </div>
+                    <h3 class="vm-card__heading">Our Mission</h3>
+                    <div class="vm-card__rule"></div>
+                    <blockquote class="vm-card__quote">
+                        "To deliver quality, future-focused education within a safe and inclusive environment — nurturing the intellectual, physical, emotional, and moral well-being of every student."
+                    </blockquote>
+                    <p class="vm-card__body">
+                        Our mission is fulfilled through rigorous academics, modern pedagogy, STEM integration, and experiential learning — guided by Pakistan Navy's ethos of discipline and service, and enriched by a culture that values every individual.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CORE VALUES ===== -->
+    <section class="core-values section-pad" id="core-values">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">What We Stand For</p>
+                <h2 class="section-title">Our Core Values</h2>
+                <div class="section-rule"></div>
+                <p class="section-desc">Six principles that define our culture, guide our decisions, and shape every student who walks through our gates.</p>
+            </div>
+
+            <div class="values-grid">
+
+                <div class="value-card animate-on-scroll">
+                    <div class="value-card__icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3 class="value-card__title">Excellence</h3>
+                    <p class="value-card__text">We set and pursue the highest standards in academics, character, and co-curricular achievement — never settling for less than the best.</p>
+                </div>
+
+                <div class="value-card animate-on-scroll">
+                    <div class="value-card__icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="value-card__title">Integrity</h3>
+                    <p class="value-card__text">Honesty, transparency, and ethical conduct are non-negotiable — in the classroom, on the field, and in every aspect of college life.</p>
+                </div>
+
+                <div class="value-card animate-on-scroll">
+                    <div class="value-card__icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
+                    <h3 class="value-card__title">Discipline</h3>
+                    <p class="value-card__text">Rooted in the Navy's tradition, discipline shapes focused minds, builds resilience, and instils the habits that underpin lifelong success.</p>
+                </div>
+
+                <div class="value-card animate-on-scroll">
+                    <div class="value-card__icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                    </div>
+                    <h3 class="value-card__title">Innovation</h3>
+                    <p class="value-card__text">We embrace STEM, digital literacy, and creative thinking — equipping students with the tools to thrive in a rapidly changing world.</p>
+                </div>
+
+                <div class="value-card animate-on-scroll">
+                    <div class="value-card__icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="value-card__title">Service</h3>
+                    <p class="value-card__text">We cultivate a spirit of giving back — to the institution, the community, and Pakistan — honouring the Navy's proud tradition of national service.</p>
+                </div>
+
+                <div class="value-card animate-on-scroll">
+                    <div class="value-card__icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+                    </div>
+                    <h3 class="value-card__title">Patriotism</h3>
+                    <p class="value-card__text">A deep love for Pakistan is woven into every aspect of campus life — inspiring students to dedicate their talents to the nation's progress.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OUR LEGACY — TIMELINE ===== -->
+    <section class="our-legacy section-pad" id="our-legacy">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">A Journey of Growth</p>
+                <h2 class="section-title">Our Legacy</h2>
+                <div class="section-rule"></div>
+                <p class="section-desc">Key milestones that trace BCKz's remarkable evolution from a single shift in 1997 to Karachi's premier multi-wing institution.</p>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline__item timeline__item--left animate-on-scroll">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <span class="timeline__year">1997</span>
+                        <h3 class="timeline__title">College Founded</h3>
+                        <p class="timeline__body">Bahria College Karsaz opens its gates under the patronage of Pakistan Navy, beginning with Boys and Girls Wings for HSSC students on the 24-acre Karsaz Road campus.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item timeline__item--right animate-on-scroll">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <span class="timeline__year">2003</span>
+                        <h3 class="timeline__title">First Best Bahria College Award</h3>
+                        <p class="timeline__body">BCKz receives the inaugural Best Bahria College Award, recognising its outstanding academic results, discipline, and contributions to Pakistan Navy's educational mandate.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item timeline__item--left animate-on-scroll">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <span class="timeline__year">2011</span>
+                        <h3 class="timeline__title">Cambridge Wing Launched</h3>
+                        <p class="timeline__body">The Cambridge International Wing opens, offering O-Level and A-Level programmes — expanding BCKz's reach to international curricula and broadening pathways for students aspiring to global universities.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item timeline__item--right animate-on-scroll">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <span class="timeline__year">2017</span>
+                        <h3 class="timeline__title">Middle Wing Established</h3>
+                        <p class="timeline__body">Classes VI–VIII are introduced under the Middle Wing, allowing BCKz to nurture students from an earlier age and strengthen the academic pipeline across all formative years.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item timeline__item--left animate-on-scroll">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <span class="timeline__year">2025</span>
+                        <h3 class="timeline__title">12th Best Bahria College Award</h3>
+                        <p class="timeline__body">BCKz is once again honoured with the Best Bahria College Award — the 12th time — cementing its place as the flagship institution within the entire Bahria College network across Pakistan.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GOVERNANCE ===== -->
+    <section class="governance section-pad" id="governance">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Administration &amp; Oversight</p>
+                <h2 class="section-title">Governance</h2>
+                <div class="section-rule"></div>
+            </div>
+
+            <div class="governance__inner">
+                <div class="governance__text">
+                    <p>
+                        Bahria College Karsaz operates under the direct oversight of <strong>Pakistan Navy's Education Directorate</strong>, which sets academic policy, approves curricula, and maintains quality standards across all Bahria institutions nationwide. The college is part of a network of Bahria educational institutions that uphold the Navy's unwavering commitment to producing well-rounded, academically excellent graduates who contribute meaningfully to Pakistan.
+                    </p>
+                    <p>
+                        The Principal is appointed by Pakistan Navy and reports to the Education Directorate, ensuring that institutional decisions are aligned with both national educational goals and Navy's core values of discipline, integrity, and service. This governance structure provides stability, accountability, and a long-term vision that distinguishes BCKz from privately managed institutions.
+                    </p>
+                </div>
+
+                <div class="governance__callout">
+                    <div class="governance__callout-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div>
+                        <strong class="governance__callout-heading">Under the Patronage of Pakistan Navy</strong>
+                        <p class="governance__callout-text">Governed by Navy's Education Directorate — ensuring the highest standards of academic quality, institutional discipline, and national purpose in every aspect of college life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ORGANIZATIONAL STRUCTURE ===== -->
+    <section class="org-structure section-pad" id="org-structure">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Leadership Hierarchy</p>
+                <h2 class="section-title">Organizational Structure</h2>
+                <div class="section-rule"></div>
+                <p class="section-desc">A clear, accountable structure that connects national Navy oversight to every classroom and department.</p>
+            </div>
+
+            <div class="org-chart">
+
+                <!-- Level 1 -->
+                <div class="org-chart__level">
+                    <div class="org-box org-box--top">
+                        <span class="org-box__label">Patron</span>
+                        <strong class="org-box__title">Pakistan Navy</strong>
+                        <span class="org-box__sub">Education Directorate</span>
+                    </div>
+                </div>
+
+                <div class="org-chart__connector org-chart__connector--down" aria-hidden="true"></div>
+
+                <!-- Level 2 -->
+                <div class="org-chart__level">
+                    <div class="org-box org-box--principal">
+                        <span class="org-box__label">Principal</span>
+                        <strong class="org-box__title">Capt. Muhammad Imran Khan PN</strong>
+                        <span class="org-box__sub">Principal, Bahria College Karsaz</span>
+                    </div>
+                </div>
+
+                <div class="org-chart__connector org-chart__connector--branch" aria-hidden="true">
+                    <span class="org-chart__branch-line"></span>
+                </div>
+
+                <!-- Level 3 -->
+                <div class="org-chart__level org-chart__level--row">
+                    <div class="org-box org-box--dept">
+                        <span class="org-box__label">Academic</span>
+                        <strong class="org-box__title">Vice Principal</strong>
+                        <span class="org-box__sub">Academic Affairs &amp; Wing Heads</span>
+                    </div>
+                    <div class="org-box org-box--dept">
+                        <span class="org-box__label">Academic</span>
+                        <strong class="org-box__title">Academic Wing</strong>
+                        <span class="org-box__sub">Faculty, Examinations &amp; Curriculum</span>
+                    </div>
+                    <div class="org-box org-box--dept">
+                        <span class="org-box__label">Operations</span>
+                        <strong class="org-box__title">Admin Wing</strong>
+                        <span class="org-box__sub">Finance, Transport, Security &amp; Facilities</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA STRIP ===== -->
+    <section class="about-cta">
+        <div class="container">
+            <div class="about-cta__inner">
+                <h2 class="about-cta__heading">Ready to Join BCKz?</h2>
+                <p class="about-cta__sub">Become part of a legacy built on excellence, discipline, and a deep commitment to Pakistan's future.</p>
+                <div class="about-cta__actions">
+                    <a href="admissions.html" class="btn btn--gold">Apply for Admission</a>
+                    <a href="contact.html" class="btn btn--outline-white">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="container">
+                <div class="footer__grid">
+
+                    <div class="footer__brand-col">
+                        <a href="index.html">
+                            <img src="Images/BCKz Logo.png" alt="Bahria College Karsaz" class="footer__logo">
+                        </a>
+                        <p class="footer__motto">Inspiring Excellence<br>Building Character<br>Shaping Future Leaders</p>
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/p/Media-Society-Bahria-College-Karsaz-61555816535227/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                            <a href="https://www.instagram.com/mediasociety_bckz" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </a>
+                            <a href="#" aria-label="WhatsApp" class="footer__social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                            </a>
+                            <a href="mailto:info@bckz.edu.pk" aria-label="Email" class="footer__social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__nav-col">
+                        <h4 class="footer__heading">Quick Links</h4>
+                        <ul class="footer__list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="wings.html">Wings</a></li>
+                            <li><a href="academics.html">Academics</a></li>
+                            <li><a href="admissions.html">Admissions</a></li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="achievements.html">Achievements</a></li>
+                            <li><a href="alumni.html">Alumni</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-col">
+                        <h4 class="footer__heading">Resources</h4>
+                        <ul class="footer__list">
+                            <li><a href="academics.html#scholarships">Scholarships</a></li>
+                            <li><a href="academics.html#calendar">Academic Calendar</a></li>
+                            <li><a href="academics.html#clubs">Clubs &amp; Societies</a></li>
+                            <li><a href="downloads.html">Downloads</a></li>
+                            <li><a href="#">Virtual Library</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__contact-col">
+                        <h4 class="footer__heading">Get In Touch</h4>
+                        <ul class="footer__contact-list">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <span>Karsaz Road, Karachi, Pakistan</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <a href="mailto:info@bckz.edu.pk">info@bckz.edu.pk</a>
+                            </li>
+                        </ul>
+                        <a href="admissions.html" class="btn btn--outline-gold" style="margin-top: 20px; display: inline-block;">Apply for Admission</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Bahria College Karsaz. All rights reserved. &nbsp;|&nbsp; Under the Patronage of Pakistan Navy</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== NEWS POPUP MODAL ===== -->
+    <div class="news-modal" id="newsModal" hidden aria-modal="true" role="dialog">
+        <button class="news-modal__backdrop" id="modalBackdrop" aria-label="Close"></button>
+        <div class="news-modal__box">
+            <button class="news-modal__close" id="modalClose" aria-label="Close announcement">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="news-modal__header">
+                <span class="news-modal__tag" id="modalTag"></span>
+                <h2 class="news-modal__title" id="modalTitle"></h2>
+                <p class="news-modal__date" id="modalDate"></p>
+            </div>
+            <div class="news-modal__body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- ===== VIDEO LIGHTBOX (Virtual Campus Tour) ===== -->
+    <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Virtual Campus Tour" hidden>
+        <button class="lightbox__backdrop" id="lightboxBackdrop" aria-label="Close tour"></button>
+        <div class="lightbox__box">
+            <button class="lightbox__close" id="lightboxClose" aria-label="Close Virtual Campus Tour">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="lightbox__video-wrap">
+                <iframe id="lightboxIframe" src="" frameborder="0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen title="Virtual Campus Tour — Bahria College Karsaz"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
