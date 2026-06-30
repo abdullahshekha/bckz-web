@@ -2501,3 +2501,329 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     .page-hero__inner { padding: 44px 20px 36px; }
     .wing-cta { padding: 48px 0; }
 }
+
+/* =============================================
+   ABOUT PAGE — PRINCIPAL'S MESSAGE
+   ============================================= */
+.about-msg {
+    background: var(--navy-dark);
+}
+
+.about-msg__inner {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.about-msg .section-label { color: var(--gold-light); }
+.about-msg .section-title { color: var(--white); }
+.about-msg .section-rule--left { background: var(--gold); }
+
+.about-msg__photo {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    display: block;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.35);
+}
+
+.about-msg__nameplate {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.about-msg__name {
+    display: block;
+    color: var(--white);
+    font-size: 0.96rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.about-msg__title-name {
+    display: block;
+    color: rgba(255,255,255,0.58);
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.about-msg__quote {
+    font-family: var(--font);
+    font-size: 1.22rem;
+    color: var(--gold-light);
+    font-style: italic;
+    margin: 0 0 24px;
+    line-height: 1.55;
+    border-left: 3px solid var(--gold);
+    padding-left: 18px;
+}
+
+.about-msg__para {
+    color: rgba(255,255,255,0.78);
+    font-size: 0.96rem;
+    line-height: 1.82;
+    margin-bottom: 14px;
+}
+.about-msg__para:last-child { margin-bottom: 0; }
+
+@media (max-width: 860px) {
+    .about-msg__inner { grid-template-columns: 1fr; gap: 36px; }
+    .about-msg__photo { max-width: 200px; margin: 0 auto; }
+}
+
+/* =============================================
+   ABOUT PAGE — TIMELINE GOLD VARIANT
+   ============================================= */
+.timeline__dot--gold {
+    background: var(--gold) !important;
+    box-shadow: 0 0 0 4px rgba(201,160,51,0.25) !important;
+}
+
+.timeline__card--gold {
+    border-top-color: var(--gold);
+    background: rgba(201,160,51,0.06);
+}
+
+.timeline__card--gold .timeline__year { color: var(--gold-dark); }
+.timeline__card--gold .timeline__title { color: var(--navy); }
+
+/* =============================================
+   BOYS WING — PAGE HERO BACKGROUND
+   ============================================= */
+.page-hero--wing-bm {
+    background-image: linear-gradient(rgba(0,0,64,0.62), rgba(0,0,64,0.62)),
+                      url('../Images/Boys Wing.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+/* =============================================
+   BOYS WING — VICE PRINCIPAL SECTION
+   ============================================= */
+.wing-vp { background: var(--off-white); }
+
+.wing-vp__inner {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.wing-vp__photo {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    display: block;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    box-shadow: var(--shadow-lg);
+}
+
+.wing-vp__name {
+    display: block;
+    font-family: var(--font);
+    font-size: 1.3rem;
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.wing-vp__designation {
+    display: block;
+    color: var(--gold-dark);
+    font-size: 0.84rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 22px;
+}
+
+.wing-vp__para {
+    color: var(--text-light);
+    font-size: 0.97rem;
+    line-height: 1.82;
+    margin-bottom: 14px;
+}
+.wing-vp__para:last-child { margin-bottom: 0; }
+
+@media (max-width: 860px) {
+    .wing-vp__inner { grid-template-columns: 1fr; text-align: center; }
+    .wing-vp__photo { max-width: 180px; margin: 0 auto; }
+}
+
+/* =============================================
+   BOYS WING — AFFILIATED BOARD
+   ============================================= */
+.wing-boards { background: var(--white); }
+
+.wing-boards__grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.wing-boards__logo {
+    width: 100%;
+    max-width: 180px;
+    display: block;
+    border-radius: var(--radius);
+}
+
+.wing-boards__name {
+    font-family: var(--font);
+    font-size: 1.15rem;
+    color: var(--navy);
+    font-weight: 700;
+    margin: 0 0 14px;
+    line-height: 1.35;
+}
+
+.wing-boards__body {
+    color: var(--text-light);
+    font-size: 0.96rem;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.wing-boards__disc-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+}
+
+.wing-boards__disc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.wing-boards__disc-list li {
+    background: var(--navy);
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 5px 16px;
+    border-radius: 20px;
+}
+
+@media (max-width: 860px) {
+    .wing-boards__grid { grid-template-columns: 1fr; text-align: center; }
+    .wing-boards__logo { margin: 0 auto 24px; }
+    .wing-boards__disc-list { justify-content: center; }
+}
+
+/* =============================================
+   BOYS WING — FACILITIES GALLERY
+   ============================================= */
+.wing-facilities { background: var(--off-white); }
+
+.wing-fac-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.wing-fac-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.wing-fac-item__img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s ease;
+}
+
+.wing-fac-item:hover .wing-fac-item__img { transform: scale(1.06); }
+
+.wing-fac-item__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,60,0.76));
+    color: var(--white);
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 22px 12px 10px;
+}
+
+@media (max-width: 860px) {
+    .wing-fac-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+    .wing-fac-grid { grid-template-columns: 1fr; }
+}
+
+/* =============================================
+   BOYS WING — CLUBS SECTION
+   ============================================= */
+.wing-clubs { background: var(--white); }
+
+.wing-clubs__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.wing-club-card {
+    background: var(--off-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.wing-club-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.wing-club-card__img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+.wing-club-card__body {
+    padding: 22px 24px 26px;
+}
+
+.wing-club-card__name {
+    font-family: var(--font);
+    font-size: 1.05rem;
+    color: var(--navy);
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.wing-club-card__desc {
+    color: var(--text-light);
+    font-size: 0.88rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 860px) {
+    .wing-clubs__grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+}
+
+/* =============================================
+   PROGRAMMES GRID — AUTO-FIT FOR VARIABLE COUNT
+   ============================================= */
+.prog-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
