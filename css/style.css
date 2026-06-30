@@ -254,7 +254,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 .navbar__link {
     font-family: var(--font);
-    font-size: 0.83rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--text);
     padding: 8px 10px;
@@ -907,16 +907,31 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 .wing-card__arrow {
-    display: block;
-    margin-top: 12px;
-    font-size: 1.1rem;
-    color: var(--gold);
-    opacity: 0;
-    transform: translateX(-6px);
-    transition: all var(--transition);
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--navy);
+    background: rgba(0,0,128,0.08);
+    border: 1px solid rgba(0,0,128,0.18);
+    border-radius: 20px;
+    padding: 5px 16px;
+    opacity: 1;
+    transform: none;
+    transition: background var(--transition), color var(--transition), border-color var(--transition);
 }
-.wing-card:hover .wing-card__arrow  { opacity: 1; transform: translateX(0); }
-.wing-card--featured .wing-card__arrow { opacity: 1; transform: translateX(0); }
+.wing-card:hover .wing-card__arrow {
+    background: var(--navy);
+    color: var(--white);
+    border-color: var(--navy);
+}
+.wing-card--featured .wing-card__arrow {
+    background: var(--gold);
+    color: var(--white);
+    border-color: var(--gold);
+}
 
 /* =============================================
    NEWS & EVENTS — white background
