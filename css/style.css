@@ -244,10 +244,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     flex: 1;
     text-align: center;
     font-family: var(--font);
-    font-size: 1.5rem;
+    font-size: 3em;
     font-weight: 700;
     color: var(--navy);
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 /* College logo */
@@ -736,6 +737,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     grid-template-columns: 340px 1fr;
     gap: 68px;
     align-items: start;
+}
+
+.principal__image-col {
+    position: sticky;
+    top: 110px;
 }
 
 .principal__img-frame {
@@ -1445,7 +1451,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 .page-hero--about {
     background-image: linear-gradient(135deg, rgba(0,0,50,0.80) 0%, rgba(0,0,100,0.62) 100%),
-                      url('Images/Drone View.JPG');
+                      url('../Images/Drone View.JPG');
     background-size: cover;
     background-position: center;
 }
@@ -1517,6 +1523,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     grid-template-columns: 1fr 380px;
     gap: 64px;
     align-items: start;
+}
+
+.about-history__stats-col {
+    position: sticky;
+    top: 110px;
 }
 
 .about-history__body {
@@ -1592,8 +1603,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     box-shadow: var(--shadow-md);
     transform: translateY(-4px);
 }
-.vm-card--vision  { border-left: 4px solid var(--gold); }
-.vm-card--mission { border-left: 4px solid var(--navy); }
 
 .vm-card__icon-wrap {
     width: 64px;
@@ -1651,6 +1660,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 22px;
+    align-items: start;
 }
 
 .core-values__footnote {
@@ -1721,6 +1731,19 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
    OUR LEGACY — VERTICAL TIMELINE
    ============================================= */
 .our-legacy { background: var(--off-white); }
+
+.our-legacy__intro {
+    max-width: 860px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+.our-legacy__intro p {
+    font-size: 0.98rem;
+    line-height: 1.85;
+    color: var(--text-light);
+    margin-bottom: 16px;
+}
+.our-legacy__intro p:last-child { margin-bottom: 0; }
 
 .timeline {
     position: relative;
@@ -2075,7 +2098,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     .section-pad { padding: 60px 0; }
 
     .navbar__toggle { display: flex; }
-    .navbar__title { font-size: 1.1rem; }
+    .navbar__title { font-size: 1.6em; }
 
     .navbar__menu {
         position: fixed;
@@ -2123,6 +2146,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
     .principal__grid { grid-template-columns: 1fr; }
     .principal__image-col {
+        position: static;
         display: grid;
         grid-template-columns: 160px 1fr;
         align-items: center;
@@ -2136,6 +2160,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
     /* About page — tablet */
     .about-history__grid  { grid-template-columns: 1fr; gap: 44px; }
+    .about-history__stats-col { position: static; }
     .vm-grid              { grid-template-columns: 1fr; gap: 20px; }
     .values-grid          { grid-template-columns: repeat(2, 1fr); }
     .governance__inner    { grid-template-columns: 1fr; gap: 32px; }
