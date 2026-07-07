@@ -39,6 +39,14 @@ const NEWS_DATA = [
         body:  `<p>Bahria College Karsaz proudly congratulates all students who secured board positions in the 2025 annual examinations across Federal Board and Karachi Board.</p>
                 <p>This year's position holders have brought great honour to the institution, their families, and the Pakistan Navy. BCKz has been recognised as the Best Bahria College for 12 years — a legacy our students continue to uphold.</p>
                 <p>We wish all our position holders continued success in their academic and professional journeys.</p>`
+    },
+    {
+        tag:   'Sports',
+        title: 'Annual Sports Gala 2026',
+        date:  'March 2026',
+        body:  `<p>Students showcased athletic excellence across cricket, football, basketball, badminton and more at the annual inter-wing Sports Gala.</p>
+                <p>The event brought together students from every wing in a celebration of teamwork, fitness and competitive spirit, reflecting BCKz's commitment to holistic development beyond the classroom.</p>
+                <p>Congratulations to all participants and winners across every category.</p>`
     }
 ];
 
@@ -48,6 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initNewsModal();
     initScrollAnimations();
     initDropdownMobile();
+    initNewsSlider();
+    initGalleryFilter();
 });
 
 /* ---------- NAVBAR ---------- */
@@ -178,6 +188,44 @@ function initLightbox() {
     closeBtn.addEventListener('click', close);
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && !lightbox.hidden) close();
+    });
+}
+
+/* ---------- NEWS SLIDER ---------- */
+function initNewsSlider() {
+    const track = document.getElementById('newsSlider');
+    const prev  = document.getElementById('newsPrev');
+    const next  = document.getElementById('newsNext');
+    if (!track || !prev || !next) return;
+
+    function scrollByCard(direction) {
+        const card = track.querySelector('.news-card');
+        if (!card) return;
+        const gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || 0);
+        track.scrollBy({ left: direction * (card.offsetWidth + gap), behavior: 'smooth' });
+    }
+
+    prev.addEventListener('click', () => scrollByCard(-1));
+    next.addEventListener('click', () => scrollByCard(1));
+}
+
+/* ---------- GALLERY FILTER ---------- */
+function initGalleryFilter() {
+    const buttons = document.querySelectorAll('.gallery-filter__btn');
+    const items   = document.querySelectorAll('.gallery-item');
+    if (!buttons.length || !items.length) return;
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const category = btn.dataset.filter;
+
+            items.forEach(item => {
+                const show = category === 'all' || item.dataset.category === category;
+                item.style.display = show ? '' : 'none';
+            });
+        });
     });
 }
 

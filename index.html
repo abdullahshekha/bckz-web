@@ -41,17 +41,26 @@
         <nav class="navbar">
             <div class="navbar__inner">
 
-                <!-- College Logo (left) -->
-                <a href="index.html" class="navbar__logo">
-                    <img src="Images/BCKz Logo.png" alt="Bahria College Karsaz">
-                </a>
+                <div class="navbar__top-row">
+                    <!-- College Logo (left) -->
+                    <a href="index.html" class="navbar__logo">
+                        <img src="Images/BCKz Logo.png" alt="Bahria College Karsaz">
+                    </a>
 
-                <!-- Mobile Toggle -->
-                <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                    <span class="navbar__title">Bahria College Karsaz</span>
+
+                    <!-- Pakistan Navy Logo (right) -->
+                    <a href="https://www.paknavy.gov.pk" target="_blank" rel="noopener noreferrer" class="navbar__navy-logo" aria-label="Pakistan Navy">
+                        <img src="Images/Navy Logo.png" alt="Pakistan Navy">
+                    </a>
+
+                    <!-- Mobile Toggle -->
+                    <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
 
                 <!-- Nav Links -->
                 <ul class="navbar__menu" id="navMenu">
@@ -68,10 +77,11 @@
                             <li><a href="wings/girls-morning.html">Girls Wing (Morning)</a></li>
                             <li><a href="wings/boys-afternoon.html">Boys Wing (Afternoon)</a></li>
                             <li><a href="wings/girls-afternoon.html">Girls Wing (Afternoon)</a></li>
-                            <li><a href="wings/cambridge.html">Cambridge Wing</a></li>
                             <li><a href="wings/middle.html">Middle Wing</a></li>
-                            <li><a href="wings/primary.html">Primary Wing</a></li>
                             <li><a href="wings/secondary.html">Secondary Wing</a></li>
+                            <li><a href="wings/cambridge.html">Cambridge Wing</a></li>
+                            <li><a href="wings/primary.html">Primary Wing</a></li>
+                            <li><a href="wings/junior.html">Junior Wing</a></li>
                         </ul>
                     </li>
 
@@ -85,17 +95,24 @@
                             <li><a href="academics.html#scholarships">Scholarships</a></li>
                             <li><a href="academics.html#calendar">Academic Calendar</a></li>
                             <li><a href="academics.html#clubs">Clubs &amp; Societies</a></li>
+                            <li><a href="academics.html#guidelines">Student &amp; Parent Guidelines</a></li>
+                            <li><a href="academics.html#summer-camp">Summer Camp</a></li>
                         </ul>
                     </li>
 
                     <li class="has-dropdown">
                         <a href="administration.html" class="navbar__link">Administration</a>
                         <ul class="dropdown">
+                            <li><a href="administration.html#admin-dept">Admin Department</a></li>
                             <li><a href="administration.html#medical">Medical</a></li>
                             <li><a href="administration.html#counselling">Student Counselling</a></li>
-                            <li><a href="administration.html#transport">Transport</a></li>
-                            <li><a href="administration.html#card">College Card</a></li>
+                            <li><a href="administration.html#bursar">Bursar</a></li>
+                            <li><a href="administration.html#sports-office">Sports Office</a></li>
+                            <li><a href="administration.html#librarian">Librarian</a></li>
+                            <li><a href="administration.html#board-coordinators">Board Coordinators</a></li>
                             <li><a href="administration.html#security">Security</a></li>
+                            <li><a href="administration.html#transport">Transport</a></li>
+                            <li><a href="administration.html#alumni-coordinator">Alumni Coordinator</a></li>
                         </ul>
                     </li>
 
@@ -113,11 +130,6 @@
                     <li><a href="achievements.html" class="navbar__link">Achievements</a></li>
                     <li><a href="alumni.html" class="navbar__link">Alumni</a></li>
                 </ul>
-
-                <!-- Pakistan Navy Logo (right) -->
-                <a href="https://www.paknavy.gov.pk" target="_blank" rel="noopener noreferrer" class="navbar__navy-logo" aria-label="Pakistan Navy">
-                    <img src="Images/Navy Logo.png" alt="Pakistan Navy">
-                </a>
 
             </div>
         </nav>
@@ -170,13 +182,6 @@
             <p class="hero__eyebrow">Inspiring Excellence &nbsp;·&nbsp; Building Character &nbsp;·&nbsp; Shaping Future Leaders</p>
             <h1 class="hero__title">Welcome to<br>Bahria College Karsaz</h1>
             <p class="hero__subtitle">A premier institution under the patronage of Pakistan Navy,<br>nurturing minds and building tomorrow's leaders since 1997.</p>
-            <div class="hero__actions">
-                <a href="admissions.html" class="btn btn--gold">Apply Now</a>
-                <button class="btn btn--outline-white" id="tourBtn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
-                    Virtual Campus Tour
-                </button>
-            </div>
         </div>
 
         <a href="#stats" class="hero__scroll-indicator" aria-label="Scroll to content">
@@ -199,12 +204,12 @@
             </div>
             <div class="stat-item__divider"></div>
             <div class="stat-item">
-                <span class="stat-item__number">3,000+</span>
+                <span class="stat-item__number">6,000+</span>
                 <span class="stat-item__label">Enrolled Students</span>
             </div>
             <div class="stat-item__divider"></div>
             <div class="stat-item">
-                <span class="stat-item__number">200+</span>
+                <span class="stat-item__number">450+</span>
                 <span class="stat-item__label">Faculty Members</span>
             </div>
         </div>
@@ -226,7 +231,15 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                     </div>
                     <h3 class="feature-card__title">Academic Excellence</h3>
-                    <p class="feature-card__text">Consistent board position holders and top results across all disciplines, recognised for excellence 12 years running.</p>
+                    <p class="feature-card__text">Consistently achieving outstanding academic results with Board position holders and exceptional performance across Federal, Karachi Board and Cambridge streams.</p>
+                </div>
+
+                <div class="feature-card" data-aos>
+                    <div class="feature-card__icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Comprehensive Academic Pathways</h3>
+                    <p class="feature-card__text">A seamless educational journey from Early Years to Intermediate, offering both Cambridge (O &amp; A Levels) and National Curriculum (Federal &amp; Karachi Boards) under one campus.</p>
                 </div>
 
                 <div class="feature-card" data-aos>
@@ -234,7 +247,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </div>
                     <h3 class="feature-card__title">Highly Qualified Faculty</h3>
-                    <p class="feature-card__text">Over 200 experienced, dedicated educators committed to nurturing every student's intellectual and personal growth.</p>
+                    <p class="feature-card__text">A dedicated team of over 450 experienced educators committed to academic excellence, innovation, and the holistic development of every student.</p>
                 </div>
 
                 <div class="feature-card" data-aos>
@@ -242,41 +255,40 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                     </div>
                     <h3 class="feature-card__title">Modern Learning Environment</h3>
-                    <p class="feature-card__text">State-of-the-art science and computer labs, e-library system, STEM integration, and technology-forward classrooms.</p>
-                </div>
-
-                <div class="feature-card" data-aos>
-                    <div class="feature-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                    </div>
-                    <h3 class="feature-card__title">Character Building</h3>
-                    <p class="feature-card__text">Holistic development grounded in integrity, discipline, leadership, and moral values that last a lifetime.</p>
-                </div>
-
-                <div class="feature-card" data-aos>
-                    <div class="feature-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    </div>
-                    <h3 class="feature-card__title">Sports &amp; Physical Education</h3>
-                    <p class="feature-card__text">Cricket, football, basketball, padel tennis, athletics and more — all on a sprawling 24-acre campus.</p>
-                </div>
-
-                <div class="feature-card" data-aos>
-                    <div class="feature-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                    </div>
-                    <h3 class="feature-card__title">Cambridge &amp; National Streams</h3>
-                    <p class="feature-card__text">Offering O-Level and A-Level under Cambridge International alongside Federal and Karachi Board programmes.</p>
+                    <p class="feature-card__text">Technology-enabled classrooms, state-of-the-art laboratories, digital learning resources, and well-equipped libraries that support experiential and future-ready learning.</p>
                 </div>
 
                 <div class="feature-card" data-aos>
                     <div class="feature-card__icon-wrap">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
-                    <h3 class="feature-card__title">Safe &amp; Secure Campus</h3>
-                    <p class="feature-card__text">Full CCTV coverage, dedicated security staff, and a meticulously maintained safe environment for all students.</p>
+                    <h3 class="feature-card__title">Discipline, Character Building &amp; Leadership</h3>
+                    <p class="feature-card__text">A disciplined and value-based environment that nurtures integrity, respect, punctuality, accountability, leadership, patriotism and strong moral values.</p>
                 </div>
 
+                <div class="feature-card" data-aos>
+                    <div class="feature-card__icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Holistic Development</h3>
+                    <p class="feature-card__text">A rich blend of academic, co-curricular, sports, and community activities that develops creativity, confidence, teamwork, communication, and leadership skills.</p>
+                </div>
+
+                <div class="feature-card" data-aos>
+                    <div class="feature-card__icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Outstanding Sports Facilities</h3>
+                    <p class="feature-card__text">Extensive sports infrastructure, including an international-standard cricket ground and facilities for football, basketball, badminton, padel tennis, table tennis, volleyball, futsal, throw ball, karate, and athletics.</p>
+                </div>
+
+                <div class="feature-card" data-aos>
+                    <div class="feature-card__icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Safe &amp; Secure Campus</h3>
+                    <p class="feature-card__text">A secure, CCTV-monitored campus with trained security personnel, controlled access, comprehensive medical support, and a safe, student-friendly environment.</p>
+                </div>
 
             </div>
         </div>
@@ -289,7 +301,7 @@
 
                 <div class="principal__image-col">
                     <div class="principal__img-frame">
-                        <img src="Images/Captain Muhammad Imran Khan PN.webp" alt="Captain Muhammad Imran Khan PN — Principal, Bahria College Karsaz" loading="lazy">
+                        <img src="Images/Captain Muhammad Imran Khan PN - New.jpeg" alt="Captain Muhammad Imran Khan PN — Principal, Bahria College Karsaz" loading="lazy">
                     </div>
                 </div>
 
@@ -304,9 +316,13 @@
                         <svg class="principal__quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="52" height="52" aria-hidden="true"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
 
                         <blockquote class="principal__blockquote">
-                            <p>Welcome to Bahria College Karsaz — where academic excellence, character and innovation seamlessly converge. Guided by national aspirations and the demands of a rapidly evolving technological landscape, we are committed to deliver quality and future-focused education.</p>
-                            <p>Our academic framework thoughtfully blends rigour with modern pedagogy, STEM integration, and experiential learning — enabling students to develop critical thinking, creativity, and digital competence.</p>
-                            <p>We take pride in providing a safe, supportive and inclusive environment that nurtures the mental, physical, emotional and moral well-being of every learner. At Bahria College Karsaz, education extends beyond the classroom. We strive to prepare our students not only for examinations, but for life — instilling in them integrity, responsibility, and a lifelong love of learning.</p>
+                            <p>Dear Students, Parents, Alumni and Visitors,</p>
+                            <p>It is my profound privilege to welcome you to Bahria College Karsaz, an institution distinguished by its tradition of academic excellence, discipline and character development.</p>
+                            <p>Since its establishment in 1997 under the patronage of the Pakistan Navy, Bahria College Karsaz has remained committed to providing quality education in a safe, disciplined and intellectually stimulating environment. Our mission is to develop well-rounded individuals who possess not only academic competence but also the character, confidence and leadership qualities required to thrive in an ever-evolving world.</p>
+                            <p>At Bahria College Karsaz, we believe that education extends beyond the classroom. While maintaining the highest academic standards, we place equal emphasis on moral values, critical thinking, creativity, innovation, physical well-being and social responsibility. Through a diverse range of academic, co-curricular and extracurricular opportunities, we strive to nurture the full potential of every student.</p>
+                            <p>Guided by our core values of Faith, Character, Courage &amp; Commitment and inspired by the national ideals of Unity, Faith, and Discipline, we strive to nurture confident, principled, and responsible individuals who lead with integrity and contribute meaningfully to society and the nation.</p>
+                            <p>The success of Bahria College Karsaz is a testament to the collective efforts of our dedicated faculty, supportive parents, accomplished alumni and hardworking students. Together, we remain committed to upholding the proud legacy of the College and pursuing excellence in all spheres of education.</p>
+                            <p>May Almighty Allah guide &amp; bless us in all our endeavours and grant us continued success in the pursuit of knowledge, character and excellence (Aameen).</p>
                         </blockquote>
 
                         <div class="principal__sig">
@@ -328,7 +344,7 @@
                 <p class="section-label">Our Structure</p>
                 <h2 class="section-title">Our Wings</h2>
                 <div class="section-rule"></div>
-                <p class="section-desc">Eight specialised wings, each tailored to the distinct needs and stages of every student's journey.</p>
+                <p class="section-desc">Nine specialised wings, each tailored to the distinct needs and stages of every student's journey.</p>
             </div>
 
             <div class="wings-grid">
@@ -373,6 +389,26 @@
                     <span class="wing-card__arrow">Explore Wing &rarr;</span>
                 </a>
 
+                <a href="wings/middle.html" class="wing-card">
+                    <div class="wing-card__icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3 class="wing-card__name">Middle Wing</h3>
+                    <span class="wing-card__shift">Morning &amp; Afternoon</span>
+                    <p class="wing-card__meta">Classes VI–VIII &nbsp;·&nbsp; Since 2017</p>
+                    <span class="wing-card__arrow">Explore Wing &rarr;</span>
+                </a>
+
+                <a href="wings/secondary.html" class="wing-card">
+                    <div class="wing-card__icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                    </div>
+                    <h3 class="wing-card__name">Secondary Wing</h3>
+                    <span class="wing-card__shift">Afternoon</span>
+                    <p class="wing-card__meta">Classes VI–X &nbsp;·&nbsp; Since 2018</p>
+                    <span class="wing-card__arrow">Explore Wing &rarr;</span>
+                </a>
+
                 <a href="wings/cambridge.html" class="wing-card">
                     <div class="wing-card__icon-wrap">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
@@ -383,33 +419,23 @@
                     <span class="wing-card__arrow">Explore Wing &rarr;</span>
                 </a>
 
-                <a href="wings/middle.html" class="wing-card">
-                    <div class="wing-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                    </div>
-                    <h3 class="wing-card__name">Middle Wing</h3>
-                    <span class="wing-card__shift">Morning</span>
-                    <p class="wing-card__meta">Classes VI–VIII &nbsp;·&nbsp; Since 2017</p>
-                    <span class="wing-card__arrow">Explore Wing &rarr;</span>
-                </a>
-
                 <a href="wings/primary.html" class="wing-card">
                     <div class="wing-card__icon-wrap">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                     </div>
                     <h3 class="wing-card__name">Primary Wing</h3>
                     <span class="wing-card__shift">Morning</span>
-                    <p class="wing-card__meta">Classes I–V</p>
+                    <p class="wing-card__meta">Classes I–V &nbsp;·&nbsp; Since 1997</p>
                     <span class="wing-card__arrow">Explore Wing &rarr;</span>
                 </a>
 
-                <a href="wings/secondary.html" class="wing-card">
+                <a href="wings/junior.html" class="wing-card">
                     <div class="wing-card__icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
                     </div>
-                    <h3 class="wing-card__name">Secondary Wing</h3>
-                    <span class="wing-card__shift">SSC &amp; HSSC</span>
-                    <p class="wing-card__meta">Federal &amp; Karachi Boards</p>
+                    <h3 class="wing-card__name">Junior Wing</h3>
+                    <span class="wing-card__shift">Morning</span>
+                    <p class="wing-card__meta">Beginner, Advance &amp; Prep &nbsp;·&nbsp; Since 1997</p>
                     <span class="wing-card__arrow">Explore Wing &rarr;</span>
                 </a>
 
@@ -426,47 +452,75 @@
                 <div class="section-rule"></div>
             </div>
 
-            <div class="news-grid">
+            <div class="news-slider">
+                <div class="news-grid" id="newsSlider">
 
-                <article class="news-card">
-                    <div class="news-card__img-wrap">
-                        <img src="Images/Board of Intermediate Education karachi.jpg" alt="Board Position Holders 2025" loading="lazy">
-                        <span class="news-card__tag">Achievement</span>
-                    </div>
-                    <div class="news-card__body">
-                        <p class="news-card__date">January 2026</p>
-                        <h3 class="news-card__title">Top Position Holders — Karachi Board 2025</h3>
-                        <p class="news-card__excerpt">BCKz students clinch top positions in the Science Group at the Karachi Board annual examinations, continuing a proud tradition of excellence.</p>
-                        <button class="news-card__link" data-news="0">Read More &#8594;</button>
-                    </div>
-                </article>
+                    <article class="news-card">
+                        <div class="news-card__img-wrap">
+                            <img src="Images/Board of Intermediate Education karachi.jpg" alt="Board Position Holders 2025" loading="lazy">
+                            <span class="news-card__tag">Achievement</span>
+                        </div>
+                        <div class="news-card__body">
+                            <p class="news-card__date">January 2026</p>
+                            <h3 class="news-card__title">Top Position Holders — Karachi Board 2025</h3>
+                            <p class="news-card__excerpt">BCKz students clinch top positions in the Science Group at the Karachi Board annual examinations, continuing a proud tradition of excellence.</p>
+                            <button class="news-card__link" data-news="0">Read More &#8594;</button>
+                        </div>
+                    </article>
 
-                <article class="news-card">
-                    <div class="news-card__img-wrap">
-                        <img src="Images/Sports Club.JPG" alt="Annual Sports Gala" loading="lazy">
-                        <span class="news-card__tag">Sports</span>
-                    </div>
-                    <div class="news-card__body">
-                        <p class="news-card__date">March 2026</p>
-                        <h3 class="news-card__title">Annual Sports Gala 2026</h3>
-                        <p class="news-card__excerpt">Students showcased athletic excellence across cricket, football, basketball and more at the annual inter-wing sports event.</p>
-                        <button class="news-card__link" data-news="2">Read More &#8594;</button>
-                    </div>
-                </article>
+                    <article class="news-card">
+                        <div class="news-card__img-wrap">
+                            <img src="Images/Facilities/Library.JPG" alt="HSC II Pre-Medical Results" loading="lazy">
+                            <span class="news-card__tag">Academics</span>
+                        </div>
+                        <div class="news-card__body">
+                            <p class="news-card__date">January 2026</p>
+                            <h3 class="news-card__title">HSC II Pre-Medical Results Now Available</h3>
+                            <p class="news-card__excerpt">Annual examination results for HSC II Pre-Medical have been announced, with BCKz students again demonstrating exceptional performance.</p>
+                            <button class="news-card__link" data-news="1">Read More &#8594;</button>
+                        </div>
+                    </article>
 
-                <article class="news-card">
-                    <div class="news-card__img-wrap">
-                        <img src="Images/IT Club.JPG" alt="Admissions Open 2026" loading="lazy">
-                        <span class="news-card__tag">Admissions</span>
-                    </div>
-                    <div class="news-card__body">
-                        <p class="news-card__date">April 2026</p>
-                        <h3 class="news-card__title">Admissions Open — Session 2026</h3>
-                        <p class="news-card__excerpt">Applications are now open for HSSC, O-Level and A-Level programmes. Entrance tests scheduled — limited seats available, apply early.</p>
-                        <button class="news-card__link" data-news="2">Apply Now &#8594;</button>
-                    </div>
-                </article>
+                    <article class="news-card">
+                        <div class="news-card__img-wrap">
+                            <img src="Images/Sports Club.JPG" alt="Annual Sports Gala" loading="lazy">
+                            <span class="news-card__tag">Sports</span>
+                        </div>
+                        <div class="news-card__body">
+                            <p class="news-card__date">March 2026</p>
+                            <h3 class="news-card__title">Annual Sports Gala 2026</h3>
+                            <p class="news-card__excerpt">Students showcased athletic excellence across cricket, football, basketball and more at the annual inter-wing sports event.</p>
+                            <button class="news-card__link" data-news="4">Read More &#8594;</button>
+                        </div>
+                    </article>
 
+                    <article class="news-card">
+                        <div class="news-card__img-wrap">
+                            <img src="Images/IT Club.JPG" alt="Admissions Open 2026" loading="lazy">
+                            <span class="news-card__tag">Admissions</span>
+                        </div>
+                        <div class="news-card__body">
+                            <p class="news-card__date">April 2026</p>
+                            <h3 class="news-card__title">Admissions Open — Session 2026</h3>
+                            <p class="news-card__excerpt">Applications are now open for HSSC, O-Level and A-Level programmes. Entrance tests scheduled — limited seats available, apply early.</p>
+                            <button class="news-card__link" data-news="2">Apply Now &#8594;</button>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="news-slider__arrows">
+                    <button class="news-slider__arrow" id="newsPrev" aria-label="Previous news">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                    </button>
+                    <button class="news-slider__arrow" id="newsNext" aria-label="Next news">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="news-section__cta">
+                <a href="news.html" class="btn btn--navy">See All</a>
             </div>
         </div>
     </section>
@@ -571,6 +625,7 @@
                             <li><a href="academics.html#clubs">Clubs &amp; Societies</a></li>
                             <li><a href="downloads.html">Downloads</a></li>
                             <li><a href="#">Virtual Library</a></li>
+                            <li><a href="news.html">News &amp; Events</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>

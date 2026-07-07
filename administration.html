@@ -42,17 +42,26 @@
         <nav class="navbar">
             <div class="navbar__inner">
 
-                <!-- College Logo (left) -->
-                <a href="index.html" class="navbar__logo">
-                    <img src="Images/BCKz Logo.png" alt="Bahria College Karsaz">
-                </a>
+                <div class="navbar__top-row">
+                    <!-- College Logo (left) -->
+                    <a href="index.html" class="navbar__logo">
+                        <img src="Images/BCKz Logo.png" alt="Bahria College Karsaz">
+                    </a>
 
-                <!-- Mobile Toggle -->
-                <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                    <span class="navbar__title">Bahria College Karsaz</span>
+
+                    <!-- Pakistan Navy Logo (right) -->
+                    <a href="https://www.paknavy.gov.pk" target="_blank" rel="noopener noreferrer" class="navbar__navy-logo" aria-label="Pakistan Navy">
+                        <img src="Images/Navy Logo.png" alt="Pakistan Navy">
+                    </a>
+
+                    <!-- Mobile Toggle -->
+                    <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
 
                 <!-- Nav Links -->
                 <ul class="navbar__menu" id="navMenu">
@@ -69,10 +78,11 @@
                             <li><a href="wings/girls-morning.html">Girls Wing (Morning)</a></li>
                             <li><a href="wings/boys-afternoon.html">Boys Wing (Afternoon)</a></li>
                             <li><a href="wings/girls-afternoon.html">Girls Wing (Afternoon)</a></li>
-                            <li><a href="wings/cambridge.html">Cambridge Wing</a></li>
                             <li><a href="wings/middle.html">Middle Wing</a></li>
-                            <li><a href="wings/primary.html">Primary Wing</a></li>
                             <li><a href="wings/secondary.html">Secondary Wing</a></li>
+                            <li><a href="wings/cambridge.html">Cambridge Wing</a></li>
+                            <li><a href="wings/primary.html">Primary Wing</a></li>
+                            <li><a href="wings/junior.html">Junior Wing</a></li>
                         </ul>
                     </li>
 
@@ -86,17 +96,24 @@
                             <li><a href="academics.html#scholarships">Scholarships</a></li>
                             <li><a href="academics.html#calendar">Academic Calendar</a></li>
                             <li><a href="academics.html#clubs">Clubs &amp; Societies</a></li>
+                            <li><a href="academics.html#guidelines">Student &amp; Parent Guidelines</a></li>
+                            <li><a href="academics.html#summer-camp">Summer Camp</a></li>
                         </ul>
                     </li>
 
                     <li class="has-dropdown">
                         <a href="administration.html" class="navbar__link active">Administration</a>
                         <ul class="dropdown">
+                            <li><a href="administration.html#admin-dept">Admin Department</a></li>
                             <li><a href="administration.html#medical">Medical</a></li>
                             <li><a href="administration.html#counselling">Student Counselling</a></li>
-                            <li><a href="administration.html#transport">Transport</a></li>
-                            <li><a href="administration.html#card">College Card</a></li>
+                            <li><a href="administration.html#bursar">Bursar</a></li>
+                            <li><a href="administration.html#sports-office">Sports Office</a></li>
+                            <li><a href="administration.html#librarian">Librarian</a></li>
+                            <li><a href="administration.html#board-coordinators">Board Coordinators</a></li>
                             <li><a href="administration.html#security">Security</a></li>
+                            <li><a href="administration.html#transport">Transport</a></li>
+                            <li><a href="administration.html#alumni-coordinator">Alumni Coordinator</a></li>
                         </ul>
                     </li>
 
@@ -114,11 +131,6 @@
                     <li><a href="achievements.html" class="navbar__link">Achievements</a></li>
                     <li><a href="alumni.html" class="navbar__link">Alumni</a></li>
                 </ul>
-
-                <!-- Pakistan Navy Logo (right) -->
-                <a href="https://www.paknavy.gov.pk" target="_blank" rel="noopener noreferrer" class="navbar__navy-logo" aria-label="Pakistan Navy">
-                    <img src="Images/Navy Logo.png" alt="Pakistan Navy">
-                </a>
 
             </div>
         </nav>
@@ -173,63 +185,89 @@
                 <p class="section-label">Student Support</p>
                 <h2 class="section-title">Administrative Services</h2>
                 <div class="section-rule"></div>
-                <p class="section-desc">A range of dedicated support services ensures every student has what they need to thrive — from health and counselling to transport and campus safety.</p>
+                <p class="section-desc">Ten dedicated departments ensure every student has what they need to thrive — from academics and health to finance, sports and security.</p>
             </div>
 
             <div class="admin-services__grid">
 
-                <!-- Medical -->
+                <div class="admin-service-card" id="admin-dept">
+                    <div class="admin-service-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <h3 class="admin-service-card__title">Admin Department</h3>
+                    <p class="admin-service-card__body">Headed by the Admin Officer, the department ensures smooth, secure and disciplined functioning — overseeing security, facilities, transport, staff affairs, and logistical support for exams and college events.</p>
+                </div>
+
                 <div class="admin-service-card" id="medical">
                     <div class="admin-service-card__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                     </div>
-                    <h3 class="admin-service-card__title">Medical Services</h3>
-                    <p class="admin-service-card__body">A fully equipped first aid room is available on campus with trained medical staff to assist students during college hours. Emergency medical support is coordinated with nearby hospitals.</p>
+                    <h3 class="admin-service-card__title">Medical Department</h3>
+                    <p class="admin-service-card__body">Headed by the Medical Officer, the department provides first aid, primary healthcare and emergency assistance, conducts regular health check-ups, and promotes hygiene and preventive healthcare across campus.</p>
                 </div>
 
-                <!-- Student Counselling -->
                 <div class="admin-service-card" id="counselling">
                     <div class="admin-service-card__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </div>
-                    <h3 class="admin-service-card__title">Student Counselling</h3>
-                    <p class="admin-service-card__body">Dedicated counselling staff provide academic and personal guidance to help students navigate challenges, plan careers, and achieve their full potential.</p>
+                    <h3 class="admin-service-card__title">Student Counselling &amp; Psychological Department</h3>
+                    <p class="admin-service-card__body">Headed by the College Psychologist, the department provides counselling, psychological assessments, and academic/career guidance, and conducts workshops on mental health, stress management and digital wellness.</p>
                 </div>
 
-                <!-- Transport -->
-                <div class="admin-service-card" id="transport">
+                <div class="admin-service-card" id="bursar">
                     <div class="admin-service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                     </div>
-                    <h3 class="admin-service-card__title">Transport</h3>
-                    <p class="admin-service-card__body">College-operated transport routes cover major areas of Karachi. Dedicated air-conditioned buses ensure safe, punctual commutes for students. Contact the transport office for route details and registration.</p>
+                    <h3 class="admin-service-card__title">Bursar Department</h3>
+                    <p class="admin-service-card__body">Headed by the Bursar, the department manages the college budget, accounts and payroll, issues fee vouchers and Transfer Certificates, and provides financial and logistical support for exams and events.</p>
                 </div>
 
-                <!-- College Identity Card -->
-                <div class="admin-service-card" id="card">
+                <div class="admin-service-card" id="sports-office">
                     <div class="admin-service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
                     </div>
-                    <h3 class="admin-service-card__title">College Identity Card</h3>
-                    <p class="admin-service-card__body">Every enrolled student is issued a college identity card required for campus entry, library access, and examinations. Cards are issued at the beginning of each academic year.</p>
+                    <h3 class="admin-service-card__title">Sports Office</h3>
+                    <p class="admin-service-card__body">Headed by the College Sports Officer, the office plans physical training, inter-house and inter-collegiate competitions, the Annual Sports Day, and the Summer Sports Camp, and maintains sports facilities and equipment.</p>
                 </div>
 
-                <!-- Campus Security -->
+                <div class="admin-service-card" id="librarian">
+                    <div class="admin-service-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3 class="admin-service-card__title">Librarian</h3>
+                    <p class="admin-service-card__body">The College Librarian manages the libraries as key academic resource centres — overseeing acquisition, cataloguing and circulation of books and digital resources, and fostering a culture of reading.</p>
+                </div>
+
+                <div class="admin-service-card" id="board-coordinators">
+                    <div class="admin-service-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3 class="admin-service-card__title">Board Coordinators</h3>
+                    <p class="admin-service-card__body">Responsible for board affiliation, registration and examination processes — ensuring timely renewal of affiliations, and managing exam/admission forms, roll numbers, admit cards and certificates via the Vice Principals.</p>
+                </div>
+
                 <div class="admin-service-card" id="security">
                     <div class="admin-service-card__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
-                    <h3 class="admin-service-card__title">Campus Security</h3>
-                    <p class="admin-service-card__body">A professional security team operates 24/7 to maintain a safe campus environment. Entry/exit is strictly monitored and CCTV surveillance covers all key areas of the campus.</p>
+                    <h3 class="admin-service-card__title">Security Office</h3>
+                    <p class="admin-service-card__body">Headed by the Security Incharge under the Administrative Officer, the office manages access control, visitor and vehicle management, ID cards, and coordinates emergency response measures.</p>
                 </div>
 
-                <!-- Fee Payment -->
-                <div class="admin-service-card">
+                <div class="admin-service-card" id="transport">
                     <div class="admin-service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
                     </div>
-                    <h3 class="admin-service-card__title">Fee Payment</h3>
-                    <p class="admin-service-card__body">Tuition fees are payable on a quarterly basis. Students must ensure timely payment to avoid disruption to their studies. Fee challan is available from the accounts office.</p>
+                    <h3 class="admin-service-card__title">Transport Coordinator</h3>
+                    <p class="admin-service-card__body">The College maintains a limited number of vehicles for pick-and-drop; most parents rely on the civil transport contractor. A dedicated Transport Coordinator facilitates communication and resolves transport-related concerns.</p>
+                </div>
+
+                <div class="admin-service-card" id="alumni-coordinator">
+                    <div class="admin-service-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="4"/><path d="M1 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="19" cy="10" r="2"/><path d="M15 21v-1a3 3 0 0 1 3-3h1a3 3 0 0 1 3 3v1"/></svg>
+                    </div>
+                    <h3 class="admin-service-card__title">Alumni Coordinator</h3>
+                    <p class="admin-service-card__body">Maintains strong links between the College and its former students — developing the alumni database, organizing alumni events, and encouraging alumni participation in college activities.</p>
                 </div>
 
             </div>
@@ -248,13 +286,13 @@
             <div class="governance__inner">
                 <div class="governance__text">
                     <p>
-                        Bahria College Karsaz operates under the direct oversight of <strong>Pakistan Navy's Education Directorate</strong>, which sets academic policy, approves curricula, and maintains quality standards across all Bahria institutions nationwide. The college is part of a network of Bahria educational institutions that uphold the Navy's unwavering commitment to producing well-rounded, academically excellent graduates who contribute meaningfully to Pakistan.
+                        As part of the <strong>Bahria Colleges network</strong>, the College is governed by the <strong>Board of Governors</strong>, chaired by the Vice Chief of the Naval Staff / Chief of Staff, with policies implemented through the <strong>Managing Committee</strong>, headed by the Commander Karachi, which provides operational oversight and ensures effective administration.
                     </p>
                     <p>
-                        The Principal is appointed by Pakistan Navy and reports to the Education Directorate, ensuring that institutional decisions are aligned with both national educational goals and Navy's core values of discipline, integrity, and service. This governance structure provides stability, accountability, and a long-term vision that distinguishes BCKz from privately managed institutions.
+                        At the institutional level, the Principal provides overall academic and administrative leadership, supported by the Vice Principals of all wings. Campus operations — including administration, security, transport, sports, IT, and maintenance — are managed by the Administrative Officer, while financial and human resource functions are overseen by the Bursar.
                     </p>
                     <p>
-                        Every administrative department — from transport and security to student counselling and medical services — operates under this structured framework, ensuring that student welfare remains at the heart of all institutional decisions.
+                        Every administrative department listed above — from the Admin Department and Bursar to Medical, Counselling, Security, and Alumni Coordination — operates within this structured framework, ensuring that student welfare remains at the heart of all institutional decisions.
                     </p>
                 </div>
 
@@ -264,7 +302,7 @@
                     </div>
                     <div>
                         <strong class="governance__callout-heading">Under the Patronage of Pakistan Navy</strong>
-                        <p class="governance__callout-text">Governed by Navy's Education Directorate — ensuring the highest standards of academic quality, institutional discipline, and national purpose in every aspect of college life.</p>
+                        <p class="governance__callout-text">Governed by a Board of Governors and Managing Committee under Pakistan Navy — ensuring the highest standards of academic quality, institutional discipline, and national purpose in every aspect of college life.</p>
                     </div>
                 </div>
             </div>
@@ -334,6 +372,7 @@
                             <li><a href="academics.html#clubs">Clubs &amp; Societies</a></li>
                             <li><a href="downloads.html">Downloads</a></li>
                             <li><a href="#">Virtual Library</a></li>
+                            <li><a href="news.html">News &amp; Events</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>

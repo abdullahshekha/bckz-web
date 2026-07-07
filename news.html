@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery — Bahria College Karsaz</title>
-    <meta name="description" content="Explore the photo gallery of Bahria College Karsaz — campus life, academics, sports, facilities, clubs, and more.">
+    <title>News &amp; Events — Bahria College Karsaz</title>
+    <meta name="description" content="Latest news, announcements and events from Bahria College Karsaz — board results, admissions updates, achievements and campus happenings.">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="Images/BCKz Logo.png">
     <link rel="stylesheet" href="css/style.css">
@@ -169,116 +169,92 @@
     <section class="page-hero">
         <div class="page-hero__overlay"></div>
         <div class="page-hero__content">
-            <h1 class="page-hero__title">Gallery</h1>
+            <h1 class="page-hero__title">News &amp; Events</h1>
             <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
                 <a href="index.html">Home</a>
                 <span aria-hidden="true">/</span>
-                <span>Gallery</span>
+                <span>News &amp; Events</span>
             </nav>
         </div>
     </section>
 
-    <!-- ===== PHOTO GALLERY ===== -->
-    <section class="gallery-section section-pad">
+    <!-- ===== NEWS & EVENTS LISTING ===== -->
+    <section class="news-section section-pad">
         <div class="container">
             <div class="section-header">
-                <p class="section-label">Campus Life</p>
-                <h2 class="section-title">Photo Gallery</h2>
+                <p class="section-label">Stay Updated</p>
+                <h2 class="section-title">All News &amp; Events</h2>
                 <div class="section-rule"></div>
-                <p class="section-desc">A glimpse into life at Bahria College Karsaz — academics, sports, facilities, and more.</p>
+                <p class="section-desc">Announcements, achievements, admissions updates and campus events from Bahria College Karsaz.</p>
             </div>
 
-            <div class="gallery-filter">
-                <button class="gallery-filter__btn active" data-filter="all">All</button>
-                <button class="gallery-filter__btn" data-filter="campus">Campus</button>
-                <button class="gallery-filter__btn" data-filter="academics">Academics</button>
-                <button class="gallery-filter__btn" data-filter="sports">Sports</button>
-                <button class="gallery-filter__btn" data-filter="clubs">Clubs</button>
-            </div>
+            <div class="news-grid news-grid--static">
 
-            <div class="gallery-grid">
+                <article class="news-card">
+                    <div class="news-card__img-wrap">
+                        <img src="Images/Board of Intermediate Education karachi.jpg" alt="Board Position Holders 2025" loading="lazy">
+                        <span class="news-card__tag">Achievement</span>
+                    </div>
+                    <div class="news-card__body">
+                        <p class="news-card__date">January 2026</p>
+                        <h3 class="news-card__title">Top Position Holders — Karachi Board 2025</h3>
+                        <p class="news-card__excerpt">BCKz students clinch top positions in the Science Group at the Karachi Board annual examinations, continuing a proud tradition of excellence.</p>
+                        <button class="news-card__link" data-news="0">Read More &#8594;</button>
+                    </div>
+                </article>
 
-                <!-- Row 1: wide + standard + standard -->
-                <div class="gallery-item gallery-item--wide" data-category="campus">
-                    <img src="Images/Drone View.JPG" alt="Aerial drone view of Bahria College Karsaz 24-acre campus" class="gallery-item__img" loading="lazy">
-                </div>
-                <div class="gallery-item" data-category="academics">
-                    <img src="Images/Facilities/Science Labs.JPG" alt="Science laboratory at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
-                <div class="gallery-item" data-category="academics">
-                    <img src="Images/Facilities/Computer Labs.JPG" alt="Computer laboratory at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
+                <article class="news-card">
+                    <div class="news-card__img-wrap">
+                        <img src="Images/Facilities/Library.JPG" alt="HSC II Pre-Medical Results" loading="lazy">
+                        <span class="news-card__tag">Academics</span>
+                    </div>
+                    <div class="news-card__body">
+                        <p class="news-card__date">January 2026</p>
+                        <h3 class="news-card__title">HSC II Pre-Medical Results Now Available</h3>
+                        <p class="news-card__excerpt">Annual examination results for HSC II Pre-Medical have been announced, with BCKz students again demonstrating exceptional performance.</p>
+                        <button class="news-card__link" data-news="1">Read More &#8594;</button>
+                    </div>
+                </article>
 
-                <!-- Row 2: standard + standard + wide -->
-                <div class="gallery-item" data-category="academics">
-                    <img src="Images/Facilities/Library.JPG" alt="Library at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
-                <div class="gallery-item" data-category="sports">
-                    <img src="Images/Facilities/Football Ground.JPG" alt="Football ground at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
-                <div class="gallery-item gallery-item--wide" data-category="campus">
-                    <img src="Images/Bahria College Main Building.JPG" alt="Main building of Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
+                <article class="news-card">
+                    <div class="news-card__img-wrap">
+                        <img src="Images/IT Club.JPG" alt="Admissions Open 2026" loading="lazy">
+                        <span class="news-card__tag">Admissions</span>
+                    </div>
+                    <div class="news-card__body">
+                        <p class="news-card__date">April 2026</p>
+                        <h3 class="news-card__title">Admissions Open — Session 2026</h3>
+                        <p class="news-card__excerpt">Applications are now open for HSSC, O-Level and A-Level programmes. Entrance tests scheduled — limited seats available, apply early.</p>
+                        <button class="news-card__link" data-news="2">Apply Now &#8594;</button>
+                    </div>
+                </article>
 
-                <!-- Row 3: tall + standard + standard + standard -->
-                <div class="gallery-item gallery-item--tall" data-category="campus">
-                    <img src="Images/Boys Wing.JPG" alt="Boys Wing building at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
-                <div class="gallery-item" data-category="sports">
-                    <img src="Images/Facilities/Cricket Ground Top.JPG" alt="Aerial view of cricket ground at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
-                <div class="gallery-item" data-category="sports">
-                    <img src="Images/Facilities/Basketball Court.JPG" alt="Basketball court at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
-                <div class="gallery-item" data-category="sports">
-                    <img src="Images/Facilities/Paddle Court.jpg" alt="Paddle court at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
+                <article class="news-card">
+                    <div class="news-card__img-wrap">
+                        <img src="Images/Drone View.JPG" alt="Board Position Holders Congratulations" loading="lazy">
+                        <span class="news-card__tag">Achievement</span>
+                    </div>
+                    <div class="news-card__body">
+                        <p class="news-card__date">January 2026</p>
+                        <h3 class="news-card__title">Congratulations to our Board Position Holders 2025</h3>
+                        <p class="news-card__excerpt">BCKz proudly congratulates all students who secured board positions in the 2025 annual examinations across Federal Board and Karachi Board.</p>
+                        <button class="news-card__link" data-news="3">Read More &#8594;</button>
+                    </div>
+                </article>
 
-                <!-- Row 4: standard + standard + tall + standard -->
-                <div class="gallery-item" data-category="clubs">
-                    <img src="Images/Sports Club.JPG" alt="Sports Club activity at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
-                <div class="gallery-item" data-category="clubs">
-                    <img src="Images/IT Club.JPG" alt="IT Club session at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
-                <div class="gallery-item gallery-item--tall" data-category="campus">
-                    <img src="Images/_MBP5005.JPG" alt="Campus life at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
-                <div class="gallery-item" data-category="clubs">
-                    <img src="Images/Science Club.JPG" alt="Science Club at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
+                <article class="news-card">
+                    <div class="news-card__img-wrap">
+                        <img src="Images/Sports Club.JPG" alt="Annual Sports Gala" loading="lazy">
+                        <span class="news-card__tag">Sports</span>
+                    </div>
+                    <div class="news-card__body">
+                        <p class="news-card__date">March 2026</p>
+                        <h3 class="news-card__title">Annual Sports Gala 2026</h3>
+                        <p class="news-card__excerpt">Students showcased athletic excellence across cricket, football, basketball and more at the annual inter-wing sports event.</p>
+                        <button class="news-card__link" data-news="4">Read More &#8594;</button>
+                    </div>
+                </article>
 
-                <!-- Row 5: standard + standard + standard + standard -->
-                <div class="gallery-item" data-category="campus">
-                    <img src="Images/Facilities/Medical Labs.JPG" alt="Medical laboratory at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
-                <div class="gallery-item" data-category="campus">
-                    <img src="Images/Facilities/First Aid.JPG" alt="First aid and medical facility at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
-                <div class="gallery-item" data-category="campus">
-                    <img src="Images/_MBP5007.JPG" alt="Students at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
-                <div class="gallery-item" data-category="campus">
-                    <img src="Images/_MBP5008.JPG" alt="Campus activity at Bahria College Karsaz" class="gallery-item__img" loading="lazy">
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== VIRTUAL TOUR CTA ===== -->
-    <section class="about-cta">
-        <div class="container">
-            <div class="about-cta__inner">
-                <h2 class="about-cta__heading">Take a Virtual Campus Tour</h2>
-                <p class="about-cta__sub">Experience the beauty and breadth of our 24-acre campus from wherever you are — watch our official campus tour video.</p>
-                <div class="about-cta__actions">
-                    <button id="tourBtn" class="btn btn--gold">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align:middle;margin-right:6px;"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                        Watch Campus Tour
-                    </button>
-                    <a href="contact.html" class="btn btn--outline-white">Contact Us</a>
-                </div>
             </div>
         </div>
     </section>
