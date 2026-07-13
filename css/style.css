@@ -2582,6 +2582,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 /* =============================================
+   WING FACULTY (LIST OF TEACHERS)
+   ============================================= */
+.wing-faculty { background: var(--off-white); }
+
+/* =============================================
    ADMISSIONS CTA STRIP
    ============================================= */
 .wing-cta {
@@ -3360,6 +3365,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
    CONTACT PAGE
    ============================================= */
 .contact-section { background: var(--white); }
+.contact-section--alt { background: var(--off-white); }
 
 .contact-grid {
     display: grid;
@@ -3632,6 +3638,147 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .alumni-section { background: var(--white); }
 .alumni-section--alt { background: var(--off-white); }
 
+/* ---------- Alumni Story Cards ---------- */
+.alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.alumni-card {
+    background: var(--white);
+    border: 1px solid rgba(0,0,128,.08);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition), transform var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+.alumni-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+.alumni-card__photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+.alumni-card__body { padding: 20px 22px 24px; display: flex; flex-direction: column; flex: 1; }
+.alumni-card__name { font-family: var(--font); font-size: 1.02rem; font-weight: 700; color: var(--navy); margin: 0 0 2px; }
+.alumni-card__batch { font-size: 0.78rem; font-weight: 600; color: var(--gold-dark); letter-spacing: .03em; text-transform: uppercase; }
+.alumni-card__intro { font-size: 0.87rem; color: var(--text-light); line-height: 1.7; margin: 12px 0 18px; flex: 1; }
+.alumni-card__btn {
+    align-self: flex-start;
+    background: none;
+    border: 1px solid rgba(0,0,128,.25);
+    color: var(--navy);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 8px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background var(--transition), color var(--transition);
+}
+.alumni-card__btn:hover { background: var(--navy); color: var(--white); }
+@media (max-width: 860px) { .alumni-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .alumni-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Alumni Full Story Modal ---------- */
+.alumni-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.alumni-modal[hidden] { display: none; }
+.alumni-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,50,0.75);
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: default;
+}
+.alumni-modal__box {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 920px;
+    max-height: 88vh;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 30px 80px rgba(0,0,80,0.35);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    animation: modalIn 0.28s ease;
+}
+.alumni-modal__close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 36px;
+    height: 36px;
+    background: var(--light-gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    transition: background var(--transition), color var(--transition);
+    z-index: 2;
+}
+.alumni-modal__close:hover { background: var(--navy); color: var(--white); }
+.alumni-modal__text { padding: 40px 36px; overflow-y: auto; max-height: 88vh; }
+.alumni-modal__name { font-family: var(--font); font-size: 1.3rem; font-weight: 700; color: var(--navy); margin: 0 0 4px; }
+.alumni-modal__meta { font-size: 0.82rem; color: var(--gold-dark); font-weight: 600; text-transform: uppercase; letter-spacing: .03em; margin-bottom: 6px; }
+.alumni-modal__role { font-size: 0.9rem; color: var(--text-light); margin-bottom: 22px; }
+.alumni-modal__body { font-size: 0.92rem; color: var(--text-light); line-height: 1.8; }
+.alumni-modal__body p { margin-bottom: 14px; }
+.alumni-modal__body ul { padding-left: 18px; margin-bottom: 14px; }
+.alumni-modal__body li { margin-bottom: 4px; }
+.alumni-modal__body h4 { font-family: var(--font); color: var(--navy); font-size: 0.95rem; margin: 20px 0 8px; }
+.alumni-modal__photo-col {
+    background: var(--off-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px;
+    overflow-y: auto;
+    max-height: 88vh;
+}
+.alumni-modal__photo { width: 100%; max-width: 220px; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+@media (max-width: 780px) {
+    .alumni-modal__box { grid-template-columns: 1fr; max-height: 92vh; }
+    .alumni-modal__photo-col { max-height: none; padding: 28px 24px 8px; }
+    .alumni-modal__photo { max-width: 160px; }
+    .alumni-modal__text { max-height: none; padding: 28px 24px; }
+}
+
+/* ---------- Give Away Form ---------- */
+.giveaway-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+.giveaway-bank-card {
+    background: var(--off-white);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    border-left: 3px solid var(--gold);
+}
+.giveaway-bank-card h4 { font-family: var(--font); color: var(--navy); margin-bottom: 14px; }
+.giveaway-bank-card dl { margin: 0; }
+.giveaway-bank-card dt { font-size: 0.76rem; color: var(--text-light); text-transform: uppercase; letter-spacing: .04em; margin-top: 12px; }
+.giveaway-bank-card dt:first-child { margin-top: 0; }
+.giveaway-bank-card dd { font-size: 0.92rem; color: var(--navy); font-weight: 600; margin: 2px 0 0; }
+.giveaway-radio-group { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 8px; }
+.giveaway-radio-group label { display: flex; align-items: center; gap: 6px; font-size: 0.88rem; color: var(--text); cursor: pointer; }
+@media (max-width: 860px) { .giveaway-grid { grid-template-columns: 1fr; } }
+
 /* =============================================
    ACADEMICS PAGE
    ============================================= */
@@ -3833,6 +3980,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 .guidelines-item__body ul { padding-left: 18px; margin-top: 6px; }
 .guidelines-item__body li { margin-bottom: 4px; }
+.guidelines-item__body p { margin-bottom: 10px; }
+.guidelines-item__body .data-table-wrap { margin: 12px 0; }
+.guidelines-item__note { font-style: italic; font-size: 0.85rem; }
 
 /* ---------- Summer Camp ---------- */
 .summer-camp__inner {
@@ -4058,6 +4208,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     box-shadow: var(--shadow-sm);
     border: 1px solid rgba(0,0,128,.08);
 }
+
+.ach-table-wrap--scroll {
+    max-height: 640px;
+    overflow-y: auto;
+}
+.ach-table-wrap--scroll .ach-table thead th { position: sticky; top: 0; z-index: 1; }
 
 .ach-table {
     width: 100%;

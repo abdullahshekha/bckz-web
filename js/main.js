@@ -50,10 +50,152 @@ const NEWS_DATA = [
     }
 ];
 
+// Alumni full-story data for the Alumni page "View Full Story" modal
+const ALUMNI_DATA = [
+    {
+        name: 'Muhammad Ali Qasmi',
+        batch: 'Batch of 2005–07',
+        role: 'Senior AI Engineer, Qcells North America — San Francisco Bay Area, California, USA · MS in Computer Science, University of Bonn, Germany',
+        photo: 'Images/Alumni/Muhammad Ali Qasmi.jpeg',
+        body: `<p>Dear Students,</p>
+               <p>I sat in the same classrooms you sit in now. I walked the same corridors, took the same exams, and had no clearer idea than you do about where any of it would lead. That is worth saying plainly, because the people whose names end up on alumni pages can seem like a different species. They are not. They were students at Karsaz, and then they kept going.</p>
+               <p>Today I build autonomous AI systems that manage power for the massive data centers forming the backbone of AI infrastructure across the USA. Twenty years ago, I was writing my first lines of code, never imagining this field would exist in the form it does now. Almost everything I learned in those early years is obsolete — the languages have changed, the tools have changed. What did not change was the habit of learning: the willingness to sit with a problem I did not understand, to read something difficult twice, and to keep asking why until the answer was truly mine.</p>
+               <p>That habit is the whole thing. It is what school quietly trains you in, underneath the syllabus.</p>
+               <p>So here is what I would urge you toward: do not stop at the degree that gets you a job. Go further. Study something deeply enough that you reach the edge of what is known, and then push past it. Research is not an abstraction reserved for a special few — it is what happens when an ordinary person refuses to accept that a question has no answer. Some of you reading this will one day work on problems nobody has solved. That is not a fantasy. It is a decision, made early, to take your own mind seriously.</p>
+               <p>The world does not need more people who can follow instructions — machines do that now, and I help build them. What it needs is people who can ask the right question, think honestly, and do careful work when nobody is watching. Those qualities are not distributed by luck. You build them, slowly, starting now.</p>
+               <p>You are not behind. You are exactly where I was. Keep going.</p>`
+    },
+    {
+        name: 'Afnan Javaid',
+        batch: 'Batch of 2016',
+        role: 'Vice President & Board Member, 3 Knots Digitals Pvt. Ltd.',
+        photo: 'Images/Alumni/Afnan Javaid.jpeg',
+        body: `<p>I completed my Matriculation from Bahria College Karsaz (Federal Board) and my Intermediate in Pre-Engineering from Bahria College Karsaz (Sindh Board). I later earned a Bachelor's degree in Software Engineering (Batch 2016) and a Master's degree in Project Management (Batch 2021) from Bahria University.</p>
+               <p>My professional journey began in 2018 at Sleekhive Technologies as a Project Coordinator. Through consistent performance and leadership, I was promoted to Assistant Project Manager within a year. In 2021, I joined Technified Labs Pvt. Ltd. as a Project Manager, later transitioning into Pre-Sales, where I played a key role in driving revenue growth and expanding business opportunities across Thailand, Indonesia, Malaysia, and Singapore. My contributions led to my promotion as Head of Pre-Sales, where I spearheaded strategic initiatives, business development, and enterprise growth.</p>
+               <p>In February 2025, I joined 3 Knots Digitals Pvt. Ltd. as Vice President and a member of the Board, contributing to corporate strategy, organizational leadership, and long-term business planning. Alongside my executive role, I also serve as a business consultant for U.S.-based organizations, Geneva B LLC and Marketing & Publishing Studio LLC, advising on strategic growth, project governance, operational excellence, and organizational development.</p>
+               <p>Throughout my career, I have been honored with the Best Employee of the Year award twice at Technified Labs Pvt. Ltd. and once at 3 Knots Digitals Pvt. Ltd., recognizing my leadership, innovation, and business impact.</p>
+               <p>Bahria College Karsaz laid the foundation for my discipline, resilience, and pursuit of excellence. From beginning my career in an entry-level role to serving as a Vice President, Board Member, and international business consultant, my journey stands as a testament to the power of perseverance, continuous learning, and purposeful leadership.</p>`
+    },
+    {
+        name: 'Muhammad Ashhad Noor Khan',
+        batch: 'Batch of 2016',
+        role: 'Advocate, Sindh Bar Council',
+        photo: 'Images/Alumni/Ashhad Noor Khan.jpeg',
+        body: `<p>After completing my intermediate studies at Bahria College in 2016, I gained admission to the University of Karachi to pursue a law degree, as I had always been passionate about studying law and becoming a lawyer.</p>
+               <p>I graduated from the University of Karachi in 2021 and, after passing the licensing examination in 2022, was enrolled as a licensed Advocate on the roll of the Sindh Bar Council.</p>
+               <p>Since then, I have handled a wide range of criminal, civil, and banking matters. However, one of the most rewarding experiences of my career was working with an NGO, where I undertook pro bono cases to provide legal assistance to underprivileged members of the community.</p>
+               <p>In 2023, I moved to England to pursue a Master's degree in Law, which I successfully completed in 2024. Alongside my studies, I was fortunate to gain valuable work experience at several solicitor firms, allowing me to develop a practical understanding of the English legal system while continuing my academic studies.</p>`
+    },
+    {
+        name: 'Muazzam Ali',
+        batch: 'Batch of 2018',
+        role: 'AI/ML Professional, Kaizen Owner Association Management Services — Dubai, UAE · Bachelor’s in Computer Science',
+        photo: 'Images/Alumni/Muazzam Ali.jpeg',
+        body: `<p>Currently working as an AI/ML professional in Dubai, UAE at Kaizen Owner Association Management Services, with around 3 years of experience in the field.</p>
+               <h4>My Journey</h4>
+               <p>After finishing my Computer Science degree, I found myself drawn towards Artificial Intelligence, back when it wasn't as mainstream as it is today. Over the last three years, I've worked as an AI/ML professional, applying AI to solve real, everyday business problems rather than just working on theory.</p>
+               <p>One of the projects I'm most proud of is a live CCTV analytics system I built using computer vision, which was deployed for a company in Saudi Arabia. The system analyzes live camera feeds in real time to detect human demographics, including gender distribution, estimated age groups, and even emotional expressions of people captured on camera. It gave the client valuable insights into footfall and audience behavior without needing any manual monitoring.</p>
+               <p>I also built a RAG based AI application for a real estate platform in the UAE. The system helps end users get detailed rental information for different areas, including property rates, nearest metro stations, and nearby schools, allowing users to shortlist areas based on their own budget and preferences. Alongside this, I developed a multi agent system that handles customer queries automatically. If a customer's issue cannot be resolved directly, the system creates a support ticket on its own and routes it to the right team.</p>
+               <p>What keeps me going in this field is that it never really stops moving. There's always something new to learn, whether it's a new model, a new technique, or just a better way of doing something you already know. I try to stay a student of AI even outside my job, that's really what this field demands.</p>
+               <p>My advice to current students would be simple: don't wait to feel "ready" before starting. Pick something, build it, break it, fix it, that's how you actually learn AI, not just from books.</p>`
+    },
+    {
+        name: 'Ahmer Sarfaraz',
+        batch: 'Matriculated 2004',
+        role: 'Regional Head Sales – South & Vice President, The Bank of Punjab',
+        photo: 'Images/Alumni/Ahmer Sarfaraz.jpeg',
+        body: `<p>My name is Ahmer Sarfaraz, and I am a proud alumni of Bahria College Karsaz. I completed my Matriculation from the college in 2004, and later earned an MBA with a specialization in Marketing and Advertising.</p>
+               <p>I began my professional journey in 2012 as a Junior Officer at NIB Bank Ltd. Banking has been my passion since day one, and over the years I have gained extensive experience across the industry. I have had the opportunity to work with leading institutions including MCB Bank, HBL, Askari Bank, and Bank AL Habib.</p>
+               <p>Currently, I serve as Regional Head Sales – South at The Bank of Punjab, holding the position of Vice President. With over 13 years of experience in banking, I have navigated numerous challenges throughout my career. Each challenge strengthened my resolve to work harder, stay focused, and achieve the goals I set for myself.</p>
+               <p>I am grateful to have been recognized with awards for my performance and contributions toward financial growth. I believe that with dedication and a positive mindset, the possibilities are limitless. I remain committed to achieving greater milestones in the future, InshaAllah.</p>`
+    },
+    {
+        name: 'Dr. Irum Shah',
+        batch: 'Batch of 2014',
+        role: 'General Surgery Resident (training in Pediatric Surgery) · Dow Medical College',
+        photo: 'Images/Alumni/Dr. Irum Shah.jpeg',
+        body: `<p>I completed my schooling at Bahria College Karsaz (Cambridge Wing) — where I developed a strong academic foundation and a passion for serving humanity. I was the high achiever of the year 2014. I graduated from Dow Medical College in 2022 and pursued a career in Surgery. Currently, I am a General Surgery Resident and am working towards specialization in Pediatric Surgery.</p>
+               <p>Throughout my training, I have gained extensive experience in emergency and elective surgical care, assisted in and performed a wide range of surgical procedures, and remained committed to continuous learning and professional development. Alongside my demanding career, I am also a proud mother, striving to balance family life with the responsibilities of surgical training.</p>
+               <h4>Success Story</h4>
+               <p>My journey from the classrooms of Bahria College Karsaz to the operating theatre has been one of perseverance, discipline, and lifelong learning. Every stage of my education reinforced the values of hard work, integrity, and resilience.</p>
+               <p>Surgery is a field that demands dedication, and the courage to face challenges every day. Despite the demands of residency, I have continued to pursue my dream of becoming a Pediatric Surgeon with determination and passion.</p>
+               <p>I firmly believe that success is not defined by reaching a destination but by consistently striving to improve, embracing challenges as opportunities to grow, and never losing sight of one's purpose. I hope my journey encourages students to dream big, remain committed to their goals, and believe that persistence and hard work can turn aspirations into reality.</p>`
+    },
+    {
+        name: 'Shaharyar Ahmed Khan',
+        batch: 'Batch of 2013',
+        role: 'Deputy General Manager – Corrective Maintenance, K-Electric · B.E. Electrical Engineering, NEDUET; MBA, University of Karachi',
+        photo: 'Images/Alumni/Shaharyar Ahmed Khan.jpeg',
+        body: `<p>Proud alumni of Bahria College Karsaz. Holding B.E. in Electrical Engineering from NED University of Engineering & Technology (NEDUET) and an MBA in Project & Industrial Management from the University of Karachi.</p>
+               <p>Currently serving as Deputy General Manager – Corrective Maintenance at K-Electric, where he leads maintenance operations to ensure the reliability and sustainability of Karachi's power distribution network.</p>
+               <h4>Key Milestones</h4>
+               <ul>
+                   <li>B.E. Electrical Engineering from NEDUET</li>
+                   <li>MBA in Project & Industrial Management from the University of Karachi</li>
+                   <li>Progressed through technical and leadership roles in the power utility sector</li>
+                   <li>Appointed as Deputy General Manager – Corrective Maintenance at K-Electric</li>
+               </ul>
+               <h4>Professional Highlights</h4>
+               <ul>
+                   <li>Deputy General Manager – Corrective Maintenance</li>
+                   <li>Expertise in maintenance operations, quality control, and project management</li>
+                   <li>Leadership of large technical teams and critical operational projects</li>
+                   <li>Strong focus on continuous improvement, compliance, and operational efficiency</li>
+               </ul>
+               <h4>Success Story</h4>
+               <p>My professional journey reflects the values of discipline, dedication, and continuous learning instilled in me at Bahria College Karsaz. After graduating in Electrical Engineering from NEDUET, I embarked on a career in the power utility sector, where I continuously expanded my technical and managerial expertise. To strengthen my leadership and project management skills, I pursued an MBA from the University of Karachi.</p>
+               <p>Through perseverance, hard work, and a commitment to excellence, I progressed into leadership positions and currently serve as Deputy General Manager – Corrective Maintenance at K-Electric. Leading teams responsible for critical maintenance operations has allowed me to contribute to improving service reliability for millions of customers. I believe that success comes from embracing challenges, continuously learning, and maintaining integrity in everything we do.</p>
+               <h4>Message to Students</h4>
+               <p>"Dream big, stay disciplined, and never stop learning. Every challenge is an opportunity to grow, and consistent effort will always lead you closer to your goals."</p>`
+    },
+    {
+        name: 'Shaheer Iqbal',
+        batch: 'Batch of 2007',
+        role: 'Deputy Manager – Assembly, Ghandhara Automobiles Limited · MSc Mechanical Engineering, Universiti Malaysia Pahang',
+        photo: 'Images/Alumni/Shaheer Iqbal.jpeg',
+        body: `<p>I began my professional career in 2012, immediately after completing my fourth year of Bachelor's studies, by joining Pak Suzuki Motor Company Limited in Pakistan. During my tenure, I had the opportunity to contribute to the successful launch and production of the Suzuki Wagon R project. This experience provided me with a strong foundation in automotive manufacturing, assembly operations, quality systems, and new model implementation.</p>
+               <p>Driven by a passion for continuous learning and professional growth, I pursued my Master's degree in Mechanical Engineering at Universiti Malaysia Pahang, Malaysia. Alongside my postgraduate studies, I gained valuable industrial exposure by working with Proton and Perodua, where I further strengthened my knowledge of modern automotive manufacturing practices and production systems.</p>
+               <p>Following my time in Malaysia, I joined Nissan Middle East FZE in Dubai, United Arab Emirates, where I worked with the regional technical team supporting distributors across the Middle East, North America, and Mediterranean regions. During this period, I had the privilege of working on several globally renowned Nissan models, including the Nissan GT-R, Nissan 370Z, Patrol, Pathfinder, Altima, and various passenger and commercial vehicles. This international experience significantly enhanced my technical expertise, problem-solving abilities, and understanding of global automotive standards.</p>
+               <p>After returning to Pakistan, I continued my journey in the automotive industry and currently serve as Deputy Manager – Assembly at Ghandhara Automobiles Limited (Car Plant). In this role, I have been leading assembly operations, new model launches, production improvement initiatives, localization projects, and manufacturing process optimization.</p>
+               <p>Over the years, I have had the opportunity to lead and contribute to several major automotive projects, including:</p>
+               <ul>
+                   <li>Isuzu D-Max</li>
+                   <li>Chery Tiggo 8 Pro</li>
+                   <li>JAC T9 Hunter</li>
+                   <li>JAC E30X (Electric Vehicle)</li>
+                   <li>JAC T9 PHEV (Plug-in Hybrid Electric Vehicle)</li>
+               </ul>
+               <p>One of the most rewarding milestones in my career was recently representing Ghandhara Automobiles Limited during a technical visit and training program at JAC Motors, China, where I worked closely with Chinese engineering teams on hybrid vehicle technologies, advanced manufacturing processes, and future product development.</p>
+               <h4>A Message to Future Engineers</h4>
+               <p>My journey began in the classrooms of Bahria College Karsaz, where I learned the importance of discipline, dedication, and perseverance. Never limit your learning to textbooks. Continuously improve your technical skills, communication, and leadership abilities. Stay curious, embrace new technologies, and never hesitate to step outside your comfort zone. Success is achieved through consistency, hard work, integrity, and the courage to take on new challenges.</p>`
+    },
+    {
+        name: 'Muhammad Umer Dar',
+        batch: 'Batch of 2008',
+        role: 'Lieutenant Commander (Ops)(S/M), Pakistan Navy — Advisor to the Royal Saudi Naval Forces',
+        photo: 'Images/Alumni/Muhammad Umer Dar.jpeg',
+        body: `<p>Following completion of intermediate education at Bahria College Karsaz, I joined Pakistan Navy in 2008 and established a progressive career.</p>
+               <p>I am currently serving in Pakistan Navy as Lieutenant Commander (Ops)(S/M). I completed my MS (Defense Studies Maritime) from the National Defense University (NDU).</p>
+               <h4>Professional Qualifications</h4>
+               <ul>
+                   <li>53rd Pakistan Navy Staff Course at PN War College</li>
+                   <li>Submarine Qualification from PNS/M HAMZA</li>
+                   <li>Specialized in Long Navigation and Direction from PN Navigation and Hydrography School (PNS BAHADUR) and Ship's Diver from PN Diving School at PNS HIMALAYA</li>
+               </ul>
+               <h4>Professional Experience</h4>
+               <ul>
+                   <li>7.5 years of active sea service onboard various PN Submarines and Ships on key appointments including Torpedo & Anti-Submarine Officer, Sonar Officer, Navigation Officer and Communication Officer</li>
+                   <li>Served 4.5 combined years in training naval personnel, including Directing Staff at the Pakistan Navy Tactical School, Divisional Officer at the Pakistan Naval Academy, and Deputy Senior Instructor at the PN Submarine School</li>
+               </ul>
+               <p>I also served as Deputy Director, Ports and Shipping at Naval Headquarters (NHQ). I am presently appointed as advisor to the Royal Saudi Naval Forces in KSA.</p>`
+    }
+];
+
 document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
     initLightbox();
     initNewsModal();
+    initAlumniModal();
     initScrollAnimations();
     initDropdownMobile();
     initNewsSlider();
@@ -150,6 +292,49 @@ function initNewsModal() {
     // News card "Read More" buttons
     document.querySelectorAll('.news-card__link[data-news]').forEach(btn => {
         btn.addEventListener('click', () => openModal(Number(btn.dataset.news)));
+    });
+
+    backdrop.addEventListener('click', closeModal);
+    closeBtn.addEventListener('click', closeModal);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.hidden) closeModal();
+    });
+}
+
+/* ---------- ALUMNI FULL STORY MODAL ---------- */
+function initAlumniModal() {
+    const modal    = document.getElementById('alumniModal');
+    const backdrop = document.getElementById('alumniModalBackdrop');
+    const closeBtn = document.getElementById('alumniModalClose');
+    const nameEl    = document.getElementById('alumniModalName');
+    const batchEl   = document.getElementById('alumniModalBatch');
+    const roleEl    = document.getElementById('alumniModalRole');
+    const bodyEl    = document.getElementById('alumniModalBody');
+    const photoEl   = document.getElementById('alumniModalPhoto');
+
+    if (!modal) return;
+
+    function openModal(index) {
+        const item = ALUMNI_DATA[index];
+        if (!item) return;
+        nameEl.textContent  = item.name;
+        batchEl.textContent = item.batch;
+        roleEl.textContent  = item.role;
+        bodyEl.innerHTML    = item.body;
+        photoEl.src         = item.photo;
+        photoEl.alt         = item.name;
+        modal.hidden        = false;
+        document.body.style.overflow = 'hidden';
+        closeBtn.focus();
+    }
+
+    function closeModal() {
+        modal.hidden = true;
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.alumni-card__btn[data-alumni]').forEach(btn => {
+        btn.addEventListener('click', () => openModal(Number(btn.dataset.alumni)));
     });
 
     backdrop.addEventListener('click', closeModal);
