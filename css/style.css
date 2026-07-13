@@ -3900,6 +3900,97 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 @media (max-width: 860px) { .admin-services__grid { grid-template-columns: 1fr 1fr; } }
 
 /* =============================================
+   SUB-PAGE SHARED COMPONENTS
+   (Administration / Academics / Facilities inner pages)
+   ============================================= */
+.card-link { display: block; text-decoration: none; color: inherit; }
+
+.subpage-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--navy);
+    text-decoration: none;
+    margin-bottom: 18px;
+}
+.subpage-back:hover { color: var(--gold-dark); }
+
+/* ---------- Department detail (Administration inner pages) ---------- */
+.dept-detail__grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 48px;
+    align-items: start;
+}
+.dept-detail__text p { font-size: 0.97rem; color: var(--text-light); line-height: 1.85; margin-bottom: 16px; }
+.dept-detail__text p:last-child { margin-bottom: 0; }
+.dept-detail__text strong { color: var(--navy); font-weight: 700; }
+
+.dept-detail__side {
+    background: var(--off-white);
+    border: 1px solid rgba(0,0,128,.08);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    text-align: center;
+}
+.dept-detail__photo-placeholder {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius);
+    border: 2px dashed rgba(0,0,128,.25);
+    background: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--mid-gray);
+}
+.dept-detail__photo-placeholder span { font-size: 0.78rem; font-weight: 600; }
+.dept-detail__head-name {
+    display: block;
+    font-family: var(--font);
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 18px;
+    font-size: 0.95rem;
+}
+.dept-detail__head-title {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.82rem;
+    margin-top: 4px;
+}
+@media (max-width: 780px) {
+    .dept-detail__grid { grid-template-columns: 1fr; }
+    .dept-detail__side { max-width: 260px; margin: 0 auto; }
+}
+
+/* ---------- Facility gallery placeholder (Facilities inner pages) ---------- */
+.facility-gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+.facility-gallery__placeholder {
+    aspect-ratio: 4/3;
+    border-radius: var(--radius);
+    border: 2px dashed rgba(0,0,128,.2);
+    background: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--mid-gray);
+}
+.facility-gallery__placeholder span { font-size: 0.74rem; font-weight: 600; text-align: center; padding: 0 8px; }
+@media (max-width: 860px) { .facility-gallery__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .facility-gallery__grid { grid-template-columns: 1fr; } }
+
+/* =============================================
    ACHIEVEMENTS PAGE
    ============================================= */
 

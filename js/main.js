@@ -231,23 +231,31 @@ function initGalleryFilter() {
 
 /* ---------- SCROLL ANIMATIONS ---------- */
 function initScrollAnimations() {
-    const elements = document.querySelectorAll('[data-aos]');
-    if (!elements.length) return;
-
-    elements.forEach(el => {
+    const aosElements = document.querySelectorAll('[data-aos]');
+    aosElements.forEach(el => {
         el.style.opacity   = '0';
         el.style.transform = 'translateY(22px)';
         el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
     });
 
+    const revealElements = document.querySelectorAll('.animate-on-scroll');
+    const elements = [...aosElements, ...revealElements];
+    if (!elements.length) return;
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (!entry.isIntersecting) return;
-            const siblings = [...entry.target.parentElement.querySelectorAll('[data-aos]')];
-            const delay    = Math.min(siblings.indexOf(entry.target) * 80, 480);
+            const siblings = [...entry.target.parentElement.children].filter(
+                el => el.hasAttribute('data-aos') || el.classList.contains('animate-on-scroll')
+            );
+            const delay = Math.min(siblings.indexOf(entry.target) * 80, 480);
             setTimeout(() => {
-                entry.target.style.opacity   = '1';
-                entry.target.style.transform = 'translateY(0)';
+                if (entry.target.hasAttribute('data-aos')) {
+                    entry.target.style.opacity   = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                } else {
+                    entry.target.classList.add('is-visible');
+                }
             }, delay);
             observer.unobserve(entry.target);
         });
