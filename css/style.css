@@ -1977,14 +1977,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 .org-box--principal {
-    border-top: 3px solid var(--navy);
-    background: var(--navy);
+    border-top: 3px solid var(--gold);
     width: 340px;
 }
-.org-box--principal .org-box__label { color: rgba(255,255,255,0.55); }
-.org-box--principal .org-box__title { color: var(--white); }
-.org-box--principal .org-box__sub   { color: rgba(255,255,255,0.60); }
-.org-box--principal:hover { background: var(--navy-light); }
 
 .org-box--dept {
     border-top: 3px solid var(--gold);
@@ -3930,6 +3925,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     margin: 40px 0 16px;
 }
 .section-subheading:first-child { margin-top: 0; }
+.section-subheading--center { text-align: center; }
 
 /* ---------- Uniform ---------- */
 .uniform-grid {

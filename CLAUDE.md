@@ -51,6 +51,7 @@ BCKz/
 ├── admissions.html
 ├── administration.html      ← Hub page: card grid linking to administration/*.html
 ├── administration/
+│   ├── principals-secretariat.html
 │   ├── admin-department.html
 │   ├── medical.html
 │   ├── counselling.html
@@ -202,7 +203,7 @@ To add news items, append to the `NEWS_DATA` array in `main.js`, add a matching 
 
 ## Page Build Status
 
-All pages are built out with real content; large sections were reworked to match `New-Content/` in a subsequent pass (About Us Core Values/Governance, all 9 Wings' facts, Academics Fee/Timings/Uniform/Calendar/Clubs/Guidelines/Summer Camp, Administration's 10 departments, Facilities' 10 categories, Admissions' detailed per-wing tables). Academics, Administration, and Facilities were subsequently split into hub + sub-page structures — see "Hub + Sub-Page Pattern" above. A further pass using `New-Content-2/` added the full Board Position Holders/CAIE tables on Achievements, the Alumni Welcome copy/Success Story cards/Give Away form, per-wing teacher lists, the Contact Us extension directory, and a full rewrite of the Guidelines sub-page.
+All pages are built out with real content; large sections were reworked to match `New-Content/` in a subsequent pass (About Us Core Values/Governance, all 9 Wings' facts, Academics Fee/Timings/Uniform/Calendar/Clubs/Guidelines/Summer Camp, Administration's departments, Facilities' 10 categories, Admissions' detailed per-wing tables). Academics, Administration, and Facilities were subsequently split into hub + sub-page structures — see "Hub + Sub-Page Pattern" above. Administration later gained an 11th department, Principal's Secretariat. A further pass using `New-Content-2/` added the full Board Position Holders/CAIE tables on Achievements, the Alumni Welcome copy/Success Story cards/Give Away form, per-wing teacher lists, the Contact Us extension directory, and a full rewrite of the Guidelines sub-page.
 
 Known gaps / next work:
 - Real student counts for Middle, Secondary, Cambridge, Primary, and Junior Wings (currently "Contact for Details" placeholders on the wing cards).
