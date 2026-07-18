@@ -1463,6 +1463,36 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 .page-hero--about .page-hero__overlay { background-image: none; background: rgba(0,0,64,0.42); }
 
+/* Generic reusable hero backgrounds (hub pages / sub-pages with no dedicated photo yet) */
+.page-hero--building,
+.page-hero--campus,
+.page-hero--clubs,
+.page-hero--fac-labs,
+.page-hero--fac-library,
+.page-hero--fac-medical,
+.page-hero--fac-sports {
+    background-size: cover;
+    background-position: center;
+}
+.page-hero--building { background-image: linear-gradient(135deg, rgba(0,0,50,0.80) 0%, rgba(0,0,100,0.62) 100%), url('../Images/Bahria College Main Building.JPG'); }
+.page-hero--campus { background-image: linear-gradient(135deg, rgba(0,0,50,0.80) 0%, rgba(0,0,100,0.62) 100%), url('../Images/Drone View.JPG'); }
+.page-hero--clubs { background-image: linear-gradient(135deg, rgba(0,0,50,0.80) 0%, rgba(0,0,100,0.62) 100%), url('../Images/Science Club.JPG'); }
+.page-hero--fac-labs { background-image: linear-gradient(135deg, rgba(0,0,50,0.80) 0%, rgba(0,0,100,0.62) 100%), url('../Images/Facilities/Computer Labs.JPG'); }
+.page-hero--fac-library { background-image: linear-gradient(135deg, rgba(0,0,50,0.80) 0%, rgba(0,0,100,0.62) 100%), url('../Images/Facilities/Library.JPG'); }
+.page-hero--fac-medical { background-image: linear-gradient(135deg, rgba(0,0,50,0.80) 0%, rgba(0,0,100,0.62) 100%), url('../Images/Facilities/First Aid.JPG'); }
+.page-hero--fac-sports { background-image: linear-gradient(135deg, rgba(0,0,50,0.80) 0%, rgba(0,0,100,0.62) 100%), url('../Images/Facilities/Cricket Ground.JPG'); }
+
+.page-hero--building .page-hero__overlay,
+.page-hero--campus .page-hero__overlay,
+.page-hero--clubs .page-hero__overlay,
+.page-hero--fac-labs .page-hero__overlay,
+.page-hero--fac-library .page-hero__overlay,
+.page-hero--fac-medical .page-hero__overlay,
+.page-hero--fac-sports .page-hero__overlay {
+    background-image: none;
+    background: rgba(0,0,64,0.42);
+}
+
 .page-hero__overlay {
     position: absolute;
     inset: 0;
