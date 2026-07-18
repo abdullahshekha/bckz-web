@@ -40,8 +40,7 @@ BCKz/
 │   └── junior.html         ← Montessori/early-childhood wing (renamed from old secondary.html)
 ├── academics.html            ← Hub page: card grid linking to academics/*.html
 ├── academics/
-│   ├── programmes.html      ← Explore Programmes + Affiliated Boards
-│   ├── fees.html            ← Fee Structure + College Timings
+│   ├── fees.html            ← Fee Structure (College Timings table removed)
 │   ├── uniform.html
 │   ├── scholarships.html
 │   ├── calendar.html        ← Academic Calendar table
@@ -74,20 +73,40 @@ BCKz/
 │   ├── electric-cart.html
 │   ├── cctv.html
 │   └── parking.html
-├── achievements.html         ← Hub page: card grid linking to achievements/*.html
+├── achievements.html         ← Hub page: card grid linking to overview.html + medals.html only
 ├── achievements/
-│   ├── overview.html        ← Achievements at a Glance (stats strip)
-│   ├── medals.html          ← Award of Medals (CNS / Chairman BOG / President MC)
-│   ├── best-bahria-college.html
-│   ├── position-holders.html ← Board Position Holders table (131 rows, 2007–2025)
-│   └── caie-results.html    ← CAIE Results Overall table
+│   ├── overview.html        ← "Achievements at a Glance" — now a SECOND-LEVEL hub: icon/symbol
+│   │                            stats summary (Gold/Silver/Bronze medal counts, Board Positions,
+│   │                            Best Bahria College, Alumni) + a card grid linking to the 8
+│   │                            sub-pages below (see "Achievements Nested IA" section)
+│   ├── medals.html          ← Award of Medals (CNS / Chairman BOG / President MC) — stays a
+│   │                            top-level sibling of "Achievements at a Glance", not nested
+│   ├── international-level.html   ← placeholder, no real data yet
+│   ├── national-level.html        ← placeholder, no real data yet
+│   ├── provincial-level.html      ← placeholder, no real data yet
+│   ├── intercollegiate-level.html ← placeholder, no real data yet
+│   ├── best-bahria-college.html   ← renamed heading "Best Bahria College Awards"; now nested
+│   │                                 under overview.html (breadcrumb/back-link updated)
+│   ├── position-holders.html      ← Board Position Holders table (131 rows, 2007–2025); now
+│   │                                 nested under overview.html (breadcrumb/back-link updated)
+│   ├── board-results-summary.html ← hub: Federal Board / Karachi Board
+│   ├── federal-board.html         ← hub: HSSC / SSC
+│   ├── federal-board-hssc.html    ← real data (1 row, filtered from position-holders table)
+│   ├── federal-board-ssc.html     ← placeholder ("no SSC position holders recorded yet")
+│   ├── karachi-board.html         ← hub: HSSC / SSC
+│   ├── karachi-board-hssc.html    ← real data (130 rows, filtered from position-holders table)
+│   ├── karachi-board-ssc.html     ← placeholder ("no SSC position holders recorded yet")
+│   ├── caie-summary.html          ← hub: O Level / A Level (replaces old caie-results.html)
+│   ├── caie-o-level.html          ← real data (moved from the old caie-results.html table)
+│   └── caie-a-level.html          ← placeholder ("A-Level launched 2025, first results ~2027")
 ├── alumni.html               ← Hub page: card grid linking to alumni/*.html
 ├── alumni/
-│   ├── welcome.html         ← Welcome to the Alumni Network copy
-│   ├── success-stories.html ← Success Story cards + modal
+│   ├── welcome.html         ← "Welcome to Alumni Family" copy (renamed from "...the Network")
+│   ├── success-stories.html ← Success Story cards + modal, ordered oldest-first by batch year
 │   ├── where-alumni-excel.html
-│   ├── stay-connected.html
-│   └── give-away.html       ← Give Away (donation/sponsorship) form
+│   ├── stay-connected.html  ← includes a "Connect With Us" block (social/WhatsApp/Alumni Coordinator link)
+│   └── give-back.html       ← Give Back (donation/sponsorship) form — renamed from give-away.html;
+│                                includes both Account Number and IBAN fields
 ├── downloads.html
 ├── gallery.html
 ├── contact.html              ← Postal address, college emails, full extension directory table
@@ -139,7 +158,7 @@ Any `background-image: url(...)` written in `css/style.css` resolves relative to
 | Primary Wing | Classes I–V — since 1997. Foundation stone laid 17 Jul 2009; inaugurated 6 Apr 2011. |
 | Junior Wing | Montessori Beginner/Advance/Prep — since 1997, relocated to purpose-built campus Feb 2023. VP Ms. Farah Sarfraz. |
 
-Student counts are only confirmed for Boys/Girls Morning & Afternoon (4 wings). The other 5 wing cards on `index.html`/`wings.html` show a "Contact for Details" placeholder — swap in real numbers when the user provides them.
+Student counts are only confirmed for Boys/Girls Morning & Afternoon (4 wings). The other 5 wing cards on `index.html`/`wings.html` show a **"700+ Students" placeholder** (previously "Contact for Details") — swap in real numbers when the user provides them.
 
 Every wing card (on `index.html` and `wings.html`) follows a fixed 4-line format: **icon → wing name → classes → student count**. Don't reintroduce shift labels, founding years, or curriculum blurbs into that card format — those live on the wing's own page instead.
 
@@ -174,13 +193,28 @@ The navbar scrolls sticky and adds a `scrolled` class via JS. The active `navbar
 - **Administration sub-pages** (`administration/*.html`): hero banner with the department name, then a two-column `.dept-detail__grid` section — left column is the department's text (from `05. Administration.docx`), right column is `.dept-detail__side` with a `.dept-detail__photo-placeholder` (no real photos yet) and a placeholder department-head name/title. Swap in a real photo + name when the user provides them.
 - **Academics sub-pages** (`academics/*.html`): content lifted directly from `04. Academics.docx`, reusing whatever CSS component fits (`.data-table` for tables, `.uniform-card`, `.clubs-tag`, etc.). Exception: `academics/guidelines.html` was later fully replaced with the far more comprehensive `GUIDELINES.docx` (from `New-Content-2/`) — Code of Conduct, Dress Code, ID Cards, House System, Disciplinary Measures, Awards & Recognition, etc. — using `.guidelines-accordion` throughout.
 - **Facilities sub-pages** (`facilities/*.html`): content from `06. Facilities.docx` using `.fac-page-card`/`.fac-page-grid`. The per-facility photo gallery section (`.facility-gallery__grid` placeholder tiles) was removed site-wide — these pages now end with the facility content itself, no gallery placeholder.
-- **Achievements sub-pages** (`achievements/*.html`): each is one of the 5 sections previously inline on `achievements.html` — `overview.html` (stats strip), `medals.html`, `best-bahria-college.html`, `position-holders.html` (the 131-row board position holders table), `caie-results.html`.
-- **Alumni sub-pages** (`alumni/*.html`): each is one of the 5 sections previously inline on `alumni.html` — `welcome.html`, `success-stories.html` (alumni cards + modal — `alumni/success-stories.html` is the only alumni sub-page that includes the `.alumni-modal` markup), `where-alumni-excel.html`, `stay-connected.html`, `give-away.html` (donation/sponsorship form).
-- Every sub-page includes a `.subpage-back` link ("← Back to Administration/Academics/Facilities/Achievements/Alumni") right under the hero, pointing at the hub page.
+- **Achievements sub-pages** (`achievements/*.html`): `achievements.html` only card-links to two top-level siblings — `overview.html` ("Achievements at a Glance") and `medals.html` ("Award of Medals"). `overview.html` is itself a second-level hub — see "Achievements Nested IA" below for its 8 children and the 3-level `board-results-summary.html`/`caie-summary.html` sub-hubs.
+- **Alumni sub-pages** (`alumni/*.html`): each is one of the 5 sections previously inline on `alumni.html` — `welcome.html`, `success-stories.html` (alumni cards + modal — `alumni/success-stories.html` is the only alumni sub-page that includes the `.alumni-modal` markup), `where-alumni-excel.html`, `stay-connected.html`, `give-back.html` (donation/sponsorship form, renamed from `give-away.html`).
+- Every sub-page includes a `.subpage-back` link ("← Back to Administration/Academics/Facilities/Achievements/Alumni") right under the hero, pointing at the hub page — except `achievements/best-bahria-college.html` and `achievements/position-holders.html`, whose back-link/breadcrumb now points to `overview.html` ("Back to Achievements at a Glance") since they're nested one level deeper.
 
-## Wing Pages — List of Teachers
+## Achievements Nested IA
 
-Every `wings/*.html` page has a `.wing-faculty` section (`id="faculty"`) as the **last content section**, right before the Admissions CTA — a `.data-table` of Name / Designation / Qualification / Remarks, sourced from `LIST OF TEACHERS FOR WEBSITE.docx` (`New-Content-2/`). `wings/middle.html` has two tables (Morning Shift + Afternoon Shift, since the source doc splits Middle Wing that way). **`wings/girls-afternoon.html` and `wings/secondary.html` have no faculty data in that docx** — they show a "Faculty list for this wing will be published soon" placeholder instead; don't invent names or duplicate another wing's list into them. When new teacher data arrives for those two wings, follow the same table structure as the other wings' `.wing-faculty` sections.
+`achievements/overview.html` ("Achievements at a Glance") is a **second-level hub** — the only spot on the site with 3 levels of navbar nesting (Achievements ▸ Achievements at a Glance ▸ child). Its navbar dropdown entry is `<li class="has-submenu">` with a `.submenu` flyout (new CSS added specifically for this — `.has-submenu`/`.submenu` in `css/style.css`, plus a `.has-submenu` mobile-accordion branch in `initDropdownMobile()` in `js/main.js`; every other dropdown site-wide is still single-level `.has-dropdown`/`.dropdown`). Its 8 children:
+
+- `international-level.html`, `national-level.html`, `provincial-level.html`, `intercollegiate-level.html` — **no real data exists yet**; these are placeholder shells (`.dept-detail__photo-placeholder`-style "Content Coming Soon" block). Don't invent achievement claims for these — wait for real data.
+- `best-bahria-college.html`, `position-holders.html` — pre-existing pages, just reparented (breadcrumb + `.subpage-back` now point to `overview.html` instead of `achievements.html`).
+- `board-results-summary.html` → hub → `federal-board.html` / `karachi-board.html` → each a hub → `-hssc.html` / `-ssc.html`. All filtered from the same 131-row `position-holders.html` table (130 Karachi-HSSC rows, 1 Federal-HSSC row, **zero SSC rows in either board** — the SSC pages are honest placeholders, not fabricated).
+- `caie-summary.html` → hub → `caie-o-level.html` (the old `caie-results.html` table, moved wholesale — O-Level has run since 2013) / `caie-a-level.html` (placeholder: A-Level launched 2025, a 2-year qualification, so first results are expected ~2027 — don't fabricate interim results).
+
+The medal-count icon summary on `overview.html` (Gold=10/Silver=9/Bronze=7) is **derived, real data** — counts of `.ach-table__pos--1`/`--2`/`--3` (1st/2nd/3rd position) rows in `position-holders.html`, since CNS Gold = 1st, Chairman BOG = 2nd, President MC = 3rd (see `achievements/medals.html`). "Alumni: 700+" on that same strip is a placeholder, not derived — update when a real count is available.
+
+## Wing Pages — List of Teachers, Clubs & Societies, CTA
+
+Every `wings/*.html` page has a `.wing-faculty` section (`id="faculty"`) — a `.teacher-cards-grid` of `.teacher-card`s (Name / Qualification / Designation / Remarks, one card per teacher — **not a table**, converted from the original `.data-table` in a later pass), sourced from `LIST OF TEACHERS FOR WEBSITE.docx` (`New-Content-2/`). `wings/middle.html` has two card grids (Morning Shift + Afternoon Shift, since the source doc splits Middle Wing that way). **`wings/girls-afternoon.html` and `wings/secondary.html` have no faculty data in that docx** — they show a "Faculty list for this wing will be published soon" placeholder instead; don't invent names or duplicate another wing's list into them. When new teacher data arrives for those two wings, follow the same `.teacher-cards-grid` structure as the other wings' `.wing-faculty` sections.
+
+Wings with club data available in `academics/clubs.html`'s `.clubs-wing-block`s (Boys Wing, Girls Wing — shared across morning/afternoon shifts, Cambridge, Middle, Primary) also have a `.wing-clubs-tags` section reusing that same club list verbatim (`.clubs-tag-list`/`.clubs-tag`), titled "Clubs & Societies at [Wing Name]", placed just before the CTA. **Secondary and Junior Wings have no club data** — don't invent one. `boys-morning.html`/`boys-afternoon.html` had an older generic 3-card `.wing-clubs` section (Sports/IT/Science Club, not sourced from real per-wing data) that was removed in favor of the authoritative `.wing-clubs-tags` section — don't reintroduce it.
+
+Every wing page's final CTA (`.wing-cta`, right before the footer) is just a heading ("Ready to Join [Wing Name]?") + generic supportive sub-line + two buttons (Admissions → `../admissions.html`, Contact Us → `../contact.html`). It intentionally does **not** claim live/rolling admissions ("Session 2026", "Limited seats available…") — this college's admissions are seasonal per class, not always-open; don't reintroduce that copy.
 
 ## JS Architecture (`js/main.js`)
 
@@ -191,7 +225,8 @@ Every `wings/*.html` page has a `.wing-faculty` section (`id="faculty"`) as the 
 - `initNewsSlider()` — homepage News & Events horizontal slider (prev/next buttons, `#newsSlider`)
 - `initGalleryFilter()` — category filter buttons on `gallery.html` (`.gallery-filter__btn`, `data-category` on `.gallery-item`)
 - `initScrollAnimations()` — IntersectionObserver fade-in for `.animate-on-scroll` elements
-- `initDropdownMobile()` — touch-friendly dropdown toggle on mobile
+- `initDropdownMobile()` — touch-friendly dropdown toggle on mobile; also handles the `.has-submenu`/`.submenu` second-level flyout (currently only used by `achievements/overview.html`'s navbar entry)
+- `initVisitCounter()` — footer `#visitCounter` span; fetches a hit count from the free `api.countapi.xyz` service (namespace `bckz-website-karsaz`) and adds it to a `BASE_COUNT` of 227,477, so the number increments per real page load. Fails silently (leaves the static "227,477" fallback) if the third-party API is unreachable — there's no real backend, so this is the best available approximation of a "real" site-wide visit counter on a static site.
 
 To add news items, append to the `NEWS_DATA` array in `main.js`, add a matching `<button class="hero__ticker-item" data-news="N">` in the ticker, and add a card to both the homepage slider and `news.html`'s full listing (`news-grid--static`).
 
@@ -205,12 +240,19 @@ To add news items, append to the `NEWS_DATA` array in `main.js`, add a matching 
 
 All pages are built out with real content; large sections were reworked to match `New-Content/` in a subsequent pass (About Us Core Values/Governance, all 9 Wings' facts, Academics Fee/Timings/Uniform/Calendar/Clubs/Guidelines/Summer Camp, Administration's departments, Facilities' 10 categories, Admissions' detailed per-wing tables). Academics, Administration, and Facilities were subsequently split into hub + sub-page structures — see "Hub + Sub-Page Pattern" above. Administration later gained an 11th department, Principal's Secretariat. A further pass using `New-Content-2/` added the full Board Position Holders/CAIE tables on Achievements, the Alumni Welcome copy/Success Story cards/Give Away form, per-wing teacher lists, the Contact Us extension directory, and a full rewrite of the Guidelines sub-page.
 
+A later editorial + restructuring pass: removed duplicate hero/first-section headings and trailing full stops under hero subtitles site-wide, dropped the comma before "and" throughout, added hero background photos to every banner that lacked one, converted wing faculty tables to `.teacher-card` grids, added per-wing Clubs & Societies sections, removed the `academics/programmes.html` "Explore Programmes" page, rewrote the Admissions intro copy, dropped the Fee Structure page's College Timings table, added a footer visit counter and updated WhatsApp/Virtual Library links site-wide, renamed Alumni's "Give Away" to "Give Back" (with a file rename), and restructured Achievements into the nested "Achievements at a Glance" hierarchy described in "Achievements Nested IA" above.
+
 Known gaps / next work:
-- Real student counts for Middle, Secondary, Cambridge, Primary, and Junior Wings (currently "Contact for Details" placeholders on the wing cards).
+- Real student counts for Middle, Secondary, Cambridge, Primary, and Junior Wings (currently a "700+ Students" placeholder on the wing cards, and on `alumni/welcome.html`'s Board Position/Current Students stats).
 - Real PDF downloads on `downloads.html` when available.
 - Department head photos/names on `administration/*.html` (currently `.dept-detail__photo-placeholder` + "Name Coming Soon").
-- Faculty lists for `wings/girls-afternoon.html` and `wings/secondary.html` (not present in `LIST OF TEACHERS FOR WEBSITE.docx` — currently a "coming soon" placeholder instead of a table).
+- Faculty lists for `wings/girls-afternoon.html` and `wings/secondary.html` (not present in `LIST OF TEACHERS FOR WEBSITE.docx` — currently a "coming soon" placeholder instead of teacher cards).
 - The generic placeholder email `info@bckz.edu.pk` is still used in the utility bar and footer on every page, but `contact.html` now shows the real addresses (`bahria_collegekarsaz@yahoo.com`, `bckzinfo@gmail.com`) from `H.  Contact Us.docx` — site-wide mailto links were intentionally left alone pending a decision on whether to update them everywhere.
+- Real content for `achievements/international-level.html`, `national-level.html`, `provincial-level.html`, `intercollegiate-level.html` (all placeholder shells — no source data exists yet, don't fabricate achievement claims).
+- Real position-holder data for `achievements/federal-board-ssc.html` and `achievements/karachi-board-ssc.html` (both placeholders — the source table has zero SSC-level rows for either board).
+- Real bank account number for `alumni/give-back.html`'s "Account Number" field (currently "Number Coming Soon"; IBAN is real).
+- Real alumni data table content and corrected Board Position/Current Students figures for `alumni/welcome.html` (currently "700+" placeholders per the site owner — the old figures were confirmed wrong).
+- An Alumni Coordinator extension number for `contact.html`'s directory table (no such row currently exists — `alumni/stay-connected.html` links to `administration/alumni-coordinator.html` instead of showing a number).
 
 ## Rules
 
@@ -221,3 +263,5 @@ Known gaps / next work:
 - Images go in `Images/` (or a relevant subfolder). Reference with relative paths, and remember the CSS `url()` gotcha above.
 - Google Fonts link must be the first `<link>` inside `<head>` on every page (kept for consistency even though currently unused by `--font`).
 - When making the same mechanical edit across many pages (navbar dropdown, footer links, etc.), verify the exact existing string first and script the replacement — a partial/approximate match risks silently skipping files or creating duplicates (this has happened before: a careless replace target once matched both the navbar dropdown and the footer, producing a duplicate "Fee Structure" link in the navbar).
+- Site-wide navbar dropdowns are single-level (`.has-dropdown`/`.dropdown`) by convention — the one exception is `achievements/overview.html`'s entry, which uses `.has-submenu`/`.submenu` for a second-level flyout (see "Achievements Nested IA"). Don't add further nesting levels without a strong reason; prefer the existing Hub + Sub-Page pattern (a hub page's own card grid) over deeper navbar flyouts.
+- Don't fabricate factual claims (achievement records, headcounts, financial details) to fill a gap — use a clearly-labeled placeholder ("Content Coming Soon", "Number Coming Soon", etc., matching the existing `.dept-detail__photo-placeholder` convention) and list it under "Known gaps" instead.
