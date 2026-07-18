@@ -200,6 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initDropdownMobile();
     initNewsSlider();
     initGalleryFilter();
+    initVisitCounter();
 });
 
 /* ---------- NAVBAR ---------- */
@@ -249,6 +250,17 @@ function initDropdownMobile() {
             e.preventDefault();
             const isOpen = item.classList.toggle('open');
             item.closest('ul').querySelectorAll('.has-dropdown').forEach(sib => {
+                if (sib !== item) sib.classList.remove('open');
+            });
+        });
+    });
+
+    document.querySelectorAll('.has-submenu').forEach(item => {
+        item.querySelector(':scope > a').addEventListener('click', (e) => {
+            if (window.innerWidth > 860) return;
+            e.preventDefault();
+            const isOpen = item.classList.toggle('open');
+            item.closest('.dropdown').querySelectorAll('.has-submenu').forEach(sib => {
                 if (sib !== item) sib.classList.remove('open');
             });
         });
@@ -447,4 +459,21 @@ function initScrollAnimations() {
     }, { threshold: 0.12 });
 
     elements.forEach(el => observer.observe(el));
+}
+
+/* ---------- VISIT COUNTER ---------- */
+function initVisitCounter() {
+    const el = document.getElementById('visitCounter');
+    if (!el) return;
+
+    const BASE_COUNT = 227477;
+    fetch('https://api.countapi.xyz/hit/bckz-website-karsaz/visits')
+        .then(res => res.json())
+        .then(data => {
+            const total = BASE_COUNT + (data.value || 0);
+            el.textContent = total.toLocaleString('en-US');
+        })
+        .catch(() => {
+            // API unreachable — leave the static fallback count in place
+        });
 }

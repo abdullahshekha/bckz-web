@@ -341,6 +341,48 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     padding-left: 26px;
 }
 
+/* Nested flyout submenu (2nd level, e.g. Achievements at a Glance) */
+.has-submenu { position: relative; }
+.has-submenu > a::after {
+    content: '\203A';
+    float: right;
+    margin-left: 10px;
+}
+.submenu {
+    position: absolute;
+    top: -8px;
+    left: 100%;
+    min-width: 220px;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    border-top: 3px solid var(--gold);
+    padding: 8px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(8px);
+    transition: all var(--transition);
+    z-index: 210;
+}
+.has-submenu:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+.submenu li a {
+    display: block;
+    padding: 9px 18px;
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: var(--text);
+    transition: color var(--transition), background var(--transition), padding-left var(--transition);
+}
+.submenu li a:hover {
+    color: var(--navy);
+    background: var(--off-white);
+    padding-left: 26px;
+}
+
 /* Navy Logo (right side) */
 .navbar__navy-logo {
     flex-shrink: 0;
@@ -1263,6 +1305,8 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     text-align: center;
 }
 .footer__bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.38); letter-spacing: 0.02em; }
+.footer__visits { margin-top: 4px; }
+.footer__visits #visitCounter { color: var(--gold); font-weight: 600; }
 
 /* =============================================
    NEWS POPUP MODAL
@@ -1583,6 +1627,10 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     overflow: hidden;
     box-shadow: var(--shadow-md);
 }
+.about-stats-strip--six { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 640px) {
+    .about-stats-strip--six { grid-template-columns: repeat(2, 1fr); }
+}
 
 .about-stat {
     display: flex;
@@ -1599,6 +1647,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .about-stat:nth-child(1),
 .about-stat:nth-child(2) { border-top: 3px solid var(--gold); }
 
+.about-stat__icon {
+    font-size: 1.7rem;
+    line-height: 1;
+    margin-bottom: 2px;
+}
 .about-stat__number {
     font-family: var(--font);
     font-size: 1.9rem;
@@ -2176,6 +2229,22 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     }
     .has-dropdown.open .dropdown { display: block; }
 
+    .submenu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border-top: none;
+        border-left: 3px solid var(--gold);
+        margin-left: 14px;
+        margin-top: 2px;
+        padding: 4px 0;
+        display: none;
+    }
+    .has-submenu.open .submenu { display: block; }
+    .has-submenu > a::after { transform: rotate(90deg); display: inline-block; }
+
     .navbar__navy-logo { display: none; }
 
     .news-grid .news-card { flex-basis: calc((100% - 28px) / 2); }
@@ -2619,33 +2688,47 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
    ============================================= */
 .wing-faculty { background: var(--off-white); }
 
-.wing-faculty .data-table-wrap {
-    border: none;
+.teacher-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+.teacher-card {
+    background: var(--white);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     border-top: 4px solid var(--gold);
+    padding: 20px 22px;
+    transition: transform var(--transition), box-shadow var(--transition);
 }
-.wing-faculty .data-table {
-    font-size: 0.88rem;
+.teacher-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
 }
-.wing-faculty .data-table thead th {
-    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
-    padding: 16px 20px;
-    font-size: 0.76rem;
-    letter-spacing: 0.06em;
-}
-.wing-faculty .data-table td {
-    padding: 14px 20px;
-    border-bottom: 1px solid rgba(0,0,128,0.06);
-    color: var(--text-light);
-}
-.wing-faculty .data-table td:first-child {
+.teacher-card__name {
     color: var(--navy);
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 6px;
 }
-.wing-faculty .data-table tbody tr:nth-child(even) { background: rgba(0,0,128,0.028); }
-.wing-faculty .data-table tbody tr:hover { background: rgba(201,160,51,0.12); }
-.wing-faculty .data-table tbody tr:last-child td { border-bottom: none; }
+.teacher-card__qualification {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+.teacher-card__designation {
+    color: var(--gold-dark);
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+}
+.teacher-card__remarks {
+    color: var(--text-light);
+    font-size: 0.8rem;
+    font-style: italic;
+}
 
 /* =============================================
    ADMISSIONS CTA STRIP
@@ -2996,6 +3079,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 @media (max-width: 480px) {
     .wing-fac-grid { grid-template-columns: 1fr; }
 }
+
+/* =============================================
+   WING PAGES — CLUBS & SOCIETIES (TAG LIST)
+   ============================================= */
+.wing-clubs-tags { background: var(--off-white); }
 
 /* =============================================
    BOYS WING — CLUBS SECTION
