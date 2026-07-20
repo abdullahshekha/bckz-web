@@ -104,6 +104,8 @@ BCKz/
 │   ├── welcome.html         ← "Welcome to Alumni Family" copy (renamed from "...the Network")
 │   ├── success-stories.html ← Success Story cards + modal, ordered oldest-first by batch year
 │   ├── where-alumni-excel.html
+│   ├── events.html          ← Alumni Events: Get-Together (2017) + Home Coming (2025), each with
+│   │                            a date/description block and a full photo grid (`.gallery-grid`)
 │   ├── stay-connected.html  ← includes a "Connect With Us" block (social/WhatsApp/Alumni Coordinator link)
 │   └── give-back.html       ← Give Back (donation/sponsorship) form — renamed from give-away.html;
 │                                includes both Account Number and IBAN fields
@@ -119,7 +121,12 @@ BCKz/
 │   ├── Navy Logo.png
 │   ├── Facilities/         ← Facility photos
 │   ├── VP/                 ← Named VP photos (e.g. "Imran Safdar.jpg", "Sadia Khanam.jpg")
-│   ├── Alumni/             ← 9 named alumni photos used by alumni.html's story cards/modal
+│   ├── Alumni/             ← 15 named alumni photos used by success-stories.html's story cards/modal
+│   │   └── Events/
+│   │       ├── Get-Together/  ← 12 photos, Alumni Get-Together 2017, used by alumni/events.html
+│   │       └── Home-Coming/   ← 23 photos, Alumni Home Coming 2025, used by alumni/events.html
+│   ├── Administration/     ← Named department-head photos used by administration/*.html
+│   │                            (sourced from Admin-Staff-Pics/, e.g. "Syed Rizwan Hussain.jpeg")
 │   └── ...
 ├── New-Content/             ← Source Word docs (canonical content reference) + reference photos.
 │                               *.docx/*.pdf are gitignored — not pushed to the repo.
@@ -128,7 +135,9 @@ BCKz/
 │                               below) — only the *.docx/*.pdf are gitignore-matched, but by convention this
 │                               whole staging folder is left untracked; only the processed copies that make
 │                               it into Images/ are committed.
-└── VP-Images/                ← Raw VP photo originals as supplied (not committed; copied/renamed into Images/VP/)
+├── VP-Images/                ← Raw VP photo originals as supplied (not committed; copied/renamed into Images/VP/)
+└── Admin-Staff-Pics/         ← Raw department-head photo originals as supplied, named "NAME, TITLE.jpeg"
+                                  (not committed; copied/renamed into Images/Administration/)
 ```
 
 ## CSS gotcha: `url()` paths are relative to `style.css`, not the HTML page
@@ -190,11 +199,11 @@ The navbar scrolls sticky and adds a `scrolled` class via JS. The active `navbar
 
 `academics.html`, `administration.html`, `facilities.html`, `achievements.html`, and `alumni.html` are all **hub pages** — none of them hold full section content. Each shows a card grid (reusing `.admin-services__grid` / `.admin-service-card.card-link`) where every card links to a standalone sub-page in the matching directory. Don't reintroduce full inline content on any of these five hub pages — add a new sub-page instead and link to it from the hub's card grid. Every one of the 5 subdirectories also has its own navbar dropdown (site-wide, on every page) linking directly to its sub-pages.
 
-- **Administration sub-pages** (`administration/*.html`): hero banner with the department name, then a two-column `.dept-detail__grid` section — left column is the department's text (from `05. Administration.docx`), right column is `.dept-detail__side` with a `.dept-detail__photo-placeholder` (no real photos yet) and a placeholder department-head name/title. Swap in a real photo + name when the user provides them.
+- **Administration sub-pages** (`administration/*.html`): hero banner with the department name, then a two-column `.dept-detail__grid` section — left column is the department's text (from `05. Administration.docx`), right column is `.dept-detail__side` with a real photo (`.dept-detail__photo`, sourced from `Admin-Staff-Pics/`, copied into `Images/Administration/`) and the department head's name/title. `board-coordinators.html` has two heads (SSC & HSSC / CAIE) so its side column uses a `.dept-detail__side-group` wrapper holding two `.dept-detail__side` cards instead of one.
 - **Academics sub-pages** (`academics/*.html`): content lifted directly from `04. Academics.docx`, reusing whatever CSS component fits (`.data-table` for tables, `.uniform-card`, `.clubs-tag`, etc.). Exception: `academics/guidelines.html` was later fully replaced with the far more comprehensive `GUIDELINES.docx` (from `New-Content-2/`) — Code of Conduct, Dress Code, ID Cards, House System, Disciplinary Measures, Awards & Recognition, etc. — using `.guidelines-accordion` throughout.
 - **Facilities sub-pages** (`facilities/*.html`): content from `06. Facilities.docx` using `.fac-page-card`/`.fac-page-grid`. The per-facility photo gallery section (`.facility-gallery__grid` placeholder tiles) was removed site-wide — these pages now end with the facility content itself, no gallery placeholder.
 - **Achievements sub-pages** (`achievements/*.html`): `achievements.html` only card-links to two top-level siblings — `overview.html` ("Achievements at a Glance") and `medals.html` ("Award of Medals"). `overview.html` is itself a second-level hub — see "Achievements Nested IA" below for its 8 children and the 3-level `board-results-summary.html`/`caie-summary.html` sub-hubs.
-- **Alumni sub-pages** (`alumni/*.html`): each is one of the 5 sections previously inline on `alumni.html` — `welcome.html`, `success-stories.html` (alumni cards + modal — `alumni/success-stories.html` is the only alumni sub-page that includes the `.alumni-modal` markup), `where-alumni-excel.html`, `stay-connected.html`, `give-back.html` (donation/sponsorship form, renamed from `give-away.html`).
+- **Alumni sub-pages** (`alumni/*.html`): `welcome.html`, `success-stories.html` (alumni cards + modal — `alumni/success-stories.html` is the only alumni sub-page that includes the `.alumni-modal` markup), `where-alumni-excel.html`, `events.html` (photo record of past alumni reunions — reuses `gallery.html`'s `.gallery-grid`/`.gallery-item` classes, no filter buttons or lightbox), `stay-connected.html`, `give-back.html` (donation/sponsorship form, renamed from `give-away.html`).
 - Every sub-page includes a `.subpage-back` link ("← Back to Administration/Academics/Facilities/Achievements/Alumni") right under the hero, pointing at the hub page — except `achievements/best-bahria-college.html` and `achievements/position-holders.html`, whose back-link/breadcrumb now points to `overview.html` ("Back to Achievements at a Glance") since they're nested one level deeper.
 
 ## Achievements Nested IA
@@ -245,7 +254,6 @@ A later editorial + restructuring pass: removed duplicate hero/first-section hea
 Known gaps / next work:
 - Real student counts for Middle, Secondary, Cambridge, Primary, and Junior Wings (currently a "700+ Students" placeholder on the wing cards, and on `alumni/welcome.html`'s Board Position/Current Students stats).
 - Real PDF downloads on `downloads.html` when available.
-- Department head photos/names on `administration/*.html` (currently `.dept-detail__photo-placeholder` + "Name Coming Soon").
 - Faculty lists for `wings/girls-afternoon.html` and `wings/secondary.html` (not present in `LIST OF TEACHERS FOR WEBSITE.docx` — currently a "coming soon" placeholder instead of teacher cards).
 - The generic placeholder email `info@bckz.edu.pk` is still used in the utility bar and footer on every page, but `contact.html` now shows the real addresses (`bahria_collegekarsaz@yahoo.com`, `bckzinfo@gmail.com`) from `H.  Contact Us.docx` — site-wide mailto links were intentionally left alone pending a decision on whether to update them everywhere.
 - Real content for `achievements/international-level.html`, `national-level.html`, `provincial-level.html`, `intercollegiate-level.html` (all placeholder shells — no source data exists yet, don't fabricate achievement claims).

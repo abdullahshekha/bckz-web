@@ -4249,6 +4249,19 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     color: var(--mid-gray);
 }
 .dept-detail__photo-placeholder span { font-size: 0.78rem; font-weight: 600; }
+.dept-detail__photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius);
+    border: 1px solid rgba(0,0,128,.12);
+    object-fit: cover;
+    display: block;
+}
+.dept-detail__side-group {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 .dept-detail__head-name {
     display: block;
     font-family: var(--font);

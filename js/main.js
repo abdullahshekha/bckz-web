@@ -56,7 +56,7 @@ const ALUMNI_DATA = [
         name: 'Muhammad Ali Qasmi',
         batch: 'Batch of 2005–07',
         role: 'Senior AI Engineer, Qcells North America — San Francisco Bay Area, California, USA · MS in Computer Science, University of Bonn, Germany',
-        photo: 'Images/Alumni/Muhammad Ali Qasmi.jpeg',
+        photo: '../Images/Alumni/Muhammad Ali Qasmi.jpeg',
         body: `<p>Dear Students,</p>
                <p>I sat in the same classrooms you sit in now. I walked the same corridors, took the same exams, and had no clearer idea than you do about where any of it would lead. That is worth saying plainly, because the people whose names end up on alumni pages can seem like a different species. They are not. They were students at Karsaz, and then they kept going.</p>
                <p>Today I build autonomous AI systems that manage power for the massive data centers forming the backbone of AI infrastructure across the USA. Twenty years ago, I was writing my first lines of code, never imagining this field would exist in the form it does now. Almost everything I learned in those early years is obsolete — the languages have changed, the tools have changed. What did not change was the habit of learning: the willingness to sit with a problem I did not understand, to read something difficult twice, and to keep asking why until the answer was truly mine.</p>
@@ -69,7 +69,7 @@ const ALUMNI_DATA = [
         name: 'Afnan Javaid',
         batch: 'Batch of 2016',
         role: 'Vice President & Board Member, 3 Knots Digitals Pvt. Ltd.',
-        photo: 'Images/Alumni/Afnan Javaid.jpeg',
+        photo: '../Images/Alumni/Afnan Javaid.jpeg',
         body: `<p>I completed my Matriculation from Bahria College Karsaz (Federal Board) and my Intermediate in Pre-Engineering from Bahria College Karsaz (Sindh Board). I later earned a Bachelor's degree in Software Engineering (Batch 2016) and a Master's degree in Project Management (Batch 2021) from Bahria University.</p>
                <p>My professional journey began in 2018 at Sleekhive Technologies as a Project Coordinator. Through consistent performance and leadership, I was promoted to Assistant Project Manager within a year. In 2021, I joined Technified Labs Pvt. Ltd. as a Project Manager, later transitioning into Pre-Sales, where I played a key role in driving revenue growth and expanding business opportunities across Thailand, Indonesia, Malaysia, and Singapore. My contributions led to my promotion as Head of Pre-Sales, where I spearheaded strategic initiatives, business development, and enterprise growth.</p>
                <p>In February 2025, I joined 3 Knots Digitals Pvt. Ltd. as Vice President and a member of the Board, contributing to corporate strategy, organizational leadership, and long-term business planning. Alongside my executive role, I also serve as a business consultant for U.S.-based organizations, Geneva B LLC and Marketing & Publishing Studio LLC, advising on strategic growth, project governance, operational excellence, and organizational development.</p>
@@ -80,7 +80,7 @@ const ALUMNI_DATA = [
         name: 'Muhammad Ashhad Noor Khan',
         batch: 'Batch of 2016',
         role: 'Advocate, Sindh Bar Council',
-        photo: 'Images/Alumni/Ashhad Noor Khan.jpeg',
+        photo: '../Images/Alumni/Ashhad Noor Khan.jpeg',
         body: `<p>After completing my intermediate studies at Bahria College in 2016, I gained admission to the University of Karachi to pursue a law degree, as I had always been passionate about studying law and becoming a lawyer.</p>
                <p>I graduated from the University of Karachi in 2021 and, after passing the licensing examination in 2022, was enrolled as a licensed Advocate on the roll of the Sindh Bar Council.</p>
                <p>Since then, I have handled a wide range of criminal, civil, and banking matters. However, one of the most rewarding experiences of my career was working with an NGO, where I undertook pro bono cases to provide legal assistance to underprivileged members of the community.</p>
@@ -90,7 +90,7 @@ const ALUMNI_DATA = [
         name: 'Muazzam Ali',
         batch: 'Batch of 2018',
         role: 'AI/ML Professional, Kaizen Owner Association Management Services — Dubai, UAE · Bachelor’s in Computer Science',
-        photo: 'Images/Alumni/Muazzam Ali.jpeg',
+        photo: '../Images/Alumni/Muazzam Ali.jpeg',
         body: `<p>Currently working as an AI/ML professional in Dubai, UAE at Kaizen Owner Association Management Services, with around 3 years of experience in the field.</p>
                <h4>My Journey</h4>
                <p>After finishing my Computer Science degree, I found myself drawn towards Artificial Intelligence, back when it wasn't as mainstream as it is today. Over the last three years, I've worked as an AI/ML professional, applying AI to solve real, everyday business problems rather than just working on theory.</p>
@@ -103,7 +103,7 @@ const ALUMNI_DATA = [
         name: 'Ahmer Sarfaraz',
         batch: 'Matriculated 2004',
         role: 'Regional Head Sales – South & Vice President, The Bank of Punjab',
-        photo: 'Images/Alumni/Ahmer Sarfaraz.jpeg',
+        photo: '../Images/Alumni/Ahmer Sarfaraz.jpeg',
         body: `<p>My name is Ahmer Sarfaraz, and I am a proud alumni of Bahria College Karsaz. I completed my Matriculation from the college in 2004, and later earned an MBA with a specialization in Marketing and Advertising.</p>
                <p>I began my professional journey in 2012 as a Junior Officer at NIB Bank Ltd. Banking has been my passion since day one, and over the years I have gained extensive experience across the industry. I have had the opportunity to work with leading institutions including MCB Bank, HBL, Askari Bank, and Bank AL Habib.</p>
                <p>Currently, I serve as Regional Head Sales – South at The Bank of Punjab, holding the position of Vice President. With over 13 years of experience in banking, I have navigated numerous challenges throughout my career. Each challenge strengthened my resolve to work harder, stay focused, and achieve the goals I set for myself.</p>
@@ -113,7 +113,7 @@ const ALUMNI_DATA = [
         name: 'Dr. Irum Shah',
         batch: 'Batch of 2014',
         role: 'General Surgery Resident (training in Pediatric Surgery) · Dow Medical College',
-        photo: 'Images/Alumni/Dr. Irum Shah.jpeg',
+        photo: '../Images/Alumni/Dr. Irum Shah.jpeg',
         body: `<p>I completed my schooling at Bahria College Karsaz (Cambridge Wing) — where I developed a strong academic foundation and a passion for serving humanity. I was the high achiever of the year 2014. I graduated from Dow Medical College in 2022 and pursued a career in Surgery. Currently, I am a General Surgery Resident and am working towards specialization in Pediatric Surgery.</p>
                <p>Throughout my training, I have gained extensive experience in emergency and elective surgical care, assisted in and performed a wide range of surgical procedures, and remained committed to continuous learning and professional development. Alongside my demanding career, I am also a proud mother, striving to balance family life with the responsibilities of surgical training.</p>
                <h4>Success Story</h4>
@@ -125,7 +125,7 @@ const ALUMNI_DATA = [
         name: 'Shaharyar Ahmed Khan',
         batch: 'Batch of 2013',
         role: 'Deputy General Manager – Corrective Maintenance, K-Electric · B.E. Electrical Engineering, NEDUET; MBA, University of Karachi',
-        photo: 'Images/Alumni/Shaharyar Ahmed Khan.jpeg',
+        photo: '../Images/Alumni/Shaharyar Ahmed Khan.jpeg',
         body: `<p>Proud alumni of Bahria College Karsaz. Holding B.E. in Electrical Engineering from NED University of Engineering & Technology (NEDUET) and an MBA in Project & Industrial Management from the University of Karachi.</p>
                <p>Currently serving as Deputy General Manager – Corrective Maintenance at K-Electric, where he leads maintenance operations to ensure the reliability and sustainability of Karachi's power distribution network.</p>
                <h4>Key Milestones</h4>
@@ -152,7 +152,7 @@ const ALUMNI_DATA = [
         name: 'Shaheer Iqbal',
         batch: 'Batch of 2007',
         role: 'Deputy Manager – Assembly, Ghandhara Automobiles Limited · MSc Mechanical Engineering, Universiti Malaysia Pahang',
-        photo: 'Images/Alumni/Shaheer Iqbal.jpeg',
+        photo: '../Images/Alumni/Shaheer Iqbal.jpeg',
         body: `<p>I began my professional career in 2012, immediately after completing my fourth year of Bachelor's studies, by joining Pak Suzuki Motor Company Limited in Pakistan. During my tenure, I had the opportunity to contribute to the successful launch and production of the Suzuki Wagon R project. This experience provided me with a strong foundation in automotive manufacturing, assembly operations, quality systems, and new model implementation.</p>
                <p>Driven by a passion for continuous learning and professional growth, I pursued my Master's degree in Mechanical Engineering at Universiti Malaysia Pahang, Malaysia. Alongside my postgraduate studies, I gained valuable industrial exposure by working with Proton and Perodua, where I further strengthened my knowledge of modern automotive manufacturing practices and production systems.</p>
                <p>Following my time in Malaysia, I joined Nissan Middle East FZE in Dubai, United Arab Emirates, where I worked with the regional technical team supporting distributors across the Middle East, North America, and Mediterranean regions. During this period, I had the privilege of working on several globally renowned Nissan models, including the Nissan GT-R, Nissan 370Z, Patrol, Pathfinder, Altima, and various passenger and commercial vehicles. This international experience significantly enhanced my technical expertise, problem-solving abilities, and understanding of global automotive standards.</p>
@@ -173,7 +173,7 @@ const ALUMNI_DATA = [
         name: 'Muhammad Umer Dar',
         batch: 'Batch of 2008',
         role: 'Lieutenant Commander (Ops)(S/M), Pakistan Navy — Advisor to the Royal Saudi Naval Forces',
-        photo: 'Images/Alumni/Muhammad Umer Dar.jpeg',
+        photo: '../Images/Alumni/Muhammad Umer Dar.jpeg',
         body: `<p>Following completion of intermediate education at Bahria College Karsaz, I joined Pakistan Navy in 2008 and established a progressive career.</p>
                <p>I am currently serving in Pakistan Navy as Lieutenant Commander (Ops)(S/M). I completed my MS (Defense Studies Maritime) from the National Defense University (NDU).</p>
                <h4>Professional Qualifications</h4>
@@ -188,6 +188,64 @@ const ALUMNI_DATA = [
                    <li>Served 4.5 combined years in training naval personnel, including Directing Staff at the Pakistan Navy Tactical School, Divisional Officer at the Pakistan Naval Academy, and Deputy Senior Instructor at the PN Submarine School</li>
                </ul>
                <p>I also served as Deputy Director, Ports and Shipping at Naval Headquarters (NHQ). I am presently appointed as advisor to the Royal Saudi Naval Forces in KSA.</p>`
+    },
+    {
+        name: 'Ayyan Ali',
+        batch: 'Batch of 2022',
+        role: 'Full Stack Software Engineer, NovaSphere Sol',
+        photo: '../Images/Alumni/Ayyan Ali.jpeg',
+        body: `<p>Hi everyone, this is Ayyan Ali. Bahria College Karsaz was a major foundational stepping stone for me, and the discipline I built during my time there played a direct role in how I approached my professional goals.</p>
+               <p>After passing out as a pre-engineering graduate in 2022, I chose to switch fields to pursue software engineering. The transition required intense focus, but it allowed me to break into the tech industry early. I have been working full-time as a Full Stack Software Engineer at NovaSphere Sol since November 2025, stepping into a complete professional role even before my formal university graduation.</p>
+               <p>My journey taught me that your starting point doesn't strictly dictate your destination. My advice to current Bahrians is to build a strong work ethic early on and never hesitate to pivot when you recognize where your true focus lies.</p>`
+    },
+    {
+        name: 'Bassam Ali',
+        batch: 'Batch of 2021',
+        role: 'Junior Frontend Developer, Auriga Solutions · BS Software Engineering, FAST NUCES',
+        photo: '../Images/Alumni/Bassam Ali.jpeg',
+        body: `<p>I am Bassam Ali. I completed my Intermediate in 2021 from Bahria College Karsaz and went on to earn my Bachelor's degree in Software Engineering from FAST NUCES. I am currently working as a Junior Frontend Developer at Auriga Solutions. Previously, I worked as a Full Stack Developer at Moosvi Dev Concepts and as a Part-Time Full Stack Engineer at Elite IT Team. I am passionate about web and app development, building scalable digital solutions, and continuously enhancing my technical expertise.</p>
+               <p>Starting my career with full-stack development roles and progressing to my current position as a Junior Frontend Developer at Auriga Solutions has been a rewarding journey. Each opportunity has strengthened my technical skills and professional growth while allowing me to contribute to real-world software solutions. I remain committed to continuous learning, embracing new technologies, and building impactful digital experiences throughout my career.</p>`
+    },
+    {
+        name: 'Dr. Tehreem Farooq',
+        batch: 'Batch of 2017',
+        role: 'BDS, Dow University of Health Sciences · Digital Creator',
+        photo: '../Images/Alumni/Dr Tehreem Farooq.jpeg',
+        body: `<p>Hi everyone, this is Dr. Tehreem Farooq.</p>
+               <p>Bahria College Karsaz has been an integral part of my life. My school and college journey at BCKz was nothing less than a roller coaster ride, and it has taught me a lot about life in general. It would not be an exaggeration to say that it has played an important role in my grooming and personal development.</p>
+               <p>After passing out as a pre-medical graduate in 2017, I enrolled in DUHS to pursue my BDS. At the same time, I started my journey as a digital creator on Instagram and YouTube. I recently completed my house job, and my digital content creation journey is going amazingly well.</p>
+               <p>After all these years, I have come to the conclusion that hard work, determination, and focus always pay off. The environment you are brought up in plays an important role in your personal and professional growth, and that is how your institution contributes to your success.</p>
+               <p>My advice to all Bahrians is to aim high and work hard toward your goals. Never lose hope, and always remain determined to achieve more in life. Your leadership qualities will definitely take you to greater heights.</p>`
+    },
+    {
+        name: 'Hamza Abdul Rauf',
+        batch: 'Batch of 2009',
+        role: 'Proud BCKz Alumnus',
+        photo: '../Images/Alumni/Hamza Abdul Rauf.jpeg',
+        body: `<p>Well, where do I start?</p>
+               <p>Words cannot fully express how I feel about Bahria College Karsaz. This institution served as a grooming center not only for me but for thousands of students who spent their academic lives here.</p>
+               <p>This place taught me the three most important values: discipline, hard work, and composure. These qualities have helped me tremendously in both my professional and personal life over the years.</p>
+               <p>I am proud to be part of an institution that has never compromised on the quality of education and its values. I am equally proud to be associated with Bahria as one of its alumni. No matter where I go or what I become, Bahria College Karsaz will always hold a very special place in my heart.</p>`
+    },
+    {
+        name: 'Anz Azhar',
+        batch: 'Batch of 2013',
+        role: 'Basketball Player & Coach — Captain, Sindh (National Games)',
+        photo: '../Images/Alumni/Anz Azhar.jpeg',
+        body: `<p>Being the son of a naval officer, I completed all my schooling at Bahria College, but I spent my later years (Grade 8 to Grade 12) at Bahria College Karsaz. I graduated in 2013, and although I had a love-hate relationship with the college, I have come to respect and appreciate the environment it provided for our growth.</p>
+               <p>I was never a top-ranking student, but Bahria introduced me to my true passion — basketball. During my senior years, I played for the college team and won the COMKAR Championship as well as the Intercollegiate Tournament. After graduation, I started pursuing CA, but I soon realized it wasn't for me. After several years, I left it behind to follow my passion.</p>
+               <p>So far, I have represented Karachi at the National Games and captained Sindh twice. Alongside playing and winning several local tournaments, I have established two basketball academies and coached multiple Army unit teams. My biggest achievement has been being part of the League of Basketball, a player-run league and one of the best basketball initiatives in the country.</p>
+               <p>My advice to all fellow Bahrians is: don't let grades define you, and don't be pressured by society's standards. Set your own standards, follow your dreams, and stay resilient.</p>`
+    },
+    {
+        name: 'Urooj Raheel',
+        batch: 'Batch of 2015',
+        role: 'Sales Director & Property Consultant — Dubai',
+        photo: '../Images/Alumni/Urooj Raheel.jpeg',
+        body: `<p>Greetings folks, this is Urooj Raheel.</p>
+               <p>I am working as a Sales Director at a marketing agency, and along with that, I am a property consultant in Dubai. Spending 15 years of my life in one school at the same place, I can proudly say that my time at Bahria College Karsaz has been nothing short of extraordinary, leaving an indelible mark on both my personal and academic growth. The college's emphasis on a well-rounded education enriched my overall experience and prepared me for the complexities of the real world.</p>
+               <p>I was always the social butterfly, and BCK gave me the platform to grow socially by participating in various activities and talent shows. I eventually became the captain of the Table Tennis team and won several medals. Along with that, the college played a pivotal role in my holistic development. It was all because of the unwavering support of our teachers, who were more like mentors.</p>
+               <p>I am grateful for the friendships, the victories, the lessons, the experiences, and the memories. Bahria College Karsaz is not just about quality education — it is about a transformative and enriching journey.</p>`
     }
 ];
 
