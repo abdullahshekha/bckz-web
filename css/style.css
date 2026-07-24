@@ -1307,9 +1307,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .footer__bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.38); letter-spacing: 0.02em; }
 .footer__bottom .footer__visits {
     display: inline-block;
-    margin-top: 14px;
-    padding: 10px 28px;
-    font-size: 2.34rem;
+    margin-top: 10px;
+    padding: 6px 16px;
+    font-size: 0.7rem;
     color: rgba(255,255,255,0.55);
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.16);
