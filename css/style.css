@@ -1230,7 +1230,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     gap: 48px;
 }
 
-.footer__logo { height: 64px; width: auto; margin-bottom: 18px; }
+.footer__logo { height: 128px; width: auto; margin-bottom: 18px; }
 
 .footer__motto {
     font-family: var(--font);
@@ -1305,7 +1305,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     text-align: center;
 }
 .footer__bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.38); letter-spacing: 0.02em; }
-.footer__visits { margin-top: 4px; }
+.footer__visits { margin-top: 4px; font-size: 1.56rem; }
 .footer__visits #visitCounter { color: var(--gold); font-weight: 600; }
 
 /* =============================================
@@ -2188,6 +2188,8 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
    ============================================= */
 @media (max-width: 860px) {
     .section-pad { padding: 60px 0; }
+
+    .footer__logo { height: 64px; }
 
     .navbar__toggle { display: flex; }
     .navbar__title { font-size: 1.6em; }
