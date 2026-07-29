@@ -2031,6 +2031,14 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     box-shadow: var(--shadow-sm);
 }
 
+.stay-connected__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
 .governance__callout-icon {
     flex-shrink: 0;
     width: 48px;
@@ -3524,11 +3532,26 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 /* ---------- Admission Details by Wing accordion (rich body layout) ---------- */
+.adm-wing-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 28px;
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(0,0,128,.08);
+}
+.adm-wing-meta__item { font-size: 0.9rem; color: var(--text-light); }
+.adm-wing-meta__item strong { color: var(--navy); font-weight: 700; }
+
 .adm-detail-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px 32px;
     margin-bottom: 22px;
+}
+.adm-detail-grid--three { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 860px) {
+    .adm-detail-grid--three { grid-template-columns: 1fr; }
 }
 
 .adm-detail-block { margin-bottom: 22px; }
@@ -4342,6 +4365,10 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .guidelines-item__body .data-table-wrap { margin: 12px 0; }
 .guidelines-item__note { font-style: italic; font-size: 0.85rem; }
 
+.uniform-note { font-size: 0.95rem; color: var(--text-light); line-height: 1.8; margin: 0 0 14px; }
+.uniform-list { margin: 0 0 14px; padding-left: 22px; font-size: 0.95rem; color: var(--text-light); line-height: 1.9; }
+.uniform-list li { margin-bottom: 4px; }
+
 /* ---------- Summer Camp ---------- */
 .summer-camp__inner {
     display: grid;
@@ -4350,6 +4377,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     align-items: start;
 }
 .summer-camp__text p { margin-bottom: 14px; font-size: 0.95rem; line-height: 1.8; color: var(--text-light); }
+.summer-camp__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .summer-camp__sports {
     background: var(--off-white);
     border-radius: var(--radius-lg);
@@ -4443,6 +4475,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     padding: 28px;
     text-align: center;
     align-self: start;
+    overflow: hidden;
 }
 .dept-detail__photo-placeholder {
     width: 100%;
@@ -4456,6 +4489,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     justify-content: center;
     gap: 10px;
     color: var(--mid-gray);
+    margin-top: -28px;
 }
 .dept-detail__photo-placeholder span { font-size: 0.78rem; font-weight: 600; }
 .dept-detail__photo {
@@ -4466,6 +4500,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     object-fit: cover;
     object-position: top;
     display: block;
+    margin-top: -28px;
 }
 .dept-detail__side-group {
     display: flex;
