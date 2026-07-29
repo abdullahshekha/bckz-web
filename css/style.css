@@ -189,6 +189,14 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     gap: 14px;
 }
 
+.utility-bar__follow {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-right: 2px;
+}
+
 .utility-bar__icon {
     color: rgba(255,255,255,0.7);
     display: flex;
@@ -782,7 +790,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 .principal__grid {
     display: grid;
-    grid-template-columns: 340px 1fr;
+    grid-template-columns: 460px 1fr;
     gap: 68px;
     align-items: start;
 }
@@ -796,7 +804,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 3.6;
     background: var(--light-gray);
 }
 .principal__img-frame img {
@@ -1230,7 +1238,17 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     gap: 48px;
 }
 
-.footer__logo { height: 128px; width: auto; margin-bottom: 18px; }
+.footer__logo-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 14px 22px;
+    margin-bottom: 18px;
+    box-shadow: var(--shadow-md);
+}
+.footer__logo { height: 92px; width: auto; display: block; }
 
 .footer__motto {
     font-family: var(--font);
@@ -1299,23 +1317,38 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .footer__contact-list a { color: rgba(255,255,255,0.60); transition: color var(--transition); }
 .footer__contact-list a:hover { color: var(--gold); }
 
+.footer__counter {
+    margin-top: 26px;
+    padding: 20px 24px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+.footer__counter-number {
+    font-family: var(--font);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--gold);
+}
+.footer__counter-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+}
+
 .footer__bottom {
     border-top: 1px solid rgba(255,255,255,0.08);
     padding: 18px 0;
     text-align: center;
 }
 .footer__bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.38); letter-spacing: 0.02em; }
-.footer__bottom .footer__visits {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 6px 16px;
-    font-size: 1.4rem;
-    color: rgba(255,255,255,0.55);
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.16);
-    border-radius: 999px;
-}
-.footer__visits #visitCounter { color: var(--gold); font-weight: 600; }
 
 /* =============================================
    NEWS POPUP MODAL
@@ -1510,11 +1543,23 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 .page-hero--about {
     background-image: linear-gradient(135deg, rgba(0,0,50,0.80) 0%, rgba(0,0,100,0.62) 100%),
-                      url('../Images/Drone View.JPG');
+                      url('../Images/Banners/About Us.png');
     background-size: cover;
     background-position: center;
 }
 .page-hero--about .page-hero__overlay { background-image: none; background: rgba(0,0,64,0.42); }
+
+.page-hero--achievements-hub,
+.page-hero--administration-hub,
+.page-hero--alumni-hub,
+.page-hero--facilities-hub {
+    background-size: cover;
+    background-position: center;
+}
+.page-hero--achievements-hub { background-image: linear-gradient(135deg, rgba(0,0,50,0.80) 0%, rgba(0,0,100,0.62) 100%), url('../Images/Banners/Achievements.png'); }
+.page-hero--administration-hub { background-image: linear-gradient(135deg, rgba(0,0,50,0.80) 0%, rgba(0,0,100,0.62) 100%), url('../Images/Banners/Administration.png'); }
+.page-hero--alumni-hub { background-image: linear-gradient(135deg, rgba(0,0,50,0.80) 0%, rgba(0,0,100,0.62) 100%), url('../Images/Banners/Alumni.png'); }
+.page-hero--facilities-hub { background-image: linear-gradient(135deg, rgba(0,0,50,0.80) 0%, rgba(0,0,100,0.62) 100%), url('../Images/Banners/Facilities.jpg'); }
 
 /* Generic reusable hero backgrounds (hub pages / sub-pages with no dedicated photo yet) */
 .page-hero--building,
@@ -2198,7 +2243,8 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 @media (max-width: 860px) {
     .section-pad { padding: 60px 0; }
 
-    .footer__logo { height: 64px; }
+    .footer__logo { height: 56px; }
+    .footer__logo-wrap { padding: 10px 16px; }
 
     .navbar__toggle { display: flex; }
     .navbar__title { font-size: 1.6em; }
@@ -2918,7 +2964,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
    ============================================= */
 .page-hero--wing-bm {
     background-image: linear-gradient(rgba(0,0,64,0.62), rgba(0,0,64,0.62)),
-                      url('../Images/Boys Wing.JPG');
+                      url('../Images/Banners/Wings/Boys Wing Morning.png');
     background-size: cover;
     background-position: center;
 }
@@ -3169,42 +3215,42 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
    ============================================= */
 .page-hero--wing-gm {
     background-image: linear-gradient(rgba(0,0,64,.60), rgba(0,0,64,.60)),
-                      url('../Images/Bahria College Main Building.JPG');
+                      url('../Images/Banners/Wings/Girls Wing Morning.png');
     background-size: cover; background-position: center;
 }
 .page-hero--wing-ba {
     background-image: linear-gradient(rgba(0,0,64,.60), rgba(0,0,64,.60)),
-                      url('../Images/Drone View.JPG');
+                      url('../Images/Banners/Wings/Boys Wing Afternoon.png');
     background-size: cover; background-position: center;
 }
 .page-hero--wing-ga {
     background-image: linear-gradient(rgba(0,0,64,.60), rgba(0,0,64,.60)),
-                      url('../Images/Bahria College Main Building.JPG');
+                      url('../Images/Banners/Wings/Girls Wing Afternoon.png');
     background-size: cover; background-position: center;
 }
 .page-hero--wing-cam {
     background-image: linear-gradient(rgba(0,0,64,.60), rgba(0,0,64,.60)),
-                      url('../Images/_MBP5007.JPG');
+                      url('../Images/Banners/Wings/Cambridge Wing.png');
     background-size: cover; background-position: center;
 }
 .page-hero--wing-mid {
     background-image: linear-gradient(rgba(0,0,64,.60), rgba(0,0,64,.60)),
-                      url('../Images/_MBP5008.JPG');
+                      url('../Images/Banners/Wings/Middle Wing.png');
     background-size: cover; background-position: center;
 }
 .page-hero--wing-pri {
     background-image: linear-gradient(rgba(0,0,64,.60), rgba(0,0,64,.60)),
-                      url('../Images/_MBP5005.JPG');
+                      url('../Images/Banners/Wings/Primary Wing.png');
     background-size: cover; background-position: center;
 }
 .page-hero--wing-sec {
     background-image: linear-gradient(rgba(0,0,64,.60), rgba(0,0,64,.60)),
-                      url('../Images/Drone View.JPG');
+                      url('../Images/Banners/Wings/Secondary Wing.png');
     background-size: cover; background-position: center;
 }
 .page-hero--wing-jr {
     background-image: linear-gradient(rgba(0,0,64,.60), rgba(0,0,64,.60)),
-                      url('../Images/Bahria College Main Building.JPG');
+                      url('../Images/Banners/Wings/Junior Wing.png');
     background-size: cover; background-position: center;
 }
 
