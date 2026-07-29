@@ -790,7 +790,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 .principal__grid {
     display: grid;
-    grid-template-columns: 460px 1fr;
+    grid-template-columns: 550px 1fr;
     gap: 68px;
     align-items: start;
 }
@@ -804,7 +804,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
-    aspect-ratio: 4 / 3.6;
+    aspect-ratio: 1142 / 1600;
     background: var(--light-gray);
 }
 .principal__img-frame img {
@@ -1329,11 +1329,35 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     gap: 2px;
 }
 .footer__counter-number {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+.footer__counter-digit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    padding: 6px 5px;
+    background: rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 6px;
+    box-shadow: inset 0 -3px 5px rgba(0,0,0,0.35);
     font-family: var(--font);
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 1.1;
     color: var(--gold);
+    font-variant-numeric: tabular-nums;
+}
+.footer__counter-sep {
+    display: inline-flex;
+    align-items: flex-end;
+    padding-bottom: 6px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.4);
 }
 .footer__counter-label {
     font-size: 0.8rem;
@@ -2962,6 +2986,18 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 /* =============================================
    BOYS WING — PAGE HERO BACKGROUND
    ============================================= */
+.page-hero--wing-bm,
+.page-hero--wing-gm,
+.page-hero--wing-ba,
+.page-hero--wing-ga,
+.page-hero--wing-cam,
+.page-hero--wing-mid,
+.page-hero--wing-pri,
+.page-hero--wing-sec,
+.page-hero--wing-jr {
+    height: 490px;
+}
+
 .page-hero--wing-bm {
     background-image: linear-gradient(rgba(0,0,64,0.62), rgba(0,0,64,0.62)),
                       url('../Images/Banners/Wings/Boys Wing Morning.png');
@@ -2976,10 +3012,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 .wing-vp__inner {
     display: grid;
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: 480px 1fr;
     gap: 60px;
     align-items: start;
 }
+
+.wing-vp__photo-col { text-align: center; }
 
 .wing-vp__photo {
     width: 100%;
@@ -2988,6 +3026,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     aspect-ratio: 3 / 4;
     object-fit: cover;
     box-shadow: var(--shadow-lg);
+}
+
+.wing-vp__photo-col .wing-vp__name {
+    margin-top: 18px;
+    margin-bottom: 4px;
 }
 
 .wing-vp__name {
@@ -3019,7 +3062,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 @media (max-width: 860px) {
     .wing-vp__inner { grid-template-columns: 1fr; text-align: center; }
-    .wing-vp__photo { max-width: 180px; margin: 0 auto; }
+    .wing-vp__photo { max-width: 360px; margin: 0 auto; }
 }
 
 /* =============================================
@@ -3035,10 +3078,13 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 .wing-boards__logo {
-    width: 100%;
-    max-width: 180px;
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
     display: block;
+    margin: 0 auto;
     border-radius: var(--radius);
+    background: var(--white);
 }
 
 .wing-boards__logo-col--multi {
@@ -3101,6 +3147,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
    BOYS WING — FACILITIES GALLERY
    ============================================= */
 .wing-facilities { background: var(--off-white); }
+.wing-labs { background: var(--white); }
 
 .wing-fac-grid {
     display: grid;
@@ -4242,6 +4289,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .clubs-tag-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
 }
 .clubs-tag {

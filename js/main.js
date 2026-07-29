@@ -524,12 +524,22 @@ function initVisitCounter() {
     const el = document.getElementById('visitCounter');
     if (!el) return;
 
+    const renderDigits = (formatted) => {
+        el.innerHTML = formatted.split('').map(ch =>
+            /[0-9]/.test(ch)
+                ? `<span class="footer__counter-digit">${ch}</span>`
+                : `<span class="footer__counter-sep">${ch}</span>`
+        ).join('');
+    };
+
     const BASE_COUNT = 227477;
+    renderDigits(BASE_COUNT.toLocaleString('en-US'));
+
     fetch('https://api.countapi.xyz/hit/bckz-website-karsaz/visits')
         .then(res => res.json())
         .then(data => {
             const total = BASE_COUNT + (data.value || 0);
-            el.textContent = total.toLocaleString('en-US');
+            renderDigits(total.toLocaleString('en-US'));
         })
         .catch(() => {
             // API unreachable — leave the static fallback count in place
