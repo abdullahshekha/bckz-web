@@ -363,7 +363,7 @@ Every wing page's final CTA (`.wing-cta`, right before the footer) is just a hea
 
 ### Message from the Vice Principal
 
-The VP section's `.wing-vp__photo-col` (left column) now holds the photo **plus** the `.wing-vp__name`/`.wing-vp__designation` lines directly underneath it (centered); the right `.wing-vp__text-col` holds only the section header and the message paragraphs. Don't move the name/designation back into the text column. The photo column (`.wing-vp__inner` grid-template-columns) was widened from `240px` to `480px` in one pass, then explicitly set back down to `360px` in a later pass (the site owner's final call on photo width) — `360px` is current, don't "fix" it back to `480px`. Mobile `.wing-vp__photo` max-width matches at `360px` (was `180px` originally).
+The VP section's `.wing-vp__photo-col` (left column) now holds the photo **plus** the `.wing-vp__name`/`.wing-vp__designation` lines directly underneath it (centered); the right `.wing-vp__text-col` holds only the section header and the message paragraphs. Don't move the name/designation back into the text column. The photo column (`.wing-vp__inner` grid-template-columns) was widened from `240px` to `480px` in one pass, then set back down to `360px` in a later pass, then explicitly returned to `240px` in a further pass (the site owner's final call on photo width) — `240px` is current. Mobile `.wing-vp__photo` max-width matches at `240px` (was `180px` originally, then `360px`).
 
 ### Admissions CTA convention (site-wide)
 
