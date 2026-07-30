@@ -3020,7 +3020,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 .wing-vp__inner {
     display: grid;
-    grid-template-columns: 480px 1fr;
+    grid-template-columns: 360px 1fr;
     gap: 60px;
     align-items: start;
 }
@@ -3556,7 +3556,15 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 .adm-detail-block { margin-bottom: 22px; }
 .adm-detail-block:last-child { margin-bottom: 0; }
-.adm-detail-grid .adm-detail-block { margin-bottom: 0; }
+.adm-detail-grid .adm-detail-block {
+    margin-bottom: 0;
+    background: var(--off-white);
+    border: 1px solid rgba(0,0,128,0.08);
+    border-top: 3px solid var(--gold);
+    border-radius: var(--radius-lg);
+    padding: 22px 24px;
+    box-shadow: var(--shadow-sm);
+}
 
 .adm-detail-label {
     display: block;
@@ -3569,6 +3577,13 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 .adm-detail-text { font-size: 0.92rem; color: var(--text-light); line-height: 1.78; margin: 0; }
+
+.adm-detail-table-wrap { overflow-x: auto; margin: 6px 0 2px; border-radius: var(--radius); border: 1px solid rgba(0,0,128,0.08); }
+.adm-detail-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; background: var(--white); }
+.adm-detail-table th, .adm-detail-table td { padding: 8px 10px; text-align: left; border-bottom: 1px solid rgba(0,0,128,0.08); }
+.adm-detail-table thead th { background: var(--navy); color: var(--white); font-weight: 600; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.03em; }
+.adm-detail-table tbody tr:last-child td { border-bottom: none; }
+.adm-detail-table tbody tr:nth-child(even) { background: rgba(0,0,128,0.03); }
 
 .adm-detail-list {
     margin: 0;
@@ -3871,6 +3886,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .fac-page-card__img {
     width: 100%;
     aspect-ratio: 4/3;
+    overflow: hidden;
+}
+.fac-page-card__img img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
@@ -4475,7 +4495,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     padding: 28px;
     text-align: center;
     align-self: start;
-    overflow: hidden;
 }
 .dept-detail__photo-placeholder {
     width: 100%;
@@ -4489,7 +4508,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     justify-content: center;
     gap: 10px;
     color: var(--mid-gray);
-    margin-top: -28px;
 }
 .dept-detail__photo-placeholder span { font-size: 0.78rem; font-weight: 600; }
 .dept-detail__photo {
@@ -4500,7 +4518,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     object-fit: cover;
     object-position: top;
     display: block;
-    margin-top: -28px;
 }
 .dept-detail__side-group {
     display: flex;
