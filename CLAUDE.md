@@ -201,8 +201,24 @@ BCKz/
 │                               Labs` subfolders, plus Libraries/Auditorium/Medical/Cafeteria/Sports/Solar
 │                               System/Electric Cart/CCTV/Parkings — source for the wing-page Facilities +
 │                               Laboratories rebuild, see "Wing Pages" section below; copied into
-│                               `Images/Facilities/Wings/` and `Images/Facilities/Wings/Labs/`), `5.Summer Camp/`
-│                               (not yet actioned), a standalone `Board of Secondary Education Karachi.jpg` (a
+│                               `Images/Facilities/Wings/` and `Images/Facilities/Wings/Labs/` — this same
+│                               `4. Facilities/` folder was later reused a second time to also fix several
+│                               `facilities/*.html` sub-pages that still had wrong/generic placeholder photos:
+│                               `cafeteria.html` (was reusing `Library.JPG`), `cctv.html` (was `Boys Wing.JPG`),
+│                               `electric-cart.html` (was the Main Building), `solar-system.html` (was a generic
+│                               drone shot), `parking.html` (was an unrelated campus photo), `medical-
+│                               facility.html` (all 3 cards were reusing 1-2 stock images), and `sports.html`'s
+│                               Badminton/Volleyball cards (both reused a generic `Sports Club.JPG`) — real
+│                               replacements copied into `Images/Facilities/` with clean filenames, e.g.
+│                               `Cafeteria Building.jpeg`, `CCTV Monitoring Room.jpeg`, `Electric Cart.jpg`,
+│                               `Solar Panels.jpg`, `Main Parking.jpeg`, `Medical Room Beds.jpeg`/`Medical
+│                               Equipment.JPG`/`Medical Office.jpeg`, `Badminton Court.JPG`, `Volleyball
+│                               Court.JPG`), `5.Summer Camp/` (actioned — `SUMMER IT CAMP/` (6 photos) and
+│                               `SPORTS SUMMER CAMP/` (~130 photos, 6 selected for variety across football,
+│                               basketball, badminton, table tennis and Padel Tennis) copied into `Images/Summer
+│                               Camp/` and added as two new `.gallery-grid` galleries — "IT Camp" and "Sports
+│                               Camp" — on `academics/summer-camp.html`, which previously had no photos at all),
+│                               a standalone `Board of Secondary Education Karachi.jpg` (a
 │                               duplicate of the already-committed `Images/Board of Secondary Education
 │                               Karachi.png` — the existing PNG was reused instead of re-copying this one), an
 │                               updated `GUIDELINES` docx (actioned — see the Academics sub-pages bullet under
