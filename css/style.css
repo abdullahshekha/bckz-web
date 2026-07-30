@@ -2033,10 +2033,22 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 .stay-connected__list {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 620px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 960px;
     margin: 0 auto;
+}
+
+.stay-connected__list .governance__callout {
+    flex: 1 1 calc(33.333% - 16px);
+    min-width: 260px;
+}
+
+@media (max-width: 640px) {
+    .stay-connected__list .governance__callout {
+        flex: 1 1 100%;
+    }
 }
 
 .governance__callout-icon {
