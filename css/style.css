@@ -4071,6 +4071,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    object-position: top;
     display: block;
 }
 .alumni-card__body { padding: 20px 22px 24px; display: flex; flex-direction: column; flex: 1; }
@@ -4161,7 +4162,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     overflow-y: auto;
     max-height: 88vh;
 }
-.alumni-modal__photo { width: 100%; max-width: 220px; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+.alumni-modal__photo { width: 100%; max-width: 220px; aspect-ratio: 1 / 1; object-fit: cover; object-position: top; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
 @media (max-width: 780px) {
     .alumni-modal__box { grid-template-columns: 1fr; max-height: 92vh; }
     .alumni-modal__photo-col { max-height: none; padding: 28px 24px 8px; }
